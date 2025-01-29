@@ -70,6 +70,14 @@ body {
     @apply bg-background text-foreground;
   }
 }
+@layer utilities {
+  .snap-x {
+    scroll-snap-type: x mandatory;
+  }
+  .snap-center {
+    scroll-snap-align: center;
+  }
+}
 .text-gradient {
   background: linear-gradient(to right, #00ff7f 20%, #b63afc 80%);
   background-size: 100%;

@@ -3,9 +3,22 @@ import {NewsSlider} from "@/components/layout/NewsSlider";
 
 import {NewsData} from "@/news-data";
 import Link from "next/link";
-import {Card, CardHeader, CardTitle} from "@/components/ui/card";
 import Image from "next/image";
 import {DayOfDate, MonthOfDate} from "@/variables";
+
+function fixText(text: string) {
+    return (
+        <>
+            {text.split("").map((char, i) =>
+                /[-!@#$%^&*(/)4]/.test(char) ? (
+                    <span key={i} className="font-sans">{char}</span>
+                ) : (
+                    char
+                )
+            )}
+        </>
+    );
+}
 
 export default function News() {
     return (
@@ -25,8 +38,7 @@ export default function News() {
                             <Link href={post.link} key={index + 1} target="_blank">
                                 <div className="group">
                                     <div className="border-2 border-gray-100 group-hover:border-b-jamni h-72 relative ">
-                                        <div
-                                            className={`min-h-32 flex items-center bg-gray-100 p-2 ${post.imgClass}`}>
+                                        <div className={`min-h-32 flex items-center bg-gray-100 p-2 ${post.imgClass}`}>
                                             <Image
                                                 src={post.img}
                                                 alt={post.title}
@@ -42,7 +54,7 @@ export default function News() {
                                             <span className="text-xs">{MonthOfDate(post.date)}</span>
                                         </div>
                                         <div className="text-center p-2 pt-3">
-                                            <div className="font-normal text-base">{post.titleHmtl}</div>
+                                            <div className="font-normal text-base">{fixText(post.title)}</div>
                                         </div>
                                     </div>
                                 </div>

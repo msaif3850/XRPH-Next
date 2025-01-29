@@ -6,7 +6,8 @@ import {
     FaTelegram,
     FaTiktok,
     FaXTwitter,
-    FaYoutube
+    FaYoutube,
+    FaWikipediaW
 } from "react-icons/fa6";
 
 const SocialLinks = [
@@ -75,15 +76,19 @@ const TeamMembers = [
         id: 'whitney-lynn', img: '/team/whitney-lynn.jpg',
         name: 'WHITNEY LYNN', role: 'Chairman',
         link: 'https://www.linkedin.com/in/whitney-lynn-97b40757/',
-        faClass: 'fab fa-linkedin-in', details: ''
 
     },
     {
         id: 'dr-peter-waiswa', img: '/team/dr-peter-waiswa.jpg',
         name: 'Dr. Peter Waiswa', role: 'Healthcare Industry Expert',
         link: 'https://en.m.wikipedia.org/wiki/Peter_Kyobe_Waiswa',
-        faClass: 'fab fa-wikipedia-w', details: ''
-    }
-]
+
+    },
+];
+
+
+// variables.ts
+
+
 
 export {SocialLinks, FooterMenu1, FooterMenu2, Exchanges, DayOfDate, MonthOfDate,TeamMembers};
