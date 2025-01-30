@@ -5,7 +5,6 @@ import {FooterMenu1} from "@/variables";
 import {FooterMenu2} from "@/variables";
 import FooterLogos from "@/components/layout/FooterLogos";
 import {SocialLinks} from "@/variables";
-import Script from "next/script";
 
 export default function Footer() {
     return (
@@ -65,13 +64,13 @@ export default function Footer() {
                             </ul>
                             {/* Adjusting signup form container */}
                             <div className="mt-6 flex justify-center">
-                                <Script className=""
+                                {/*<Script className=""
                                         src="https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js"
                                         data-button-color="#b63afc"
                                         data-button-text-color="#FFFFFF"
                                         data-site="https://xrp-healthcare.ghost.io/"
                                         data-locale="en" async
-                                />
+                                />*/}
                             </div>
                         </div>
                     </div>

@@ -80,21 +80,21 @@ const faqs = [
     {
         key:16,
         question: "I live in the USA; how can I save money on my medication?",
-        answer: (<>You can save up to 80% on prescriptions with the XRPH Prescription Savings Card – <Link href={'/XRPHSavingsCard'} className="underline hover:no-underline">click here</Link>.</>)
+        answer: (<>You can save up to 80<span className="font-sans">%</span> on prescriptions with the XRPH Prescription Savings Card – <Link href={'/XRPHSavingsCard'} className="underline hover:no-underline">click here</Link>.</>)
     },
     {
         key:17,
         question: "How safe will the XRPH decentralized mobile wallet be?",
-        answer: "The XRPH mobile wallet will be 100% safe with advanced security measures making unauthorized access impossible."
+        answer:(<>The XRPH mobile wallet will be 100<span className="font-sans">%</span> safe with advanced security measures making unauthorized access impossible.</>)
     },
     {
         key:18,
         question: "Will code for the XRPH mobile wallet be open source?",
-        answer: (<>Yes. The code is 100% open source and unique to XRP Healthcare. Check the XRPH Open Source code <Link href={'https://github.com/XRPHealthcare/XRPH-Mobile-Wallet'} target={'_blank'} className="underline hover:no-underline">here</Link>.</>)
+        answer: (<>Yes. The code is 100<span className="font-sans">%</span> open source and unique to XRP Healthcare. Check the XRPH Open Source code <Link href={'https://github.com/XRPHealthcare/XRPH-Mobile-Wallet'} target={'_blank'} className="underline hover:no-underline">here</Link>.</>)
     }
 ];
 
-export default function Exchanges() {
+export default function FAQs() {
     return (
         <>
             <Placeholder title={'Frequently Asked Questions'} key={'faq'} description={''}/>

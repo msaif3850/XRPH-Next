@@ -67,14 +67,13 @@ export default function Header() {
                         <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">
                             <circle r={1} cx={1} cy={1}/>
                         </svg>
-                        Available at App Store and Google Play
+                        <span className="hidden md:inline-block">Available at App Store and Google Play</span>
                     </p>
-                    <a
-                        href="#"
+                    <Link href={'https://xrph.ai/'} target="_blank" rel="noopener noreferrer"
                         className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
                     >
                         Download Now <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex flex-1 justify-end">
                     <Button type="button" className="-m-3 bg-transparent border-0 shadow-none hover:bg-transparent p-3 focus-visible:outline-offset-[-4px]"
@@ -113,17 +112,14 @@ export default function Header() {
                     </SheetTrigger>
                     <SheetContent side="right" className="bg-white p-6">
                         <SheetHeader>
-                            <Image className="-mt-3" src="/logo/logo-black-colored.png" alt="logo" width={150}
+                            <Image className="-mt-3" src="/logo.png" alt="logo" width={150}
                                    height={150}/>
                         </SheetHeader>
                         <nav className="mt-6 space-y-4">
-                            <Link href={"/about"} className="block text-gray-900 hover:text-gray-950">About Us</Link>
-                            <Link href={"/mac-repair"} className="block text-gray-900 hover:text-gray-950">Mac
-                                Repairs</Link>
-                            <Link href={"/watch-repair"} className="block text-gray-900 hover:text-gray-950">Watch
-                                Repairs</Link>
-                            <Link href={"/ipod-repair"} className="block text-gray-900 hover:text-gray-950">iPod
-                                Repairs</Link>
+                            {NavLinks.map((link) => (
+                                <Link key={link.key} href={link.link}
+                                      className="block text-gray-900 hover:text-gray-950">{link.text}</Link>
+                            ))}
                         </nav>
                     </SheetContent>
                 </Sheet>
