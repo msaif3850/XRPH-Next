@@ -13,7 +13,6 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import MyButton from "@/components/layout/MyButton";
 import {FaAngleRight} from "react-icons/fa6";
 
 export default function Exchanges() {
