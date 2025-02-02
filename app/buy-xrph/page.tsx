@@ -8,7 +8,7 @@ export default function BuyExchanges() {
     return (
         <>
             <Placeholder title={'Buy XRPH.'} key={'buy'} description={'Exchanges where you can buy XRPH'}/>
-            <div className="max-w-screen-xl mx-auto">
+            <div className="max-w-screen-xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-md:max-w-md-mx-auto">
                     {Exchanges.map((exchange) => (
                         <Link href={exchange.link} key={exchange.id} title={exchange.name}>

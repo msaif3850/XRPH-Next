@@ -5,6 +5,7 @@ import {FooterMenu1} from "@/variables";
 import {FooterMenu2} from "@/variables";
 import FooterLogos from "@/components/layout/FooterLogos";
 import {SocialLinks} from "@/variables";
+import BackToTopButton from "@/components/layout/BackToTopButton";
 
 export default function Footer() {
     return (
@@ -23,7 +24,7 @@ export default function Footer() {
                             <ul className="space-y-1">
                                 {FooterMenu1.map((menu) => (
                                     <li key={menu.key}>
-                                        <Link href={menu.link} className="text-gray-400 font-normal hover:underline ">
+                                        <Link href={menu.link} target={ menu.blank ? '_blank': '_self' } className="text-gray-400 font-normal hover:underline">
                                             {menu.text}
                                         </Link>
                                     </li>
@@ -35,7 +36,7 @@ export default function Footer() {
                             <ul className="space-y-1">
                                 {FooterMenu2.map((menu) => (
                                     <li key={menu.key}>
-                                        <Link href={menu.link} className="text-gray-400 font-normal hover:underline ">
+                                        <Link href={menu.link} target={ menu.blank ? '_blank': '_self' } className="text-gray-400 font-normal hover:underline ">
                                             {menu.text}
                                         </Link>
                                     </li>
@@ -81,6 +82,7 @@ export default function Footer() {
                     </p>
                 </div>
             </footer>
+            <BackToTopButton/>
         </>
     )
 }

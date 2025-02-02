@@ -20,27 +20,40 @@ const SocialLinks = [
     {key: 'TikTok', icon: FaTiktok, link: 'https://www.tiktok.com/@xrphealthcare?is_from_webapp=1&sender_device=pc'},
     {key: 'Instagram', icon: FaInstagram, link: 'https://www.instagram.com/xrphealthcare/'},
 ];
-const FooterMenu1 = [
-    {key: 1, text: 'Roadmap', link: 'roadmap'},
-    {key: 2, text: 'Exchanges', link: 'buy-xrph'},
-    {key: 3, text: 'Savings Card', link: 'XRPHSavingsCard'},
-    {key: 4, text: 'Africa', link: 'africa'},
-    {key: 5, text: 'Media', link: 'media-center'},
-    {key: 6, text: 'News', link: 'news'},
-    {key: 7, text: 'Blog', link: 'https://xrphealthcare.ai/blog/'},
+const NavLinks = [
+    {key: 1, text: 'XRPH AI', link: 'https://xrph.ai/'},
+    {key: 2, text: 'Roadmap', link: 'roadmap'},
+    {key: 3, text: 'Magazine', link: 'https://xrphmagazine.ai/magazine/'},
+    {key: 4, text: 'News', link: 'news'},
+    {key: 5, text: 'Savings Card', link: 'XRPHSavingsCard'},
+    {key: 6, text: 'Exchanges', link: 'buy-xrph'},
+    {key: 7, text: 'Africa', link: 'africa'},
     {key: 8, text: 'Team', link: 'team'},
-    {key: 9, text: 'Magazine', link: 'https://xrphmagazine.ai/magazine/'},
+    {key: 9, text: 'Blog', link: 'https://xrphealthcare.ai/blog/'},
+    {key: 10, text: 'FAQ', link: 'faq'},
+    {key: 11, text: 'Contact', link: 'contact'},
+]
+const FooterMenu1 = [
+    {key: 1, text: 'Roadmap', link: 'roadmap', blank: false},
+    {key: 2, text: 'Exchanges', link: 'buy-xrph', blank: false},
+    {key: 3, text: 'Savings Card', link: 'XRPHSavingsCard', blank: false},
+    {key: 4, text: 'Africa', link: 'africa', blank: false},
+    {key: 5, text: 'Media', link: 'media-center', blank: false},
+    {key: 6, text: 'News', link: 'news', blank: false},
+    {key: 7, text: 'Blog', link: 'https://xrphealthcare.ai/blog/', blank: true},
+    {key: 8, text: 'Team', link: 'team', blank: false},
+    {key: 9, text: 'Magazine', link: 'https://xrphmagazine.ai/magazine/', blank: true},
 ]
 const FooterMenu2 = [
-    {key: 1, text: 'Contact', link: 'contact'},
-    {key: 2, text: 'Linktree', link: 'https://linktr.ee/xrphealthcare'},
-    {key: 3, text: ' Terms', link: 'terms-and-conditions'},
-    {key: 4, text: 'FAQ', link: 'faq'},
-    {key: 5, text: 'APP FAQ', link: 'app-faqs'},
-    {key: 6, text: 'Privacy', link: 'privacy-policy'},
-    {key: 7, text: 'Legal Opinion', link: ''},
-    {key: 8, text: 'Disclaimer', link: ''},
-    {key: 9, text: 'AI Chat Bot', link: 'https://xrph.ai/'},
+    {key: 1, text: 'Contact', link: 'contact', blank: false},
+    {key: 2, text: 'Linktree', link: 'https://linktr.ee/xrphealthcare', blank: true},
+    {key: 3, text: ' Terms', link: 'terms-and-conditions', blank: false},
+    {key: 4, text: 'FAQ', link: 'faq', blank: false},
+    {key: 5, text: 'APP FAQ', link: 'app-faqs', blank: false},
+    {key: 6, text: 'Privacy', link: 'privacy-policy', blank: false},
+    {key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},
+    {key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},
+    {key: 9, text: 'AI Chat Bot', link: 'https://xrph.ai/', blank: true},
 ]
 const Exchanges = [
     {
@@ -224,9 +237,11 @@ const TeamMembers = [
             University of Oxford and a Bachelor of Science in Physics from UNSW.
             Isansys<span className="font-sans">&#39;</span> commitment to excellence has garnered prestigious awards,
             including being named the <span className="font-sans">&#39;</span>Best
-            Medtech Company<span className="font-sans">&#39;</span> in the UK Medtech 50 and receiving the <span className="font-sans">&#39;</span>Best Established Medtech
+            Medtech Company<span className="font-sans">&#39;</span> in the UK Medtech 50 and receiving the <span
+                className="font-sans">&#39;</span>Best Established Medtech
             Company<span className="font-sans">&#39;</span> accolade
-            at the 2021 UK IT Industry Awards. These recognitions underscore Isansys<span className="font-sans">&#39;</span> dedication to improving
+            at the 2021 UK IT Industry Awards. These recognitions underscore Isansys<span
+                className="font-sans">&#39;</span> dedication to improving
             patient outcomes and enhancing healthcare efficiency on a global scale.</>)
     },
     {
@@ -248,7 +263,8 @@ const TeamMembers = [
         icon: FaLinkedin,
         link: 'https://www.linkedin.com/in/laban-roomes-7508457',
         description: (<>Laban Roomes is a serial entrepreneur who Co<span className="font-sans">-</span>founded XRP
-            Healthcare with his son Kain Roomes – The first Pharma and Healthcare platform to be built on the XRP Ledger.
+            Healthcare with his son Kain Roomes – The first Pharma and Healthcare platform to be built on the XRP
+            Ledger.
             <br/><br/>Having had success investing in a medicinal cannabis company <span className="font-sans">(</span>Marigold
             Projects Jamaica<span className="font-sans">)</span> of which
             <span className="font-sans">49%</span> was then sold to the Canadian public company giant Aphria for
@@ -269,7 +285,8 @@ const TeamMembers = [
             launched initiatives and campaigns to raise money by donating a percentage of the company’s luxury gift
             sales to raise much<span className="font-sans">-</span>needed cash for several high<span
                 className="font-sans">-</span>profile charities including the Elton John Aids Foundation
-            <span className="font-sans">(</span>EJAF<span className="font-sans">)</span>, The Teenage Cancer TRUST and SOS Children’s Villages.
+            <span className="font-sans">(</span>EJAF<span className="font-sans">)</span>, The Teenage Cancer TRUST and
+            SOS Children’s Villages.
             <br/><br/>Laban has also gone on to win the Great British Entrepreneur and the coveted Lloyds TSB – FSB
             Entrepreneur of the year award and now spends his time in Jamaica, Miami, and Dubai where he has business
             interests.</>)
@@ -292,7 +309,8 @@ const TeamMembers = [
             leadership, the company grew from zero to a valuation of <span className="font-sans">$194</span> million
             within three months.
             <br/><br/>Recently, XRP Healthcare has expanded into mergers and acquisitions in East Africa, positioning
-            itself to make a meaningful impact on the region<span className="font-sans">&#39;</span>s healthcare accessibility.
+            itself to make a meaningful impact on the region<span className="font-sans">&#39;</span>s healthcare
+            accessibility.
             <br/><br/>Kain’s journey is a testament to resilience, vision and the foresight to take calculated
             risks<span className="font-sans">-</span>transforming challenges into opportunities and building XRP
             Healthcare into a leading force in the healthcare industry.</>)
@@ -300,4 +318,4 @@ const TeamMembers = [
 ];
 
 
-export {SocialLinks, FooterMenu1, FooterMenu2, Exchanges, DayOfDate, MonthOfDate, TeamMembers};
+export {SocialLinks,NavLinks, FooterMenu1, FooterMenu2, Exchanges, DayOfDate, MonthOfDate, TeamMembers};

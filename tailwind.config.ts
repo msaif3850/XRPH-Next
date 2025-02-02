@@ -12,6 +12,7 @@ export default {
 		backgroundImage: {
 			'waves': "url('/waves.jpg')",
 			'map': "url('/africa-map.webp')",
+			'thumbnail': "url('/yt-thumbnail.webp')",
 		},
   		colors: {
 			haraa: '#1ce092e6',
