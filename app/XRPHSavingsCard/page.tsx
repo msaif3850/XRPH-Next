@@ -10,6 +10,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import Image from "next/image";
+import MyButton from "@/components/layout/MyButton";
 
 export default function Exchanges() {
     return (
@@ -26,7 +27,8 @@ export default function Exchanges() {
                         className="bg-gradient-to-r from-haraa to-jamni p-3 flex mb-4 md:mb-0 hover:shadow-lg transition-shadow"
                     >
                         <div
-                            className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[400px] items-center justify-center rounded-lg shadow-md relative">
+                            className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[400px] items-center justify-center rounded-lg shadow-md relative"
+                        style={{boxShadow: "6px 6px 7px 0 rgba(0, 0, 0, 0.8"}}>
                             <Dialog>
                                 <DialogTrigger><FaPlayCircle
                                     className="ring-[20px] ring-haraa/20 rounded-full text-7xl text-jamni hover:text-jamni/80 hover:ring-haraa/50"/></DialogTrigger>
@@ -50,8 +52,6 @@ export default function Exchanges() {
 
                     </div>
                 </div>
-
-                {/* Right Column */}
                 <div className="w-full md:w-1/2">
                     <div>
                         <ul className="list-none space-y-4">
@@ -59,7 +59,7 @@ export default function Exchanges() {
                                 <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
                                        className="w-5 mt-2"/>
                                 <div>
-                                    Unlock Savings of Up to 80<span className="font-special">%</span> on
+                                    Unlock Savings of Up to 80<span className="font-sans">%</span> on
                                     Your Prescription and Medications with Unlimited Usage.
                                 </div>
                             </li>
@@ -132,6 +132,88 @@ export default function Exchanges() {
                 <div className="w-full md:w-1/2">
                 </div>
             </div>
+            <div className="flex flex-col lg:flex-row items-center gap-8 px-6 py-24 sm:py-22">
+                <div className="w-full lg:w-7/12">
+                    <h6 className="font-normal mb-2 text-gray-500 uppercase">
+                        Introducing Brochure
+                    </h6>
+                    <h1 className="font-bold text-4xl mb-4">Affordable Healthcare</h1>
+                    <p className="text-2xl mb-6">
+                        At XRP Healthcare, we believe everyone deserves access to affordable
+                        medication. Our Prescription Savings Card offers significant discounts
+                        on medication and prescription drugs, helping you save money and manage
+                        your health more effectively. With the XRPH Wallet, you can easily
+                        access your savings card and manage your health expenses seamlessly.
+                        <br/>
+                        <br/>
+                        Our Prescription Savings Card is simple to use. Present it at any
+                        participating pharmacy to receive discounts on your prescriptions. No
+                        insurance is needed, and the card is available to everyone, regardless
+                        of income or health status. This card is for anyone that needs or may
+                        need medication from a U.S. pharmacy.
+                    </p>
+                    <MyButton buttonText={'Read More'} buttonUrl={'/docs/XRPH-Prescription-Savings-Card.pdf'}
+                              target={'_blank'}/>
+                </div>
+                <div className="w-full lg:w-5/12 p-4 pl-0">
+                    <Link
+                        href={"/docs/XRPH-Prescription-Savings-Card.pdf"}
+                        target={"_blank"}
+                        title="XRP Healthcare Prescription Savings Card Brochure"
+                    >
+                        <div style={{boxShadow: "15px 15px 0px 0px #dadada"}}>
+                            <Image
+                                src="/psca/XRPH-Prescription-Savings-Card.png"
+                                alt="XRP Healthcare Prescription Savings Card"
+                                width={600}
+                                height={400}
+                                className="w-full h-auto shadow-lg"
+                            />
+                        </div>
+                    </Link>
+                </div>
+            </div>
+            <div className="flex flex-col lg:flex-row items-center gap-8 px-6 ">
+                <div className="w-full lg:w-5/12 p-4 pl-0">
+                    <Image
+                        src="/psca/XRPHSavingsCard.png"
+                        alt="XRP Healthcare Prescription Savings Card"
+                        width={600}
+                        height={400}
+                        className="w-full h-auto"
+                    />
+
+                </div>
+                <div className="w-full lg:w-7/12">
+                    <h6 className="font-normal mb-2 text-gray-500 uppercase">
+                        Introducing Brochure
+                    </h6>
+                    <h1 className="font-bold text-4xl mb-4">Affordable Healthcare</h1>
+                    <p className="text-2xl mb-6">
+                        <b>NOTE: </b> When picking up your prescription or medication from any one of the 68,000
+                        pharmacies
+                        we have partnered with, make sure to give them your unique ID number located on image of your
+                        card
+                        in the XRPH App.
+                        <br/><br/>
+                        <b>PAYMENTS:</b>
+                        You will receive <span className="font-sans">$1</span> worth of XRPH each time your card is used.
+                        Payments
+                        are made automatically to your wallet every 60 days.
+                        <br/><br/>
+                        <b>DISCLAIMER:</b> All XRPH rewards will be distributed
+                        solely by XRP Healthcare. This program<span className="font-sans">/</span>card
+                        is a drug coupon. This is not a Medicare prescription drug plan and is privately supported. This
+                        is
+                        not a
+                        government run<span className="font-sans">/</span>affiliated<span className="font-sans">/</span>funded
+                        program.
+                        Discounts
+                        are only available at participating pharmacies. This program is not
+                        insurance.</p>
+                </div>
+            </div>
+
         </>
     )
 }

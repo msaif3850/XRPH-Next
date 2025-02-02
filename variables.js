@@ -56,12 +56,7 @@ const FooterMenu2 = [
     {key: 9, text: 'AI Chat Bot', link: 'https://xrph.ai/', blank: true},
 ]
 const Exchanges = [
-    {
-        id: 1,
-        name: 'MEXC',
-        link: 'https://www.mexc.com/exchange/XRPH_USDT?_from=search_spot_trade',
-        image: '/exchanges/mexc.png'
-    },
+    {id: 1, name: 'LBANK', link: 'https://www.lbank.com/trade/xrph_usdt/', image: '/exchanges/lbank.png'},
     {
         id: 2,
         name: 'BitMart',
@@ -69,8 +64,13 @@ const Exchanges = [
         image: '/exchanges/bitmart.png'
     },
     {id: 3, name: 'BitTrue', link: 'https://www.bitrue.com/trade/xrph_usdt', image: '/exchanges/bitrue.png'},
-    {id: 4, name: 'LBANK', link: 'https://www.lbank.com/trade/xrph_usdt/', image: '/exchanges/lbank.png'},
-    {id: 5, name: 'Coinstore', link: 'https://www.coinstore.com/#/spot/XRPHUSDT', image: '/exchanges/coinstore.png'},
+    {id: 4, name: 'Coinstore', link: 'https://www.coinstore.com/#/spot/XRPHUSDT', image: '/exchanges/coinstore.png'},
+    {
+        id: 5,
+        name: 'MEXC',
+        link: 'https://www.mexc.com/exchange/XRPH_USDT?_from=search_spot_trade',
+        image: '/exchanges/mexc.png'
+    },
 ]
 
 const DayOfDate = (dateString) => {
