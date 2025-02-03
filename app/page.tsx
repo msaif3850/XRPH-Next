@@ -1,10 +1,13 @@
 'use client'
 import PageTitleImage from "@/components/layout/PageTitleImage";
 import Image from "next/image";
+
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
 import {NewsData} from "@/news-data";
+//import format from "dateformat";
 import {Exchanges} from "@/variables";
+
 function fixText(text: string) {
     return (
         <>
@@ -56,7 +59,8 @@ export default function Home() {
                                             <div className="px-6">
                                                 <div
                                                     className="flex justify-between items-center my-2 font-bold text-sm">
-                                                    <div>{fixText(format(post.date, "dd mmmm yyyy"))}</div>
+                                                    {/*<div>{fixText(format(post.date, "dd mmmm yyyy"))}</div>*/}
+                                                    <div>{fixText(post.date.slice(0,10))}</div>
                                                     <div>By admin</div>
                                                 </div>
                                                 <div
