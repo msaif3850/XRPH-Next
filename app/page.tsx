@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
 import {NewsData} from "@/news-data";
+import {Exchanges} from "@/variables";
 function fixText(text: string) {
     return (
         <>
@@ -25,10 +26,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center w-full">
                 <PageTitleImage/>
             </div>
-
             <PageTitleImage image={'/xrph-logos/logo-xrph-ai.webp'}/>
-
-
             <div className="px-6">
                 <div className="pb-20">
                     <div className="max-w-full mx-auto">
