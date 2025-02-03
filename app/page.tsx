@@ -1,12 +1,9 @@
 'use client'
 import PageTitleImage from "@/components/layout/PageTitleImage";
 import Image from "next/image";
-import {DayOfDate, Exchanges, MonthOfDate} from "@/variables";
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
 import {NewsData} from "@/news-data";
-import format from 'dateformat';
-
 function fixText(text: string) {
     return (
         <>
