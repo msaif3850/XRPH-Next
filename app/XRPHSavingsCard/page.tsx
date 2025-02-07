@@ -12,22 +12,22 @@ import {
 import Image from "next/image";
 import MyButton from "@/components/layout/MyButton";
 
-export default function Exchanges() {
+export default function XRPHSavingsCard() {
     return (
         <>
             <div className="px-6 py-24 sm:py-22 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
-                    <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight text-gradient">XRPH Prescription
+                    <h1 className="text-3xl lg:text-5xl lg:leading-[1.2] -text-5xl font-semibold tracking-tight text-gradient ">XRPH Prescription
                         Savings Card <span className="font-sans">&</span> App</h1>
                 </div>
             </div>
             <div className="flex flex-col md:flex-row gap-8 items-center px-6">
                 <div className="w-full md:w-1/2">
                     <div
-                        className="bg-gradient-to-r from-haraa to-jamni p-3 flex mb-4 md:mb-0 hover:shadow-lg transition-shadow"
+                        className="bg-gradient-to-r from-haraa to-jamni p-4 flex mb-4 md:mb-0 hover:shadow-lg transition-shadow"
                     >
                         <div
-                            className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[400px] items-center justify-center rounded-lg shadow-md relative"
+                            className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[360px] items-center justify-center rounded-lg shadow-md relative"
                         style={{boxShadow: "6px 6px 7px 0 rgba(0, 0, 0, 0.8"}}>
                             <Dialog>
                                 <DialogTrigger><FaPlayCircle
@@ -47,7 +47,6 @@ export default function Exchanges() {
                                     </DialogHeader>
                                 </DialogContent>
                             </Dialog>
-
                         </div>
 
                     </div>

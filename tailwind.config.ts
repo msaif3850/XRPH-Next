@@ -11,11 +11,12 @@ export default {
   	extend: {
 		backgroundImage: {
 			'waves': "url('/waves.jpg')",
+			'waves-ai': "url('/ai/xrph-ai-banner-mobile.jpg')",
 			'map': "url('/africa-map.webp')",
 			'thumbnail': "url('/yt-thumbnail.webp')",
 		},
   		colors: {
-			haraa: '#1ce092e6',
+			haraa: '#02fd81',
 			jamni: '#a84af3e6',
 			footerbg: '#ecfff5',
   			background: 'hsl(var(--background))',

@@ -221,7 +221,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare: Helping to Transform HIV and AIDS Care with Innovative Prescription Savings Solutions',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19773616-xrp-healthcare-helping-to-transform-hiv-and-aids-care-innovative-prescription-savings',
         imgClass: '',
         date: '2024-07-01 01:30:00',
@@ -245,7 +245,7 @@ const NewsData = [
     },
     {
         title: 'After Just 18 Months, Is XRP Healthcare (XRPH) One of the Fastest Growing Companies on the Blockchain?',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19766042-after-just-18-months-is-xrp-healthcare-xrph-one-of-fastest-growing-companies-on-blockchain',
         imgClass: '',
         date: '2024-06-24 01:30:00',
@@ -268,7 +268,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Magazine Issue 3: Featuring Ugandan Innovator Peter Waiswa, NHS Collaborator ISANSYS, Ehlers-Danlos Society & Top 10 African Hospitals',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19759485-xrp-healthcare-magazine-issue-3-featuring-ugandan-innovator-peter-waiswa-nhs-collaborator',
         imgClass: '',
         date: '2024-06-17 13:30:00',
@@ -402,7 +402,7 @@ const NewsData = [
     },
     {
         title: 'Renowned Industry Expert Peter Kyobe Waiswa Joins XRP Healthcare to transform Private Healthcare in Uganda',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19687867-renowned-industry-expert-peter-kyobe-waiswa-joins-xrp-healthcare-to-transform-private',
         imgClass: '', date: '2024-04-16 10:30:00',
         description: ' XRP Healthcare, a UAE<span class="sp-font">-</span>based M<span class="sp-font">&</span>A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
@@ -423,7 +423,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Unveils Revolutionary Swap Facility in Open-Source XRPH Wallet, Encouraging Autonomy Across XRPL Projects',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19682482-xrp-healthcare-unveils-revolutionary-swap-facility-in-open-source-xrph-wallet-encouraging',
         imgClass: '', date: '2024-04-10 00:00:00',
         description: ' XRP Healthcare, an innovative web3 healthcare solution, is proud to introduce a groundbreaking swap facility ...'
@@ -451,7 +451,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare move forward as one entity for African M&A venture',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19669482-xrp-healthcare-move-forward-one-entity-for-african-m-venture',
         imgClass: '',
         date: '2024-03-28 01:30:00',
@@ -559,7 +559,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Partner with NHS collaborator Isansys Lifecare to Revolutionize Healthcare Services in Uganda',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19664700-xrp-healthcare-partner-nhs-collaborator-isansys-lifecare-to-revolutionize-healthcare-services',
         imgClass: '', date: '2024-03-25 01:30:00',
         description: ' XRP Healthcare is thrilled to announce a strategic partnership with Isansys Lifecare, a leading innovator in the digital healthcare...'
@@ -573,7 +573,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Announces Strategic Partnership with Expogroup to Expand Presence in Africa',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19662220-xrp-healthcare-announces-strategic-partnership-expogroup-to-expand-presence-in-africa',
         imgClass: '', date: '2024-03-21 04:30:00',
         description: ' XRP Healthcare, an innovative force on a mission to transform healthcare through mergers, acquisitions and blockchain...'
@@ -665,7 +665,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Appoints Digital Healthcare Evangelist and Isansys Founder Keith Errey as Strategic Advisor',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19574830-xrp-healthcare-appoints-digital-healthcare-evangelist-and-isansys-founder-keith-errey',
         imgClass: '', date: '2023-12-21 08:55:00',
         description: 'XRP Healthcare, a leading player in the healthcare industry, is proud to announce the appointment of Keith Errey...'
@@ -996,7 +996,7 @@ const NewsData = [
     },
     {
         title: 'XRPH announces new listing on Bitrue Exchange',
-        img: '/news/logos_6.jpg',
+        img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19095434-xrph-announces-new-listing-on-bitrue-exchange',
         imgClass: '', date: '2023-01-26 03:30:00',
         description: 'XRP Healthcare is continuing to pursue its objectives with its first &lbbrk;highly anticipated&rbbrk; exchange listing on the...'

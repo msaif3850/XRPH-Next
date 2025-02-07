@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaAngleUp } from 'react-icons/fa';
 
 const BackToTopButton: React.FC = () => {
     const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -24,10 +24,10 @@ const BackToTopButton: React.FC = () => {
         isVisible && (
             <button
                 onClick={scrollToTop}
-                className="z-10 fixed bottom-5 right-5 p-3 rounded-full bg-purple-600 text-white shadow-lg hover:bg-purple-700 transition-all duration-300"
+                className="z-10 hover:scale-110 fixed bottom-5 left-[50%] border border-gray-100 p-3 rounded-full text-gray-400 bg-white shadow-lg hover:text-purple-600 transition-all duration-100"
                 aria-label="Back to top"
             >
-                <FaArrowUp className="text-lg" />
+                <FaAngleUp className="text-xl" />
             </button>
         )
     );

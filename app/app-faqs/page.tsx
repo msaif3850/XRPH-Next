@@ -21,7 +21,7 @@ const faqs = [
         answer: "We advise you to create another account and make sure to keep the new padlock combination secure. Then transfer your tokens over to this account."
     },
     {
-        key:5, question: "My tokens disappeared from my wallet! Where did they go?",
+        key:5, question: (<>My tokens disappeared from my wallet<span className="font-sans">!</span> Where did they go?</>),
         answer: "If this happens, it is likely due to rate limiting by the XRPL (XRP Ledger). Wait a little bit then click the “Refresh” button."
     },
     {
