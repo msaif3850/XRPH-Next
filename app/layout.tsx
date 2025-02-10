@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import localFont from 'next/font/local'
+import {ThemeProvider} from "@/components/theme-provider";
 
 const biennale = localFont({
     src: [
@@ -44,9 +45,16 @@ export default function RootLayout({
         <html lang="en" >
         {/*<body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >*/}
         <body className={`${biennale.className}  antialiased`}>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+        >
         <Header/>
         {children}
         <Footer/>
+        </ThemeProvider>
         </body>
         </html>
     );

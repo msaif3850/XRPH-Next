@@ -36,8 +36,8 @@ export default function News() {
                         {NewsData.map((post, index) => (
                             <Link href={post.link} key={index + 1} target="_blank">
                                 <div className="group">
-                                    <div className="border-2-border-gray-100 group-hover:border-t-jamni h-72 relative ">
-                                        <div className={`min-h-32 flex items-center bg-gray-100 p-2 ${post.imgClass}`}>
+                                    <div className="group-hover:border-t-jamni h-72 relative ">
+                                        <div className={`min-h-32 flex items-center bg-gray-100 dark:bg-gray-900 p-2 ${post.imgClass}`}>
                                             <Image
                                                 src={post.img}
                                                 alt={post.title}

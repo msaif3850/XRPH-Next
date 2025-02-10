@@ -98,7 +98,7 @@ export default function FAQs() {
     return (
         <>
             <Placeholder title={'Frequently Asked Questions'} key={'faq'} description={''}/>
-            <div className="bg-white px-6 mx-auto max-w-screen-lg">
+            <div className=" px-6 mx-auto max-w-screen-lg">
                 <div className="space-y-16 max-w-4xl">
                     {faqs.map((faq) => (
                         <div key={faq.key} className="flex items-start ">
@@ -111,8 +111,8 @@ export default function FAQs() {
                                 </svg>
                             </div>
                             <div className="ml-4">
-                                <h3 className="text-lg font-semibold text-black">{faq.question}</h3>
-                                <p className="text-lg text-black mt-4">{faq.answer}</p>
+                                <h3 className="text-lg font-semibold">{faq.question}</h3>
+                                <p className="text-lg mt-4">{faq.answer}</p>
                             </div>
                         </div>
                     ))}

@@ -32,6 +32,7 @@ const NavLinks = [
     {key: 9, text: 'Blog', link: 'https://xrphealthcare.ai/blog/'},
     {key: 10, text: 'FAQ', link: 'faq'},
     {key: 11, text: 'Contact', link: 'contact'},
+    {key: 12, text: 'App', link: 'XRPH-Wallet'},
 ]
 const FooterMenu1 = [
     {key: 1, text: 'Roadmap', link: 'roadmap', blank: false},

@@ -17,6 +17,9 @@ import {
 } from "@/components/ui/dialog";
 import {FaPlayCircle} from "react-icons/fa";
 import React from "react";
+import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
+import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
+import ThemeLogo from "@/components/layout/ThemeLogo";
 
 function fixText(text: string) {
     return (
@@ -36,7 +39,7 @@ export default function Home() {
 
     return (
         <>
-            <section id="xrph-ai-banner" className="bg-waves-ai bg-cover bg-center bg-no-repeat py-20 sm:py-16">
+            <section id="xrph-ai-banner" className="bg-waves-ai dark:bg-waves bg-cover bg-center bg-no-repeat py-20 sm:py-16">
                 <div className="mx-auto md:px-32">
                     <div className="flex flex-col md:flex-row items-center gap-8 pt-0 lg:pt-12">
                         {/* Left Column */}
@@ -47,33 +50,9 @@ export default function Home() {
                                 Medical Insights, Powered by AI
                             </h4>
                             {/* App Store Buttons (Hidden on Mobile) */}
-                            <div className="hidden md:flex justify-center  gap-4 mt-4">
-                                <Link
-                                    href="https://apps.apple.com/us/app/xrph-ai/id6739782817"
-                                    target="_blank"
-                                    title="Download XRPH Wallet on the App Store"
-                                >
-                                    <Image
-                                        src="/app-store-o.png"
-                                        alt="App Store"
-                                        width={150}
-                                        height={50}
-                                        className="w-40 h-auto hover:scale-95 hover:drop-shadow-lg transition-all"
-                                    />
-                                </Link>
-                                <Link
-                                    href="https://play.google.com/store/apps/details?id=com.xrphwallet"
-                                    target="_blank"
-                                    title="Get XRPH Wallet on Google Play"
-                                >
-                                    <Image
-                                        src="/google-play-o.png"
-                                        alt="Google Play"
-                                        width={150}
-                                        height={50}
-                                        className="w-40 h-auto hover:scale-95 hover:drop-shadow-lg transition-all"
-                                    />
-                                </Link>
+                            <div className="hidden md:flex justify-center gap-3 mt-4">
+                                <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             </div>
                         </div>
 
@@ -82,8 +61,8 @@ export default function Home() {
                             <div className="flex justify-center">
                                 <div className="w-10/12 md:w-full">
                                     <Image
-                                        src="/ai/xrph-ai-new-app.webp"
-                                        alt="XRPH AI APP"
+                                        src={"/ai/xrph-ai-new-app.webp"}
+                                        alt={"XRPH AI APP"}
                                         width={400}
                                         height={400}
                                         className="w-full h-auto"
@@ -93,32 +72,8 @@ export default function Home() {
 
                             {/* App Store Buttons (Visible on Mobile) */}
                             <div className="md:hidden flex justify-center gap-4 mt-4">
-                                <Link
-                                    href="https://apps.apple.com/us/app/xrph-ai/id6739782817"
-                                    target="_blank"
-                                    title="Download XRPH Wallet on the App Store"
-                                >
-                                    <Image
-                                        src="/app-store-o.png"
-                                        alt="App Store"
-                                        width={150}
-                                        height={50}
-                                        className="w-40 h-auto hover:scale-95 hover:drop-shadow-lg transition-all"
-                                    />
-                                </Link>
-                                <Link
-                                    href="https://play.google.com/store/apps/details?id=com.xrphwallet"
-                                    target="_blank"
-                                    title="Get XRPH Wallet on Google Play"
-                                >
-                                    <Image
-                                        src="/google-play-o.png"
-                                        alt="Google Play"
-                                        width={150}
-                                        height={50}
-                                        className="w-40 h-auto hover:scale-95 hover:drop-shadow-lg transition-all"
-                                    />
-                                </Link>
+                                <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             </div>
                             {/* Horizontal Separator (Visible on Mobile) */}
                             <div className="md:hidden mt-4">
@@ -150,8 +105,8 @@ export default function Home() {
                                 </li>
                                 <li className="text-xl lg:text-2xl flex items-start gap-3">
                                     <Image
-                                        src="/arrow-check.webp"
-                                        alt="Arrow"
+                                        src={"/arrow-check.webp"}
+                                        alt={"Arrow"}
                                         width={25}
                                         height={25}
                                         className="mt-2"
@@ -163,8 +118,8 @@ export default function Home() {
                                 </li>
                                 <li className="text-xl lg:text-2xl flex items-start gap-3">
                                     <Image
-                                        src="/arrow-check.webp"
-                                        alt="Arrow"
+                                        src={"/arrow-check.webp"}
+                                        alt={"Arrow"}
                                         width={25}
                                         height={25}
                                         className="mt-2"
@@ -182,9 +137,14 @@ export default function Home() {
 
             <div className="px-6 py-20 lg:px-28">
                 <div className="mx-auto max-w-7xl text-center mb-8 ">
-                    <h1 className="text-2xl sm:text-3xl lg:flex content-center items-center gap-2 justify-center ">
-                        Introducing the <Image className="sm:w-full w-72 mx-auto" src={'/logo.png'}
-                                               alt={'XRP Healthcare'} width={400} height={200}/> <span
+                    <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center ">
+                        Introducing the <ThemeLogo
+                            lightLogo="/logo.png"
+                            darkLogo="/logo-dark.png"
+                            width={250}
+                            height={100}
+                            className="sm:w-full lg:w-72 mx-2"
+                        /><span
                         className="underline underline-offset-8">Prescription Savings Card:</span>
                     </h1>
                 </div>
@@ -261,7 +221,9 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row gap-8 items-center mt-8">
                     <div className="w-full md:w-5/12 lg:pl-7">
                         <div className="flex justify-center md:justify-start gap-5">
-                            <div>
+                            <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                            <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                            {/*<div>
                                 <Link href={"https://apps.apple.com/gb/app/xrph-wallet/id6451218628"}
                                       target={"_blank"} rel="noopener noreferrer"
                                       title="Download XRPH Wallet on the App Store">
@@ -278,7 +240,7 @@ export default function Home() {
                                            className="w-48 h-auto hover:scale-95 transition-all duration-200"
                                     />
                                 </Link>
-                            </div>
+                            </div>*/}
                         </div>
                     </div>
                     <div className="w-full md:w-7/12">
@@ -313,9 +275,9 @@ export default function Home() {
                                 <Link href={post.link} key={index + 1} target="_blank">
                                     <div className="group">
                                         <div
-                                            className="border-2 border-white group-hover:border-b-jamni h-80 relative ">
+                                            className="h-80 relative ">
                                             <div
-                                                className={`min-h-32 flex items-center -bg-gray-100 p-2 ${post.imgClass}`}>
+                                                className={`min-h-32 flex items-center dark:bg-gray-900 p-2 ${post.imgClass}`}>
                                                 <Image
                                                     src={post.img}
                                                     alt={post.title}
@@ -371,7 +333,7 @@ export default function Home() {
                                 }
 
                                 return (
-                                    <div className={`group ${extraClass}`} key={exchange.id}>
+                                    <div className={`group ${extraClass} h-20 flex items-center dark:bg-gray-400`} key={exchange.id}>
                                         <Link href={exchange.link} title={exchange.name}>
                                             <Image
                                                 src={exchange.image}

@@ -1,10 +1,12 @@
+'use client'
 import Placeholder from "@/components/layout/Placeholder";
 import Image from "next/image";
 import {FaEnvelope} from "react-icons/fa6";
 import {SocialLinks} from "@/variables";
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
-import NewsletterSignup from "@/components/layout/NewsletterSignup";
+import ThemeLogo from "@/components/layout/ThemeLogo";
+import GhostSignup from "@/components/layout/GhostSignup";
 
 const emails = [
     {
@@ -23,8 +25,13 @@ export default function Contact() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col items-center text-center space-y-5">
                         <div className="flex flex-col justify-center items-center gap-y-1">
-                            <Image src="/logo.png" width={800} height={500} alt="XRP Healthcare"
-                                   className="w-52 md:w-96 text-center"/>
+                            <ThemeLogo
+                                lightLogo="/logo.png"
+                                darkLogo="/logo-dark.png"
+                                width={400}
+                                height={200}
+                                className=""
+                            />
                             <p className="font-medium">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai,
                                 U.A.E.</p>
                         </div>
@@ -53,7 +60,7 @@ export default function Contact() {
                                             className="text-jamni group-hover:text-white transition-all duration-300 text-lg"/>
                                     </div>
                                     <div>
-                                        <p className="text-sm text-black font-medium ">{title}:</p>
+                                        <p className="text-sm font-medium ">{title}:</p>
                                         <p className="font-bold group-hover:text-jamni">{prefix}<span
                                             className="font-sans">@</span>xrphealthcare.com</p>
                                     </div>
@@ -63,7 +70,7 @@ export default function Contact() {
                         {/* Subscription Form */}
                         <div className="mt-6">
                             <h2 className="text-lg font-semibold mb-2">Subscribe to our newsletter:</h2>
-                            <NewsletterSignup/>
+                            <GhostSignup id={'ghost-signup-form'}/>
                         </div>
                     </div>
                 </div>

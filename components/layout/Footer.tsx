@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,17 +7,25 @@ import {FooterMenu2} from "@/variables";
 import FooterLogos from "@/components/layout/FooterLogos";
 import {SocialLinks} from "@/variables";
 import BackToTopButton from "@/components/layout/BackToTopButton";
+import ThemeLogo from "@/components/layout/ThemeLogo";
+import GhostSignup from "@/components/layout/GhostSignup";
 
 export default function Footer() {
     return (
         <>
             <FooterLogos/>
-            <footer className="bg-footerbg pt-12 pb-6 px-6 tracking-wide">
+            <footer className="bg-footerbg dark:bg-transparent pt-12 pb-6 px-6 tracking-wide">
                 <div className="max-w-screen-xl- mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-16 gap-8 items-start">
                         <div className="lg:flex lg:items-center">
-                            <Link href={'/'}>
-                                <Image src={'/logo.png'} alt="logo" width={300} height={100}/>
+                            <Link href="/">
+                                <ThemeLogo
+                                    lightLogo="/logo.png"
+                                    darkLogo="/logo-dark.png"
+                                    width={250}
+                                    height={100}
+                                    className="custom-class"
+                                />
                             </Link>
                         </div>
                         <div>
@@ -65,13 +74,7 @@ export default function Footer() {
                             </ul>
                             {/* Adjusting signup form container */}
                             <div className="mt-6 flex justify-center">
-                                {/*<Script className=""
-                                        src="https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js"
-                                        data-button-color="#b63afc"
-                                        data-button-text-color="#FFFFFF"
-                                        data-site="https://xrp-healthcare.ghost.io/"
-                                        data-locale="en" async
-                                />*/}
+                                <GhostSignup id={'ghost-signup-form-1'}/>
                             </div>
                         </div>
                     </div>

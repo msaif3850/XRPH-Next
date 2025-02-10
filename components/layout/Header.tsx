@@ -14,6 +14,8 @@ import {
 
 import {NavLinks} from "@/variables"
 import HeaderTopBar from "@/components/layout/HeaderTopBar";
+import ModeToggler from "@/components/layout/ModeToggler";
+import ThemeLogo from "@/components/layout/ThemeLogo";
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -27,20 +29,26 @@ export default function Header() {
         <>
             <HeaderTopBar/>
             <div
-                className={`flex items-center justify-between bg-white px-6 fixed w-full z-50 transition-all duration-300 ${
+                className={`flex flex-wrap items-center justify-between -dark:bg-gray-900 px-6 fixed w-full z-50 transition-all duration-300 backdrop-blur ${
                     scrolled ? "shadow-sm top-0 lg:py-1 py-2" : "py-2"
                 }`}
             >
                 <Link href="/">
-                    <Image priority={false} src="/logo.png" alt="logo" width={250} height={150}
-                           className="transition-transform duration-300"/>
+                    <ThemeLogo
+                        lightLogo="/logo.png"
+                        darkLogo="/logo-dark.png"
+                        width={250}
+                        height={100}
+                        className="custom-class"
+                    />
                 </Link>
                 <div className="hidden lg:flex flex-row items-center text-lg gap-0">
                     {NavLinks.map((link) => (
                         <Link key={link.key} href={link.link}
-                              className="font-medium text-lg px-3 py-1 rounded-full text-black hover:text-white hover:bg-gradient-to-r hover:from-haraa hover:to-jamni transition-all duration-0">{link.text}</Link>
+                              className="font-medium text-lg px-3 py-1 rounded-full text-black dark:text-white hover:text-white dark:hover:text-black hover:bg-gradient-to-r hover:from-haraa hover:to-jamni transition-all duration-0">{link.text}</Link>
                     ))}
                 </div>
+                <ModeToggler/>
                 {/*<Button><Link href={"/XRPH-Wallet"} className="">App</Link></Button>*/}
                 {/* Mobile Menu Button */}
                 <Sheet>

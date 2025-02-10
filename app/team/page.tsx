@@ -50,18 +50,17 @@ export default function Exchanges() {
                                             <DialogHeader>
                                                 <div className="flex items-center gap-2">
                                                     <div>
-                                                        {<Image src={member.img} alt={member.name} height={40}
-                                                                width={40} className="rounded-full "/>}
+                                                        {<Image src={member.img} alt={member.name} height={50}
+                                                                width={50} className="rounded-full "/>}
                                                     </div>
                                                     <div>
-                                                        <DialogTitle
-                                                            className="text-left text-black">{member.name}</DialogTitle>
+                                                        <DialogTitle className="text-left">{member.name}</DialogTitle>
                                                         <h3 className="uppercase text-sm font-medium">{member.role}</h3>
                                                     </div>
                                                 </div>
                                             </DialogHeader>
                                             <DialogDescription
-                                                className="min-h-72 max-h-96 overflow-y-auto py-3 pr-2 text-base text-black text-left">{member.description}
+                                                className="min-h-72 max-h-96 overflow-y-auto py-3 pr-2 text-base text-left">{member.description}
                                             </DialogDescription>
                                         </DialogContent>
                                     </Dialog>

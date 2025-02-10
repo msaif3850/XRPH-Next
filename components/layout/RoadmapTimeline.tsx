@@ -21,11 +21,11 @@ const milestones = [
     {
         date: 'Q1 2025',
         description: (
-            <ul className="space-y-3 text-black">
+            <ul className="space-y-3">
                 {[
                     {text: 'XRP Healthcare Global Announcement', checked: false},
-                    {text: 'XRPH AI App launched on Google Play and Apple Store', checked: false},
-                    {text: 'Encryption layer implemented to ensure user data protection', checked: false},
+                    {text: 'XRPH AI App launched on Google Play and Apple Store', checked: true},
+                    {text: 'Encryption layer implemented to ensure user data protection', checked: true},
                     {text: '1.2M XRPH distributed as staking rewards', checked: false},
                 ].map((item, i) => (
                     <li key={i} className="flex items-center">
@@ -33,7 +33,7 @@ const milestones = [
                             {item.checked ? (
                                 <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
                             ) : (
-                                <FaCircle className="text-xs text-black mr-2"/>
+                                <FaCircle className="text-xs mr-2"/>
                             )}
                         </div>
                         <div>
@@ -71,7 +71,7 @@ const milestones = [
                             {item.checked ? (
                                 <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
                             ) : (
-                                <FaCircle className="text-xs text-black mr-2"/>
+                                <FaCircle className="text-xs mr-2"/>
                             )}
                         </div>
                         <div>
@@ -110,7 +110,7 @@ const milestones = [
                             {item.checked ? (
                                 <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
                             ) : (
-                                <FaCircle className="text-xs text-black mr-2"/>
+                                <FaCircle className="text-xs mr-2"/>
                             )}
                         </div>
                         <div>
@@ -142,7 +142,7 @@ const milestones = [
                             {item.checked ? (
                                 <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
                             ) : (
-                                <FaCircle className="text-xs text-black mr-2"/>
+                                <FaCircle className="text-xs mr-2"/>
                             )}
                         </div>
                         <div>
@@ -178,7 +178,7 @@ const milestones = [
                             {item.checked ? (
                                 <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
                             ) : (
-                                <FaCircle className="text-xs text-black mr-2"/>
+                                <FaCircle className="text-xs mr-2"/>
                             )}
                         </div>
                         <div>
@@ -213,7 +213,7 @@ const milestones = [
                             {item.checked ? (
                                 <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
                             ) : (
-                                <FaCircle className="text-xs text-black mr-2"/>
+                                <FaCircle className="text-xs mr-2"/>
                             )}
                         </div>
                         <div>
