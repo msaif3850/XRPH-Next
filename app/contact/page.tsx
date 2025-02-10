@@ -1,6 +1,5 @@
 'use client'
 import Placeholder from "@/components/layout/Placeholder";
-import Image from "next/image";
 import {FaEnvelope} from "react-icons/fa6";
 import {SocialLinks} from "@/variables";
 import Link from "next/link";

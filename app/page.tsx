@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
 import {NewsData} from "@/news-data";
-//import format from "dateformat";
 import {Exchanges} from "@/variables";
 import {
     Dialog,

@@ -2,8 +2,6 @@
 import {useState, useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
-//import {Button} from "@/components/ui/button";
-
 
 import {
     Sheet,
@@ -53,22 +51,29 @@ export default function Header() {
                 {/* Mobile Menu Button */}
                 <Sheet>
                     <SheetTrigger asChild className="order-last">
-                        <button className="lg:hidden text-gray-900">
+                        <button className="lg:hidden ">
                             <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
                             </svg>
                         </button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="bg-white p-6">
+                    <SheetContent side="right" className="p-6">
                         <SheetHeader>
-                            <Image className="-mt-3" src="/logo.png" alt="logo" width={150}
-                                   height={150}/>
+                            <Link href="/">
+                                <ThemeLogo
+                                    lightLogo="/logo.png"
+                                    darkLogo="/logo-dark.png"
+                                    width={170}
+                                    height={100}
+                                    className="-mt-3"
+                                />
+                            </Link>
                         </SheetHeader>
-                        <nav className="mt-6 space-y-4">
+                        <nav className="mt-6 text-center text-lg space-y-4">
                             {NavLinks.map((link) => (
                                 <Link key={link.key} href={link.link}
-                                      className="block text-gray-900 hover:text-gray-950">{link.text}</Link>
+                                      className="block">{link.text}</Link>
                             ))}
                         </nav>
                     </SheetContent>
