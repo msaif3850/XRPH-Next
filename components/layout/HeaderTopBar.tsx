@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
-import {FaWindowClose} from "react-icons/fa";
+import {FaRegWindowClose} from "react-icons/fa";
 import {useState} from "react";
 export default function HeaderTopBar() {
     const [closed, setClosed] = useState(false);
@@ -44,11 +44,10 @@ export default function HeaderTopBar() {
                         </Link>
                     </div>
                     <div className="flex flex-1 justify-end">
-                        <Button type="button"
-                                className="-m-3 bg-transparent border-0 shadow-none hover:bg-transparent p-3 focus-visible:outline-offset-[-4px]"
+                        <Button className="-m-3 bg-transparent border-0 shadow-none hover:bg-transparent p-3 focus-visible:outline-offset-[-4px]"
                                 onClick={() => setClosed(true)}>
                             <span className="sr-only">Dismiss</span>
-                            <FaWindowClose aria-hidden="true" className="size-5 text-gray-900 "/>
+                            <FaRegWindowClose className="size-5"/>
                         </Button>
                     </div>
                 </div>

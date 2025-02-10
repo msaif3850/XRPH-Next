@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface ThemeLogoProps {
-    lightLogo: string; // Light mode logo
-    darkLogo?: string; // Optional dark mode logo (default: lightLogo)
+    lightLogo: string;
+    darkLogo?: string;
     alt?: string;
     width?: number;
     height?: number;
