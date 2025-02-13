@@ -5,20 +5,7 @@ import {NewsData} from "@/news-data";
 import Link from "next/link";
 import Image from "next/image";
 import {DayOfDate, MonthOfDate} from "@/variables";
-
-function fixText(text: string) {
-    return (
-        <>
-            {text.split("").map((char, i) =>
-                /[-!@#$%^&*(/)4]/.test(char) ? (
-                    <span key={i} className="font-sans">{char}</span>
-                ) : (
-                    char
-                )
-            )}
-        </>
-    );
-}
+import {FixText} from "@/components/FixText";
 
 export default function News() {
     return (
@@ -53,7 +40,7 @@ export default function News() {
                                             <span className="text-xs">{MonthOfDate(post.date)}</span>
                                         </div>
                                         <div className="text-center-p-2 pt-3">
-                                            <div className="font-normal text-base">{fixText(post.title)}</div>
+                                            <div className="font-normal text-base">{FixText(post.title)}</div>
                                         </div>
                                     </div>
                                 </div>

@@ -19,26 +19,14 @@ import React from "react";
 import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
 import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
 import ThemeLogo from "@/components/layout/ThemeLogo";
-
-function fixText(text: string) {
-    return (
-        <>
-            {text.split("").map((char, i) =>
-                /[-!@#$%^&*(/)4]/.test(char) ? (
-                    <span key={i} className="font-sans">{char}</span>
-                ) : (
-                    char
-                )
-            )}
-        </>
-    );
-}
+import {FixText} from "@/components/FixText";
 
 export default function Home() {
 
     return (
         <>
-            <section id="xrph-ai-banner" className="bg-waves-ai dark:bg-waves bg-cover bg-center bg-no-repeat py-20 sm:py-16">
+            <section id="xrph-ai-banner"
+                     className="bg-waves-ai dark:bg-waves bg-cover bg-center bg-no-repeat py-20 sm:py-16">
                 <div className="mx-auto md:px-32">
                     <div className="flex flex-col md:flex-row items-center gap-8 pt-0 lg:pt-12">
                         {/* Left Column */}
@@ -51,7 +39,8 @@ export default function Home() {
                             {/* App Store Buttons (Hidden on Mobile) */}
                             <div className="hidden md:flex justify-center gap-3 mt-4">
                                 <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                                <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                <GoogleDownloadButton
+                                    link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             </div>
                         </div>
 
@@ -72,7 +61,8 @@ export default function Home() {
                             {/* App Store Buttons (Visible on Mobile) */}
                             <div className="md:hidden flex justify-center gap-4 mt-4">
                                 <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                                <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                <GoogleDownloadButton
+                                    link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             </div>
                             {/* Horizontal Separator (Visible on Mobile) */}
                             <div className="md:hidden mt-4">
@@ -138,12 +128,12 @@ export default function Home() {
                 <div className="mx-auto max-w-7xl text-center mb-8 ">
                     <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center ">
                         Introducing the <ThemeLogo
-                            lightLogo="/logo.png"
-                            darkLogo="/logo-dark.png"
-                            width={250}
-                            height={100}
-                            className="sm:w-full lg:w-72 mx-2"
-                        /><span
+                        lightLogo="/logo.png"
+                        darkLogo="/logo-dark.png"
+                        width={250}
+                        height={100}
+                        className="sm:w-full lg:w-72 mx-2"
+                    /><span
                         className="underline underline-offset-8">Prescription Savings Card:</span>
                     </h1>
                 </div>
@@ -221,7 +211,8 @@ export default function Home() {
                     <div className="w-full md:w-5/12 lg:pl-7">
                         <div className="flex justify-center md:justify-start gap-5">
                             <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                            <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                            <GoogleDownloadButton
+                                link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             {/*<div>
                                 <Link href={"https://apps.apple.com/gb/app/xrph-wallet/id6451218628"}
                                       target={"_blank"} rel="noopener noreferrer"
@@ -294,14 +285,13 @@ export default function Home() {
                                             <div className="lg:px-6">
                                                 <div
                                                     className="flex justify-between items-center my-2 font-bold text-sm">
-                                                    {/*<div>{fixText(format(post.date, "dd mmmm yyyy"))}</div>*/}
-                                                    <div>{fixText(post.date.slice(0, 10))}</div>
+                                                    <div>{FixText(post.date.slice(0, 10))}</div>
                                                     <div>By admin</div>
                                                 </div>
                                                 <div
-                                                    className="font-bold text-lg leading-6 text-jamni mb-2 line-clamp-3">{fixText(post.title)}</div>
+                                                    className="font-bold text-lg leading-6 text-jamni mb-2 line-clamp-3">{FixText(post.title)}</div>
                                                 <div
-                                                    className="font-normal text-sm line-clamp-3">{fixText(post.description)}</div>
+                                                    className="font-normal text-sm line-clamp-3">{FixText(post.description)}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -309,7 +299,7 @@ export default function Home() {
                             ))}
                         </div>
                         <div className="flex items-center justify-center mt-10">
-                            <MyButton buttonText={'XRPH News'} buttonUrl={'buy-xrph'} target={'_self'}/>
+                            <MyButton buttonText={'XRPH News'} buttonUrl={'news'} target={'_self'}/>
                         </div>
                     </div>
                 </div>
@@ -332,7 +322,8 @@ export default function Home() {
                                 }
 
                                 return (
-                                    <div className={`group ${extraClass} h-20 flex items-center dark:bg-gray-400`} key={exchange.id}>
+                                    <div className={`group ${extraClass} h-20 flex items-center dark:bg-gray-400`}
+                                         key={exchange.id}>
                                         <Link href={exchange.link} title={exchange.name}>
                                             <Image
                                                 src={exchange.image}
