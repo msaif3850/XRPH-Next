@@ -27,21 +27,22 @@ const footerLogos = [
 
     { img: '/footer-logos/una.jpeg', alt: 'una', width: 180 },
     { img: '/footer-logos/walmart.jpeg', alt: 'walmart_pharmacy', width: 130 },
-    { img: '/footer-logos/nasa-jpl-logo.png', alt: 'nasa-jpl', width: 110 },
-    { img: '/footer-logos/mind.png', alt: 'mind', width: 120 },
+
+    { img: '/footer-logos/nasa-jpl-logo.png', alt: 'nasa-jpl', width: 140 },
+    { img: '/footer-logos/mind.png', alt: 'mind', width: 140 },
     { img: '/footer-logos/xrp_ledger.png', alt: 'xrp_ledger', width: 150 },
     { img: '/footer-logos/nhs.png', alt: 'nhs', width: 130 },
     { img: '/footer-logos/cision.png', alt: 'cision', width: 120 },
     { img: '/footer-logos/safeway.png', alt: 'safeway', width: 150 },
     { img: '/footer-logos/eldano-society.webp', alt: 'eldano-society', width: 140 },
-    { img: '/footer-logos/isansys.webp', alt: 'isansys', width: 120 },
+    { img: '/footer-logos/isansys.webp', alt: 'isansys', width: 140 },
     { img: '/footer-logos/expogroup.webp', alt: 'expogroup', width: 140 },
     { img: '/footer-logos/spiritus-logo.jpg', alt: 'spiritus-logo', width: 140 },
     { img: '/footer-logos/genesis.png', alt: 'genesis', width: 140 },
     { img: '/footer-logos/shonubi-musoke.png', alt: 'shonubi musoke', width: 140 },
     { img: '/footer-logos/riteaid.png', alt: 'riteaid', width: 110 },
     { img: '/footer-logos/ace-group.png', alt: 'ace-group', width: 110 },
-    { img: '/xrph-logos/logo-africa.webp', alt: 'XRPHealthcare Africa', width: 290 },
+    { img: '/xrph-logos/africa.png', alt: 'XRPHealthcare Africa', width: 290 },
 ];
 
 export default function FooterLogos() {
