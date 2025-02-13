@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
 
-import {FaAngleRight} from "react-icons/fa6";
+import {FaAngleRight, FaDownload} from "react-icons/fa6";
 import {PressReleases} from "@/press-releases-data";
 import {DayOfDate, MonthOfDate} from "@/variables";
 import { RiContactsLine } from "react-icons/ri";
@@ -48,25 +48,27 @@ export default function MediaCenter() {
                     </header>
                     <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
                         {logos.map((logo, index) => (
-                            <Link key={index} href={logo.imgSrc} download
-                                  className="group block basis-[48%] sm:basis-[24%]">
+                            <a key={index} href={logo.imgSrc} download className="group block basis-[48%] sm:basis-[24%]">
                                 <div
                                     className="rounded-lg shadow-lg transition hover:shadow-xl relative p-0.5 bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa">
                                     <div
-                                        className="min-h-32 md:min-h-48 p-3 bg-gray-600 dark:bg-gray-700 flex justify-center rounded-lg ">
+                                        className="min-h-32 md:min-h-48 p-3 bg-gray-600 dark:bg-gray-700 flex justify-center items-center rounded-lg ">
                                         <Image src={logo.imgSrc} alt={logo.name} width={250} height={100}
                                                className="object-contain group-hover:scale-95 duration-300 transition-all"/>
                                     </div>
-                                    <div
-                                        className="text-center hidden group-hover:block absolute bottom-0 left-0 right-0">
-                                        <Button
-                                            className="w-full bg-gradient-to-r from-haraa to-jamni  text-white px-5 py-2 text-lg shadow-md">
+                                    <div className="absolute top-0.5 right-0.5">
+                                        <Button className="bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa text-sm">
+                                            Download
+                                            {/*<FaDownload className="group-hover:scale-125 duration-300 transition-all"/>*/}
+                                        </Button>
+                                    </div>
+                                    {/*<div className="text-center hidden group-hover:block absolute bottom-0 left-0 right-0">
+                                        <Button className="w-full bg-gradient-to-r from-haraa to-jamni sm:py-2 py-0 text-lg shadow-md">
                                             Download <FaAngleRight
                                             className="group-hover:translate-x-2 duration-300 transition-all"/></Button>
-                                        {/*<MyButton buttonText={'Download'} buttonUrl={'#'} target={'_self'}/>*/}
-                                    </div>
+                                    </div>*/}
                                 </div>
-                            </Link>
+                            </a>
                         ))}
                     </div>
                 </div>
