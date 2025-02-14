@@ -10,14 +10,18 @@ export default {
   theme: {
   	extend: {
 		backgroundImage: {
-			'waves': "url('/waves.jpg')",
+			'waves': "url('/waves.webp')",
 			'waves-ai': "url('/ai/xrph-ai-banner-mobile.jpg')",
+			'waves-ai-dark': "url('/ai/xrph-ai-banner-mobile-dark.png')",
+			'waves-wallet': "url('/xrph-wallet-app-home-banner.webp')",
 			'map': "url('/africa-map.webp')",
 			'thumbnail': "url('/yt-thumbnail.webp')",
 		},
   		colors: {
 			haraa: '#02fd81',
+			haraa2: '#00CC66',
 			jamni: '#a84af3e6',
+			jamni2: '#922ECA',
 			footerbg: '#ecfff5',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

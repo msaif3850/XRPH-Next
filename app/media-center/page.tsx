@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
 
-import {FaAngleRight, FaDownload} from "react-icons/fa6";
 import {PressReleases} from "@/press-releases-data";
 import {DayOfDate, MonthOfDate} from "@/variables";
 import { RiContactsLine } from "react-icons/ri";

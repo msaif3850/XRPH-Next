@@ -12,13 +12,12 @@ export default function BuyExchanges() {
                 {/*<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">*/}
                 <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 lg:gap-6">
                     {Exchanges.map((exchange) => (
-                        <Link href={exchange.link} key={exchange.id} title={exchange.name}
-                              className="basis-full sm:basis-[48%] md:basis-[48%] lg:basis-[32%]">
+                        <Link href={exchange.link} key={exchange.id} title={exchange.name} className="basis-full sm:basis-[48%] md:basis-[48%] lg:basis-[32%]">
                             <div className="relative h-[150px] group">
                                 <div
                                     className="bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa p-1 rounded-2xl">
                                     <div
-                                        className="bg-white rounded-2xl overflow-hidden transition-all flex items-center justify-center h-[125px]">
+                                        className="bg-white dark:bg-gray-400 rounded-2xl overflow-hidden transition-all flex items-center justify-center h-[125px]">
                                         <Image
                                             src={exchange.image}
                                             alt={exchange.name}

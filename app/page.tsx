@@ -1,7 +1,5 @@
 'use client'
-import PageTitleImage from "@/components/layout/PageTitleImage";
 import Image from "next/image";
-
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
 import {NewsData} from "@/news-data";
@@ -11,7 +9,6 @@ import {
     DialogContent,
     DialogDescription,
     DialogHeader,
-    DialogTitle,
     DialogTrigger
 } from "@/components/ui/dialog";
 import {FaPlayCircle} from "react-icons/fa";
@@ -20,15 +17,17 @@ import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
 import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
 import ThemeLogo from "@/components/layout/ThemeLogo";
 import {FixText} from "@/components/FixText";
+import ElfsightWidget from "@/components/layout/ElfsightWidget";
+import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
 
 export default function Home() {
 
     return (
         <>
             <section id="xrph-ai-banner"
-                     className="bg-waves-ai dark:bg-waves bg-cover bg-center bg-no-repeat py-20 sm:py-16">
-                <div className="mx-auto md:px-32">
-                    <div className="flex flex-col md:flex-row items-center gap-8 pt-0 lg:pt-12">
+                     className="bg-waves-ai dark:bg-waves-ai bg-cover bg-center bg-no-repeat pt-24 sm:pt-28 pb-16 sm:pb-12 -sm:py-20">
+                <div className="mx-auto xl:px-32 lg:px-20 md:px-16 px-6">
+                    <div className="flex flex-col md:flex-row items-center gap-8">
                         {/* Left Column */}
                         <div className="text-center w-full md:w-1/2 lg:w-2/5">
                             <h1 className="text-4xl font-extrabold mb-0">XRPH AI APP</h1>
@@ -43,11 +42,9 @@ export default function Home() {
                                     link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             </div>
                         </div>
-
-                        {/* Center Column (Image) */}
                         <div className="w-full md:w-1/2 lg:w-2/5 text-center">
                             <div className="flex justify-center">
-                                <div className="w-10/12 md:w-full">
+                                <div className="w-11/12 md:w-full">
                                     <Image
                                         src={"/ai/xrph-ai-new-app.webp"}
                                         alt={"XRPH AI APP"}
@@ -65,7 +62,7 @@ export default function Home() {
                                     link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             </div>
                             {/* Horizontal Separator (Visible on Mobile) */}
-                            <div className="md:hidden mt-4">
+                            <div className="md:hidden mt-6">
                                 <Image
                                     src="/separator-horizontal.webp"
                                     alt="Separator"
@@ -75,10 +72,8 @@ export default function Home() {
                                 />
                             </div>
                         </div>
-
-                        {/* Right Column (List) */}
-                        <div className="w-full md:w-1/2 lg:w-2/5 px-4 md:px-0">
-                            <ul className="list-none space-y-4">
+                        <div className="w-full md:w-1/2 lg:w-2/5 px-12 md:px-0">
+                            <ul className="list-none space-y-4 pl-0 sm:pl-4">
                                 <li className="text-xl lg:text-2xl flex items-start gap-3">
                                     <Image
                                         src="/arrow-check.webp"
@@ -126,57 +121,55 @@ export default function Home() {
 
             <div className="px-6 py-20 lg:px-28">
                 <div className="mx-auto max-w-7xl text-center mb-8 ">
-                    <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center ">
+                    <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center text-center">
                         Introducing the <ThemeLogo
                         lightLogo="/logo.png"
                         darkLogo="/logo-dark.png"
-                        width={250}
+                        width={300}
                         height={100}
-                        className="sm:w-full lg:w-72 mx-2"
+                        className="sm:w-full lg:w-72 sm:mx-2 mx-auto"
                     /><span
                         className="underline underline-offset-8">Prescription Savings Card:</span>
                     </h1>
                 </div>
                 <div className="flex flex-col md:flex-row gap-8 items-center">
-                    <div className="w-full md:w-5/12">
-                        <div>
-                            <ul className="list-none space-y-5">
-                                <li className="text-xl leading-snug flex items-start gap-2">
-                                    <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
-                                           className="w-5 mt-2"/>
-                                    <div>
-                                        Unlock Savings of Up to 80<span className="font-sans">%</span> on
-                                        Your Prescription and Medications with Unlimited Usage.
-                                    </div>
-                                </li>
-                                <li className="text-xl leading-snug flex items-start gap-2">
-                                    <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
-                                           className="w-5 mt-2"/>
-                                    <div>
-                                        Accepted at More Than 68,000 Pharmacies Across the United States,
-                                        including Walgreens, CVS, and Walmart.
-                                    </div>
-                                </li>
-                                <li className="text-xl leading-snug flex items-start gap-2">
-                                    <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
-                                           className="w-5 mt-2"/>
-                                    <div>
-                                        Earn XRPH Rewards Every Time You Use Your Card – Straight to Your
-                                        Wallet.
-                                    </div>
-                                </li>
-                                <li className="text-xl leading-snug flex items-start gap-2">
-                                    <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
-                                           className="w-5 mt-2"/>
-                                    <div>
-                                        Get Your Free XRPH Prescription Savings Card by <b>Downloading</b> it Today<span
-                                        className="font-mono">!</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div className="w-full md:w-5/12 order-2 sm:order-1">
+                        <ul className="list-none space-y-5">
+                            <li className="text-xl leading-snug flex items-start gap-2">
+                                <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
+                                       className="w-5 mt-1"/>
+                                <div>
+                                    Unlock Savings of Up to 80<span className="font-sans">%</span> on
+                                    Your Prescription and Medications with Unlimited Usage.
+                                </div>
+                            </li>
+                            <li className="text-xl leading-snug flex items-start gap-2">
+                                <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
+                                       className="w-5 mt-1"/>
+                                <div>
+                                    Accepted at More Than 68,000 Pharmacies Across the United States,
+                                    including Walgreens, CVS, and Walmart.
+                                </div>
+                            </li>
+                            <li className="text-xl leading-snug flex items-start gap-2">
+                                <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
+                                       className="w-5 mt-1"/>
+                                <div>
+                                    Earn XRPH Rewards Every Time You Use Your Card – Straight to Your
+                                    Wallet.
+                                </div>
+                            </li>
+                            <li className="text-xl leading-snug flex items-start gap-2">
+                                <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
+                                       className="w-5 mt-1"/>
+                                <div>
+                                    Get Your Free XRPH Prescription Savings Card by <b>Downloading</b> it Today<span
+                                    className="font-mono">!</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="w-full md:w-7/12">
+                    <div className="w-full md:w-7/12 order-1 sm:order-2">
                         <div
                             className="bg-gradient-to-r from-haraa to-jamni p-4 flex mb-4 md:mb-0 hover:shadow-lg transition-shadow"
                         >
@@ -186,17 +179,11 @@ export default function Home() {
                                 <Dialog>
                                     <DialogTrigger><FaPlayCircle
                                         className="ring-[20px] ring-haraa/20 rounded-full text-7xl text-jamni hover:text-jamni/80 hover:ring-haraa/50"/></DialogTrigger>
-                                    <DialogContent className="max-w-screen-lg">
+                                    <DialogContent className="max-w-screen-lg p-2 bg-transparent ">
                                         <DialogHeader>
-                                            <DialogTitle></DialogTitle>
+
                                             <DialogDescription>
-                                                <iframe width="100%" height="550"
-                                                        src="https://www.youtube.com/embed/98D3KBayHgw?rel=0"
-                                                        title="XRPH Prescription Savings Card | Up to 80% Savings @ CVS, Walgreens Walmart | XRP Healthcare | Video"
-                                                        frameBorder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                        referrerPolicy="strict-origin-when-cross-origin"
-                                                        allowFullScreen></iframe>
+                                                <YouTubeEmbed videoId="98D3KBayHgw" />
                                             </DialogDescription>
                                         </DialogHeader>
                                     </DialogContent>
@@ -207,33 +194,15 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-8 items-center mt-8">
-                    <div className="w-full md:w-5/12 lg:pl-7">
+                <div className="flex flex-col md:flex-row gap-4 items-center mt-8">
+                    <div className="w-full md:w-5/12 lg:pl-7 order-2 sm:order-1">
                         <div className="flex justify-center md:justify-start gap-5">
                             <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
                             <GoogleDownloadButton
                                 link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
-                            {/*<div>
-                                <Link href={"https://apps.apple.com/gb/app/xrph-wallet/id6451218628"}
-                                      target={"_blank"} rel="noopener noreferrer"
-                                      title="Download XRPH Wallet on the App Store">
-                                    <Image height={'200'} width={'300'} src={"/app-store-o.png"} alt={"app-store"}
-                                           className="w-48 h-auto hover:scale-95 transition-all duration-200"
-                                    />
-                                </Link>
-                            </div>
-                            <div>
-                                <Link href={"https://play.google.com/store/apps/details?id=com.xrphwallet"}
-                                      target={"_blank"} rel="noopener noreferrer"
-                                      title="Get XRPH Wallet on Google Play">
-                                    <Image height={'200'} width={'300'} src={"/google-play-o.png"} alt={"google play"}
-                                           className="w-48 h-auto hover:scale-95 transition-all duration-200"
-                                    />
-                                </Link>
-                            </div>*/}
                         </div>
                     </div>
-                    <div className="w-full md:w-7/12">
+                    <div className="w-full md:w-7/12 order-1 sm:order-2">
                         <div className="flex justify-center items-center md:justify-between ">
                             <div>
                                 <Image height={'100'} width={'200'} src={"/psca/csv.webp"} alt={"csv"}
@@ -253,12 +222,155 @@ export default function Home() {
                 </div>
             </div>
 
-            <PageTitleImage image={'/xrph-logos/logo-xrph-ai.webp'}/>
+            <section className="bg-waves-wallet bg-cover bg-center bg-no-repeat">
+                <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                    <ThemeLogo lightLogo={'/xrph-logos/wallet-app.png'} darkLogo={'/xrph-logos/wallet-app-dark.png'}
+                               width={500} height={200}/>
+                </div>
+                <div className="max-w-7xl px-6 sm:py-10 py-0 mx-auto">
+                    {/*<div className="lg:w-4/5 mx-auto flex flex-wrap items-center"></div>*/}
+                    <div className="flex flex-col md:flex-row items-center--justify-center">
+                        <div className="md:w-5/12 text-center order-2-sm:order-1">
+                            <Image
+                                src="/xrph-wallet-app-available-to-download.webp"
+                                alt="The XRPH Wallet available to download"
+                                width={1700} height={2500}
+                                className="max-w-full sm:max-w-none md:w-[700px] sm:w-[500px] lg:w-[900px]"
+                            />
+                        </div>
+                        <div className="md:w-7/12 text-center order-1-sm:order-2">
+                            <div className="pt-0 md:pt-20">
+                                <h2 className="hidden md:block text-gradient font-extrabold text-2xl md:text-4xl">The
+                                    XRPH Wallet</h2>
+                                <h3 className="hidden md:block text-gradient biennaleMedium text-xl md:text-3xl">
+                                    available to download
+                                </h3>
+                            </div>
+                            {/* App Store & Play Store Links */}
+                            <div className="flex items-center justify-center gap-3 mt-6 md:mt-10">
+                                <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                <GoogleDownloadButton
+                                    link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="px-6 sm:px-0">
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                        <ThemeLogo lightLogo={'/xrph-logos/africa.png'} darkLogo={'/xrph-logos/africa-dark.png'}
+                                   width={500} height={200}/>
+                    </div>
+                    <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
+                        <div className="lg:w-2/3 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
+                            <p className="leading-relaxed text-lg mb-4">
+                                XRP Healthcare Africa is transforming healthcare across Africa with advanced AI
+                                technology, unifying privately owned healthcare businesses through strategic mergers and
+                                acquisitions.
+                                <br/><br/>Our mission is to improve healthcare accessibility and efficiency by
+                                integrating these fragmented sectors into a cohesive, AI{FixText("-")}driven system.
+                                We{FixText("'")}re
+                                setting a
+                                new standard for healthcare delivery, making quality care more accessible to all.
+                                Discover how our innovative approach is shaping the future of healthcare.
+                            </p>
+                            <MyButton buttonText={'Read More'} buttonUrl={'/africa'} target={'_self'}/>
+                        </div>
+                        <Image
+                            className="lg:w-1/3 w-full lg:h-auto h-64 object-cover-object-center rounded order-1 sm:order-2 mb-6 sm:mb-0"
+                            src={'/africa/map-africa.webp'} width={'500'} height={'500'} alt={'Africa map'}/>
+                    </div>
+                </div>
+            </section>
+
+            <section className="px-6 sm:px-0">
+                <div className="container py-24 mx-auto flex flex-col">
+                    <div className="lg:w-4/6 mx-auto">
+                        <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                            <ThemeLogo lightLogo={'/xrph-logos/magazine.png'} darkLogo={'/xrph-logos/magazine-dark.png'}
+                                       width={500} height={200}/>
+                        </div>
+                        <div className="flex flex-col items-center sm:flex-row mt-10--">
+                            <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                                <Link
+                                    href={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_4?fr=sNGJmMjY5MjQ4MTQ'}
+                                    target={'_blank'}>
+                                    <Image src={'/press-releases/xrp_healthcare_magazine_issue_4.webp'}
+                                           className="hover:scale-95 transition-all duration-200"
+                                           alt={'XRP Healthcare Magazine issue4'} width={'500'} height={'150'}/>
+                                </Link>
+                            </div>
+                            <div
+                                className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 --border-t mt-4 pt-4 sm:mt-0 ">
+                                <p className="leading-relaxed text-lg mb-4">
+                                    <b>African Healthcare Transformation:</b> XRP Healthcare drives change via mergers,
+                                    acquisitions, and blockchain, redefining healthcare delivery.
+                                    <br/><br/><b>Global Trends Insights:</b> Explore exclusive insights in XRP
+                                    Healthcare {FixText('Magazine\'s 4th  issue, featuring in-depth')} analysis and
+                                    expert commentary on emerging healthcare trends.
+                                    <br/><br/><b>Flexible Access Anywhere:</b> Download or order a physical copy to
+                                    enjoy convenient access to our free quarterly magazine. Stay informed about evolving
+                                    healthcare, including interviews with NASDAQ and {FixText('NYSE-listed')} companies.
+                                </p>
+                                <MyButton buttonText={'Access Now'} buttonUrl={'https://xrphmagazine.ai/magazine/'}
+                                          target={'_blank'}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="px-6 sm:px-0">
+                <div className="container  py-24 mx-auto">
+                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                        <ThemeLogo lightLogo={'/xrph-logos/xrph-ai.png'} darkLogo={'/xrph-logos/xrph-ai-dark.png'}
+                                   width={500} height={200}/>
+                    </div>
+                    <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
+                        <div className="lg:w-1/2 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
+                            <p className="leading-relaxed text-lg mb-4">XRP Healthcare is strategically positioning
+                                itself to leverage the rapid expansion of AI in healthcare. By focusing on advanced AI
+                                solutions, we are leading the way toward a smarter, more accessible future in
+                                healthcare, with XRP Healthcare at the forefront.</p>
+                            <ul className="list-disc list-inside text-lg mb-4--">
+                                <li className="text-haraa2"><b>Annual Growth
+                                    Rate:</b>{FixText(" Estimating a Compound Annual Growth Rate (CAGR) of about 40% in AI for healthcare.")}
+                                </li>
+                                <li className="text-jamni2"><b>Market
+                                    Value:</b>{FixText(" Starting with a baseline value in 2024, with significant expansion expected through 2030.\n")}
+                                </li>
+                            </ul>
+                        </div>
+                        <Dialog>
+                            <DialogTrigger className="lg:w-1/2 w-full order-1 sm:order-2 mb-6 sm:mb-0">
+                                <Image className="object-cover object-center hover:scale-95 transition-all duration-200"
+                                       src={'/ai/projected-growth-of-AI-in-healthcare-2024-2030.webp'} width={'500'}
+                                       height={'500'} alt={'Projected growth of AI in healthcare 2024-2030'}/>
+                            </DialogTrigger>
+                            <DialogContent>
+                                <DialogHeader>
+                                    <DialogDescription>
+                                        <Image className="lg:h-auto h-64 object-cover-object-center"
+                                               src={'/ai/projected-growth-of-AI-in-healthcare-2024-2030-graph.webp'}
+                                               width={'1000'}
+                                               height={'1000'} alt={'Projected growth of AI in healthcare 2024-2030'}/>
+                                    </DialogDescription>
+                                </DialogHeader>
+                            </DialogContent>
+                        </Dialog>
+                    </div>
+                </div>
+            </section>
+
+
             <div className="px-6">
                 <div className="pb-32">
                     <div className="max-w-full mx-auto ">
                         <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                            <Image src={'/xrph-logos/logo-news.webp'} alt={'xrph news'} width={'500'} height={'150'}/>
+                            <ThemeLogo lightLogo={'/xrph-logos/news.png'} darkLogo={'/xrph-logos/news-dark.png'}
+                                       width={500} height={200}/>
                         </div>
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
                             {NewsData.slice(0, 3).map((post, index) => (
@@ -303,53 +415,52 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="pb-32">
-                    <div className="max-w-5xl mx-auto text-center">
-                        <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                            <Image src={'/xrph-logos/logo-buy-xrph.webp'} alt={'buy xrph'} width={'500'}
-                                   height={'150'}/>
-                        </div>
-                        <div className="grid grid-cols-4 md:grid-cols-6 gap-6 place-items-center">
-                            {Exchanges.map((exchange, index) => {
-                                let extraClass = "col-span-2";
+            </div>
+            <div className="pb-32">
+                <div className="max-w-7xl px-6 mx-auto text-center">
+                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                        <ThemeLogo lightLogo={'/xrph-logos/buy-xrph.png'} darkLogo={'/xrph-logos/buy-xrph-dark.png'}
+                                   width={500} height={200}/>
+                    </div>
 
-                                if (Exchanges.length === 4 && index === 3) {
-                                    extraClass = "col-span-2 justify-self-end";
-                                } else if (Exchanges.length === 5 && index === 4) {
-                                    extraClass = "col-span-2 justify-self-start";
-                                } else if (index >= 3 && Exchanges.length % 3 !== 0) {
-                                    extraClass = "lg:col-span-3 col-span-2 justify-self-end";
-                                }
-
-                                return (
-                                    <div className={`group ${extraClass} h-20 flex items-center dark:bg-gray-400`}
-                                         key={exchange.id}>
-                                        <Link href={exchange.link} title={exchange.name}>
+                    <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 lg:gap-6">
+                        {Exchanges.map((exchange) => (
+                            <Link href={exchange.link} key={exchange.id} title={exchange.name}
+                                  className="basis-full sm:basis-[48%] md:basis-[48%] lg:basis-[32%]">
+                                <div className="relative h-[130px] group">
+                                    <div
+                                        className="bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa p-1 rounded-2xl">
+                                        <div
+                                            className="bg-white dark:bg-gray-400 rounded-2xl overflow-hidden transition-all flex items-center justify-center h-[125px]">
                                             <Image
                                                 src={exchange.image}
                                                 alt={exchange.name}
                                                 width={300}
                                                 height={200}
-                                                className="transition-all duration-300 group-hover:scale-90 -object-fill "
+                                                className="transition-all duration-300 group-hover:scale-90 object-contain"
                                             />
-                                        </Link>
+                                        </div>
                                     </div>
-                                );
-                            })}
-                        </div>
-
-
-                        <div className="flex items-center justify-center mt-10">
-                            <MyButton
-                                buttonText={'View All Exchanges'} buttonUrl={'buy-xrph'} target={'_self'}/>
-                        </div>
+                                    {/*<div
+                                        className="absolute left-0 right-0 bottom-0 w-[160px] mx-auto rounded-full p-2 bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa">
+                                        <div
+                                            className="text-center font-bold flex items-center justify-between text-white px-3">
+                                            BUY XRPH <FaAngleRight
+                                            className="group-hover:translate-x-2 duration-300 transition-all"/>
+                                        </div>
+                                    </div>*/}
+                                </div>
+                            </Link>
+                        ))}
                     </div>
-
-                    {/*<div className="pt-24 max-w-4xl mx-auto">
-                        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                        <div className="elfsight-app-5c0edd23-a297-4195-a5da-5c8fee6a789a" data-elfsight-app-lazy></div>
-                    </div>*/}
+                    <div className="flex items-center justify-center mt-10">
+                        <MyButton
+                            buttonText={'View All Exchanges'} buttonUrl={'buy-xrph'} target={'_self'}/>
+                    </div>
                 </div>
+            </div>
+            <div className="max-w-4xl mx-auto">
+                <ElfsightWidget/>
             </div>
         </>
     );
