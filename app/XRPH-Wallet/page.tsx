@@ -1,9 +1,12 @@
 import Image from "next/image";
 import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
 import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
+import SEO from "@/components/SEO";
+import React from "react";
 export default function XrphWallet() {
     return (
         <>
+            <SEO title="Wallet" canonical="https://www.xrphealthcare.ai/XRPH-Wallet"/>
             <div className="flex items-center pt-24 pb-20 sm:py-22">
                 <div className="w-full text-center">
                     <div className="flex flex-col lg:flex-row justify-center items-center gap-8">

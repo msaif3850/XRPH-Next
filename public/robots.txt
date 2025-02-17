@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+
+# Host
+Host: https://www.xrphealthcare.ai
+
+# Sitemaps
+Sitemap: https://www.xrphealthcare.ai/sitemap.xml

@@ -14,11 +14,13 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog";
 import {FaAngleRight} from "react-icons/fa6";
+import SEO from "@/components/SEO";
 
 export default function Exchanges() {
 
     return (
         <>
+            <SEO title="Team" canonical="https://www.xrphealthcare.ai/team"/>
             <Placeholder title={'Meet Our Team'} key={'team'} description={''}/>
             <div className="pb-20 px-2">
                 <div className="max-w-6xl mx-auto">
@@ -74,18 +76,3 @@ export default function Exchanges() {
         </>
     );
 }
-
-/*<Drawer open={openStates[index] || false} onOpenChange={(isOpen) => handleOpenChange(index, isOpen)}>
-                                            <DrawerTrigger className="underline hover:no-underline">Read Bio</DrawerTrigger>
-                                            <DrawerContent>
-                                                <DrawerHeader>
-                                                    <div className="flex justify-between items-center">
-                                                        <DrawerTitle>{member.name}</DrawerTitle>
-                                                        <DrawerClose>
-                                                            <Button variant="destructive">Close</Button>
-                                                        </DrawerClose>
-                                                    </div>
-                                                    <DrawerDescription >{member.description}</DrawerDescription>
-                                                </DrawerHeader>
-                                            </DrawerContent>
-                                        </Drawer>*/

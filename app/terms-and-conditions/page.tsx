@@ -1,9 +1,12 @@
 import Placeholder from "@/components/layout/Placeholder";
 import Link from "next/link";
+import SEO from "@/components/SEO";
+import React from "react";
 
 export default function TermsAndConditions() {
     return (
         <>
+            <SEO title="Terms and Conditions" canonical="https://www.xrphealthcare.ai/terms-and-conditions"/>
             <Placeholder title={'XRPH Terms and Conditions'} key={'terms'} description={''}/>
             <div className="px-6 mx-auto max-w-screen-lg">
                 <div className="">

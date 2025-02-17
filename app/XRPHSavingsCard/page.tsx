@@ -6,15 +6,19 @@ import {
     DialogContent,
     DialogDescription,
     DialogHeader,
-    DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
 import Image from "next/image";
 import MyButton from "@/components/layout/MyButton";
+import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
+import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
+import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
+import SEO from "@/components/SEO";
 
 export default function XRPHSavingsCard() {
     return (
         <>
+            <SEO title="XRPH Prescription Savings Card & App" canonical="https://www.xrphealthcare.ai/XRPHSavingsCard"/>
             <div className="px-6 py-24 sm:py-22 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
                     <h1 className="text-3xl lg:text-5xl lg:leading-[1.2] -text-5xl font-semibold tracking-tight text-gradient ">XRPH Prescription
@@ -32,17 +36,10 @@ export default function XRPHSavingsCard() {
                             <Dialog>
                                 <DialogTrigger><FaPlayCircle
                                     className="ring-[20px] ring-haraa/20 rounded-full text-7xl text-jamni hover:text-jamni/80 hover:ring-haraa/50"/></DialogTrigger>
-                                <DialogContent className="max-w-screen-lg">
+                                <DialogContent className="max-w-screen-lg p-3 border border-black bg-gradient-to-r from-haraa to-jamni ">
                                     <DialogHeader>
-                                        <DialogTitle></DialogTitle>
                                         <DialogDescription>
-                                            <iframe width="100%" height="550"
-                                                    src="https://www.youtube.com/embed/98D3KBayHgw?rel=0"
-                                                    title="XRPH Prescription Savings Card | Up to 80% Savings @ CVS, Walgreens Walmart | XRP Healthcare | Video"
-                                                    frameBorder="0"
-                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                    referrerPolicy="strict-origin-when-cross-origin"
-                                                    allowFullScreen></iframe>
+                                            <YouTubeEmbed videoId="98D3KBayHgw" />
                                         </DialogDescription>
                                     </DialogHeader>
                                 </DialogContent>
@@ -88,24 +85,8 @@ export default function XRPHSavingsCard() {
                             </li>
                         </ul>
                         <div className="flex justify-center md:justify-start gap-4 mt-6">
-                            <div>
-                                <Link href={"https://apps.apple.com/gb/app/xrph-wallet/id6451218628"}
-                                      target={"_blank"} rel="noopener noreferrer"
-                                      title="Download XRPH Wallet on the App Store">
-                                    <Image height={'200'} width={'300'} src={"/app-store-o.png"} alt={"app-store"}
-                                           className="w-48 h-auto hover:scale-95 transition-all duration-200"
-                                    />
-                                </Link>
-                            </div>
-                            <div>
-                                <Link href={"https://play.google.com/store/apps/details?id=com.xrphwallet"}
-                                      target={"_blank"} rel="noopener noreferrer"
-                                      title="Get XRPH Wallet on Google Play">
-                                    <Image height={'200'} width={'300'} src={"/google-play-o.png"} alt={"google play"}
-                                           className="w-48 h-auto hover:scale-95 transition-all duration-200"
-                                    />
-                                </Link>
-                            </div>
+                            <AppleDownloadButton link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
+                            <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                         </div>
                     </div>
                 </div>
@@ -212,7 +193,6 @@ export default function XRPHSavingsCard() {
                         insurance.</p>
                 </div>
             </div>
-
         </>
     )
 }

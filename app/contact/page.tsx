@@ -6,6 +6,8 @@ import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
 import ThemeLogo from "@/components/layout/ThemeLogo";
 import GhostSignup from "@/components/layout/GhostSignup";
+import SEO from "@/components/SEO";
+import React from "react";
 
 const emails = [
     {
@@ -19,6 +21,7 @@ const emails = [
 export default function Contact() {
     return (
         <>
+            <SEO title="Links" canonical="https://www.xrphealthcare.ai/contact"/>
             <Placeholder title={'Contact Us'} key={'contact'} description={''}/>
             <div className=" mx-auto px-10 lg:px-40" id="contact">
                 <div className="grid md:grid-cols-2 gap-8 items-center">

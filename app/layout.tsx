@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import localFont from 'next/font/local'
 import {ThemeProvider} from "@/components/theme-provider";
+import SEO from "@/components/SEO";
 
 const biennale = localFont({
     src: [
@@ -43,6 +44,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" >
+        <SEO
+            title="XRP Healthcare  | AI | Mergers & Acquisitions"
+            description="XRP Healthcare, built on the XRP Ledger, enhances access with a US Prescription Card and expands African healthcare via AI-driven acquisitions"
+            keywords="XRP, healthcare, blockchain, investments, XRP Healthcare, XRPH AI, XRP Healthcare AI, Mergers & Acquisitions, Healthcare Solutions, XRP Healthcare, XRPH, AI,XRPH AI, scalable solutions provider, revolutionizing the Pharma, Healthcare industry, Pharma, Healthcare services, AI"
+            canonical="https://www.xrphealthcare.ai/"
+        />
         {/*<body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >*/}
         <body className={`${biennale.className}  antialiased`}>
         <ThemeProvider

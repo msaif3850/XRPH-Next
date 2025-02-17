@@ -1,6 +1,8 @@
 'use client'
 import Placeholder from "@/components/layout/Placeholder";
 import Link from "next/link";
+import SEO from "@/components/SEO";
+import React from "react";
 
 const faqs = [
     {
@@ -56,6 +58,7 @@ const faqs = [
 export default function AppFAQs() {
     return (
         <>
+            <SEO title="App FAQs" canonical="https://www.xrphealthcare.ai/app-faqs" description="Frequently Asked Questions for the XRPH Mobile Wallet App."/>
             <Placeholder title={'XRPH Mobile Wallet Frequently Asked Questions'} key={'app-faq'} description={''}/>
             <div className="px-6 mx-auto max-w-screen-lg">
                 <div className="space-y-16 max-w-4xl">

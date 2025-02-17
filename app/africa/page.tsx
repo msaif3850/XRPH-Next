@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/card"
 import Link from "next/link";
 import {FaAngleRight} from "react-icons/fa6";
+import SEO from "@/components/SEO";
+import React from "react";
 
 const AfricaPosts = [
     {
@@ -77,6 +79,7 @@ const AfricaPosts = [
 export default function Africa() {
     return (
         <>
+            <SEO title="Africa" canonical="https://www.xrphealthcare.ai/africa" />
             <div className="px-6 py-24 sm:py-16 lg:px-8">
                 <div className="mx-auto max-w-7xl text-center">
                     <Image src="/africa/xrph-africa-banner.webp" alt={'XRPH Africa'} width={1500} height={1200}/>

@@ -3,10 +3,13 @@ import Image from "next/image";
 import {FaAngleRight} from "react-icons/fa6";
 import Link from "next/link";
 import {Exchanges} from "@/variables";
+import SEO from "@/components/SEO";
+import React from "react";
 
 export default function BuyExchanges() {
     return (
         <>
+            <SEO title="Buy XRPH" canonical="https://www.xrphealthcare.ai/buy-xrph"/>
             <Placeholder title={'Buy XRPH.'} key={'buy'} description={'Exchanges where you can buy XRPH'}/>
             <div className="max-w-screen-xl mx-auto px-6">
                 {/*<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">*/}

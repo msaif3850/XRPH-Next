@@ -8,6 +8,7 @@ import {SocialLinks} from "@/variables";
 import BackToTopButton from "@/components/layout/BackToTopButton";
 import ThemeLogo from "@/components/layout/ThemeLogo";
 import GhostSignup from "@/components/layout/GhostSignup";
+import SecurityBadges from "@/components/layout/SecurityBadges";
 
 export default function Footer() {
     return (
@@ -85,6 +86,7 @@ export default function Footer() {
                 </div>
             </footer>
             <BackToTopButton/>
+            <SecurityBadges />
         </>
     )
 }

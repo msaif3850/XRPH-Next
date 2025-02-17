@@ -171,25 +171,24 @@ export default function Home() {
                     </div>
                     <div className="w-full md:w-7/12 order-1 sm:order-2">
                         <div
-                            className="bg-gradient-to-r from-haraa to-jamni p-4 flex mb-4 md:mb-0 hover:shadow-lg transition-shadow"
-                        >
-                            <div
-                                className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[300px] items-center justify-center rounded-lg shadow-md relative"
-                                style={{boxShadow: "6px 6px 7px 0 rgba(0, 0, 0, 0.8"}}>
-                                <Dialog>
-                                    <DialogTrigger><FaPlayCircle
-                                        className="ring-[20px] ring-haraa/20 rounded-full text-7xl text-jamni hover:text-jamni/80 hover:ring-haraa/50"/></DialogTrigger>
-                                    <DialogContent className="max-w-screen-lg p-2 bg-transparent ">
-                                        <DialogHeader>
+                            className="bg-gradient-to-r from-haraa to-jamni p-4 flex mb-4 md:mb-0 hover:shadow-lg transition-shadow">
 
+                            <Dialog>
+                                <div
+                                    className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[300px] items-center justify-center rounded-lg shadow-md relative"
+                                    style={{boxShadow: "6px 6px 7px 0 rgba(0, 0, 0, 0.8"}}>
+                                    <DialogTrigger>
+                                        <FaPlayCircle className="ring-[20px] ring-haraa/20 rounded-full text-7xl text-jamni hover:text-jamni/80 hover:ring-haraa/50"/></DialogTrigger>
+                                    <DialogContent
+                                        className="max-w-screen-lg p-3 border border-black bg-gradient-to-r from-haraa to-jamni ">
+                                        <DialogHeader>
                                             <DialogDescription>
-                                                <YouTubeEmbed videoId="98D3KBayHgw" />
+                                                <YouTubeEmbed videoId="98D3KBayHgw"/>
                                             </DialogDescription>
                                         </DialogHeader>
                                     </DialogContent>
-                                </Dialog>
-                            </div>
-
+                                </div>
+                            </Dialog>
                         </div>
                     </div>
                 </div>
@@ -323,7 +322,7 @@ export default function Home() {
             </section>
 
             <section className="px-6 sm:px-0">
-                <div className="container  py-24 mx-auto">
+                <div className="container py-24 mx-auto">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
                         <ThemeLogo lightLogo={'/xrph-logos/xrph-ai.png'} darkLogo={'/xrph-logos/xrph-ai-dark.png'}
                                    width={500} height={200}/>

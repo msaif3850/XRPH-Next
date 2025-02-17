@@ -1,5 +1,7 @@
 import Placeholder from "@/components/layout/Placeholder";
 import Link from "next/link";
+import SEO from "@/components/SEO";
+import React from "react";
 
 const faqs = [
     {
@@ -97,6 +99,7 @@ const faqs = [
 export default function FAQs() {
     return (
         <>
+            <SEO title="FAQ" canonical="https://www.xrphealthcare.ai/faq"/>
             <Placeholder title={'Frequently Asked Questions'} key={'faq'} description={''}/>
             <div className=" px-6 mx-auto max-w-screen-lg">
                 <div className="space-y-16 max-w-4xl">
