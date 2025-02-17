@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 
 const SecurityBadges = () => {
     const [showBadges, setShowBadges] = useState(false);
@@ -29,15 +30,15 @@ const SecurityBadges = () => {
                 id="sitelock-badge"
                 href="#"
                 onClick={openSiteLock}
-                className={`fixed bottom-5 left-0.5 transition-opacity duration-300 ${
+                className={`fixed bottom-3 left-0.5 transition-opacity duration-300 ${
                     showBadges ? "opacity-100" : "opacity-0"
                 }`}
             >
-                <img
+                <Image width={100} height={70}
                     className="w-auto h-auto"
-                    alt="SiteLock"
-                    title="SiteLock"
-                    src="https://shield.sitelock.com/shield/www.xrphealthcare.ai"
+                    alt={"SiteLock"}
+                    title={"SiteLock"}
+                    src={"https://shield.sitelock.com/shield/www.xrphealthcare.ai"}
                 />
             </a>
 
@@ -47,15 +48,15 @@ const SecurityBadges = () => {
                 href="//www.dmca.com/Protection/Status.aspx?ID=b23b657b-f720-4c9a-9cdf-89fe291b0155"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`fixed bottom-0 left-0 transition-opacity duration-300 ${
+                className={`fixed bottom-0.5 left-0 transition-opacity duration-300 ${
                     showBadges ? "opacity-100" : "opacity-0"
                 }`}
             >
-                <img
+                <Image width={100} height={50}
                     className="w-auto h-auto"
-                    alt="DMCA.com Protection Status"
-                    title="DMCA.com Protection Status"
-                    src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-09.png?ID=b23b657b-f720-4c9a-9cdf-89fe291b0155"
+                    alt={"DMCA.com Protection Status"}
+                    title={"DMCA.com Protection Status"}
+                    src={"https://images.dmca.com/Badges/dmca-badge-w100-5x1-09.png?ID=b23b657b-f720-4c9a-9cdf-89fe291b0155"}
                 />
             </a>
         </>
