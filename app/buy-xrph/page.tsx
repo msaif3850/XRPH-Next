@@ -1,4 +1,3 @@
-import Placeholder from "@/components/layout/Placeholder";
 import Image from "next/image";
 import {FaAngleRight} from "react-icons/fa6";
 import Link from "next/link";

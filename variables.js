@@ -56,6 +56,12 @@ const FooterMenu2 = [
     {key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},
     {key: 9, text: 'AI Chat Bot', link: 'https://xrph.ai/', blank: true},
 ]
+const SheetMenu = [
+    {key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},
+    {key: 3, text: 'Terms', link: 'terms-and-conditions', blank: false},
+    {key: 6, text: 'Privacy', link: 'privacy-policy', blank: false},
+    {key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},
+]
 const Exchanges = [
     {id: 1, name: 'LBANK', link: 'https://www.lbank.com/trade/xrph_usdt/', image: '/exchanges/lbank.png'},
     {
@@ -319,4 +325,4 @@ const TeamMembers = [
 ];
 
 
-export {SocialLinks,NavLinks, FooterMenu1, FooterMenu2, Exchanges, DayOfDate, MonthOfDate, TeamMembers};
+export {SocialLinks,NavLinks, FooterMenu1, FooterMenu2, Exchanges, DayOfDate, MonthOfDate, TeamMembers, SheetMenu};
