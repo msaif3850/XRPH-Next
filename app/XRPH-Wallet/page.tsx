@@ -1,17 +1,17 @@
 import Image from "next/image";
 import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
 import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
-import SEO from "@/components/SEO";
+import HeadTag from "@/components/HeadTag";
 import React from "react";
 export default function XrphWallet() {
     return (
         <>
-            <SEO title="Wallet" canonical="https://www.xrphealthcare.ai/XRPH-Wallet"/>
+            <HeadTag title="Wallet" canonical="https://www.xrphealthcare.ai/XRPH-Wallet"/>
             <div className="flex items-center pt-24 pb-20 sm:py-22">
                 <div className="w-full text-center">
                     <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
                         <div className="w-full lg:w-1/3  px-6 sm:px-10">
-                            <div className="border-4 border-light rounded-3xl shadow-lg ">
+                            <div className="border-4 border-light rounded-3xl shadow-lg dark:bg-gray-900">
                                 <div className="p-6 lg:py-12 card border-0 text-center rounded-3xl flex flex-col justify-center items-center">
                                     <Image
                                         src={"/icon.png"}
@@ -23,7 +23,7 @@ export default function XrphWallet() {
                                     <h3 className="text-2xl font-bold bg-gradient-to-r from-haraa to-jamni bg-clip-text text-transparent">
                                         XRPH AI
                                     </h3>
-                                    <p className="mt-2 text-gray-600">
+                                    <p className="mt-2 ">
                                         Holistic <span className="font-sans">&</span> Traditional Medical Insights, Powered by AI
                                     </p>
                                 </div>
@@ -48,7 +48,7 @@ export default function XrphWallet() {
                                         <div className="w-full border-t border-2 border-jamni"></div>
                                     </div>
                                     <div className="relative flex justify-center">
-                                        <span className="bg-white px-2 ">OR</span>
+                                        <span className="bg-white dark:bg-black px-2 ">OR</span>
                                     </div>
                                 </div>
                                 <div className="flex justify-center gap-1 sm:gap-4">
@@ -64,7 +64,7 @@ export default function XrphWallet() {
                 <div className="w-full text-center">
                     <div className="flex flex-col lg:flex-row justify-center items-center gap-8">
                         <div className="w-full lg:w-1/3 order-1 lg:order-2 px-6 sm:px-10">
-                            <div className="border-4 border-light rounded-3xl shadow-lg">
+                            <div className="border-4 border-light rounded-3xl shadow-lg dark:bg-gray-900">
                                 <div
                                     className="p-6 lg:py-12 card border-0 text-center rounded-3xl flex flex-col justify-center items-center">
                                     <Image
@@ -77,7 +77,7 @@ export default function XrphWallet() {
                                     <h3 className="text-2xl font-bold bg-gradient-to-r from-haraa to-jamni bg-clip-text text-transparent">
                                         XRPH Wallet
                                     </h3>
-                                    <p className="mt-2 text-gray-600">
+                                    <p className="mt-2 ">
                                         The XRP Healthcare Decentralized Mobile Wallet is a non
                                         <span className="font-sans">-</span>custodial wallet backed
                                         by the XRP Ledger.
@@ -104,7 +104,7 @@ export default function XrphWallet() {
                                         <div className="w-full border-t border-2 border-jamni"></div>
                                     </div>
                                     <div className="relative flex justify-center">
-                                        <span className="bg-white px-2 ">OR</span>
+                                        <span className="bg-white dark:bg-black px-2 ">OR</span>
                                     </div>
                                 </div>
                                 <div className="flex justify-center gap-1 sm:gap-4">

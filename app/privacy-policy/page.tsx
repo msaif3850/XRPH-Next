@@ -1,12 +1,12 @@
 import Placeholder from "@/components/layout/Placeholder";
-import SEO from "@/components/SEO";
+import HeadTag from "@/components/HeadTag";
 import React from "react";
 
 
 export default function PrivacyPolicyPage() {
     return (
         <>
-            <SEO title="Privacy Policy" canonical="https://www.xrphealthcare.ai/privacy-policy"/>
+            <HeadTag title="Privacy Policy" canonical="https://www.xrphealthcare.ai/privacy-policy"/>
             <Placeholder title={'XRPH Privacy Policy'} key={'faq'} description={''}/>
             <div className="px-6 mx-auto max-w-screen-lg">
                 <div className="">

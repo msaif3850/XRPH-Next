@@ -2,31 +2,34 @@
 import Image from "next/image";
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
+import MyButtonSimple from "@/components/layout/MyButtonSimple";
 import {NewsData} from "@/news-data";
 import {Exchanges} from "@/variables";
 import {
     Dialog,
     DialogContent,
     DialogDescription,
-    DialogHeader,
+    DialogHeader, DialogTitle,
     DialogTrigger
 } from "@/components/ui/dialog";
 import {FaPlayCircle} from "react-icons/fa";
 import React from "react";
 import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
 import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
-import ThemeLogo from "@/components/layout/ThemeLogo";
+import Logo from "@/components/layout/Logo";
 import {FixText} from "@/components/FixText";
 import ElfsightWidget from "@/components/layout/ElfsightWidget";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
+import GhostSignupISSUE5 from "@/components/layout/GhostSignupISSUE5";
+
 
 export default function Home() {
 
     return (
         <>
             <section id="xrph-ai-banner"
-                     className="bg-waves-ai dark:bg-waves-ai bg-cover bg-center bg-no-repeat pt-24 sm:pt-28 pb-16 sm:pb-12 -sm:py-20">
-                <div className="mx-auto xl:px-32 lg:px-20 md:px-16 px-6">
+                     className="bg-waves-ai dark:bg-waves-dark bg-cover bg-center bg-no-repeat pt-24 sm:pt-28 pb-16 sm:pb-12 -sm:py-20">
+                <div className="mx-auto xl:px-32 lg:px-20 md:px-16 px-0 ">
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         {/* Left Column */}
                         <div className="text-center w-full md:w-1/2 lg:w-2/5">
@@ -122,7 +125,7 @@ export default function Home() {
             <div className="px-6 py-20 lg:px-28">
                 <div className="mx-auto max-w-7xl text-center mb-8 ">
                     <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center text-center">
-                        Introducing the <ThemeLogo
+                        Introducing the <Logo
                         lightLogo="/logo.png"
                         darkLogo="/logo-dark.png"
                         width={300}
@@ -178,7 +181,8 @@ export default function Home() {
                                     className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[300px] items-center justify-center rounded-lg shadow-md relative"
                                     style={{boxShadow: "6px 6px 7px 0 rgba(0, 0, 0, 0.8"}}>
                                     <DialogTrigger>
-                                        <FaPlayCircle className="ring-[20px] ring-haraa/20 rounded-full text-7xl text-jamni hover:text-jamni/80 hover:ring-haraa/50"/></DialogTrigger>
+                                        <FaPlayCircle
+                                            className="ring-[20px] ring-haraa/20 rounded-full text-7xl text-jamni hover:text-jamni/80 hover:ring-haraa/50"/></DialogTrigger>
                                     <DialogContent
                                         className="max-w-screen-lg p-3 border border-black bg-gradient-to-r from-haraa to-jamni ">
                                         <DialogHeader>
@@ -221,10 +225,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <section className="bg-waves-wallet bg-cover bg-center bg-no-repeat">
+            <section className="bg-waves-wallet dark:bg-waves-dark bg-cover bg-center bg-no-repeat">
                 <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                    <ThemeLogo lightLogo={'/xrph-logos/wallet-app.png'} darkLogo={'/xrph-logos/wallet-app-dark.png'}
-                               width={500} height={200}/>
+                    <Logo lightLogo={'/xrph-logos/wallet-app.png'} darkLogo={'/xrph-logos/wallet-app-dark.png'}
+                          width={500} height={200}/>
                 </div>
                 <div className="max-w-7xl px-6 sm:py-10 py-0 mx-auto">
                     {/*<div className="lg:w-4/5 mx-auto flex flex-wrap items-center"></div>*/}
@@ -256,11 +260,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="px-6 sm:px-0">
-                <div className="container px-5 py-24 mx-auto">
+            <div className="px-6 sm:px-0">
+                <div className="container px-5 py-10 mx-auto">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                        <ThemeLogo lightLogo={'/xrph-logos/africa.png'} darkLogo={'/xrph-logos/africa-dark.png'}
-                                   width={500} height={200}/>
+                        <Logo lightLogo={'/xrph-logos/africa.png'} darkLogo={'/xrph-logos/africa-dark.png'}
+                              width={500} height={200}/>
                     </div>
                     <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
                         <div className="lg:w-2/3 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
@@ -282,50 +286,68 @@ export default function Home() {
                             src={'/africa/map-africa.webp'} width={'500'} height={'500'} alt={'Africa map'}/>
                     </div>
                 </div>
-            </section>
 
-            <section className="px-6 sm:px-0">
-                <div className="container py-24 mx-auto flex flex-col">
+                <div className="container py-10 mx-auto flex flex-col">
                     <div className="lg:w-4/6 mx-auto">
                         <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                            <ThemeLogo lightLogo={'/xrph-logos/magazine.png'} darkLogo={'/xrph-logos/magazine-dark.png'}
-                                       width={500} height={200}/>
+                            <Logo lightLogo={'/xrph-logos/magazine.png'} darkLogo={'/xrph-logos/magazine-dark.png'}
+                                  width={500} height={200}/>
                         </div>
-                        <div className="flex flex-col items-center sm:flex-row mt-10--">
-                            <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                                <Link
-                                    href={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_4?fr=sNGJmMjY5MjQ4MTQ'}
-                                    target={'_blank'}>
-                                    <Image src={'/press-releases/xrp_healthcare_magazine_issue_4.webp'}
-                                           className="hover:scale-95 transition-all duration-200"
-                                           alt={'XRP Healthcare Magazine issue4'} width={'500'} height={'150'}/>
-                                </Link>
+                        <Dialog>
+                            <div className="flex flex-col items-center sm:flex-row">
+                                <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                                    <DialogTrigger>
+                                        <Image src={'/press-releases/xrp_healthcare_magazine_issue_5.webp'}
+                                               className="hover:scale-95 transition-all duration-200"
+                                               alt={'XRP Healthcare Magazine issue 5'} width={'500'} height={'150'}/>
+                                    </DialogTrigger>
+                                    {/*<Link
+                                        href={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_4?fr=sNGJmMjY5MjQ4MTQ'}
+                                        target={'_blank'}>
+                                        <Image src={'/press-releases/xrp_healthcare_magazine_issue_5.webp'} className="hover:scale-95 transition-all duration-200" alt={'XRP Healthcare Magazine issue 5'} width={'500'} height={'150'}/>
+                                    </Link>*/}
+                                </div>
+                                <div
+                                    className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 --border-t mt-4 pt-4 sm:mt-0 ">
+                                    <p className="leading-relaxed text-lg mb-4"><b>XRP Healthcare: A New Milestone
+                                        Approaches:</b> XRP Healthcare continues to drive change through strategic
+                                        mergers, acquisitions, and AI innovation. Next month’s Special Edition Magazine
+                                        takes an exclusive deep dive into our latest progress and future vision.</p>
+                                    <p className="leading-relaxed text-lg mb-4"><b>Exclusive Global
+                                        Announcement:</b> This upcoming issue is fully dedicated to XRP Healthcare’s
+                                        evolution, featuring a major global announcement set to reshape the future of
+                                        healthcare.</p>
+                                    <p className="leading-relaxed text-lg mb-4"><b>Sign Up Now:</b> Be the first to
+                                        access it{FixText('!')} Sign up today to <DialogTrigger
+                                            className="underline">download </DialogTrigger> or <DialogTrigger
+                                            className="underline">receive a physical copy</DialogTrigger> as soon as
+                                        it’s released next month. Don’t miss this {FixText('game-changing edition!')}
+                                    </p>
+                                    <DialogTrigger>
+                                        <MyButtonSimple buttonText={'Access Now'}/>
+                                    </DialogTrigger>
+                                </div>
                             </div>
-                            <div
-                                className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 --border-t mt-4 pt-4 sm:mt-0 ">
-                                <p className="leading-relaxed text-lg mb-4">
-                                    <b>African Healthcare Transformation:</b> XRP Healthcare drives change via mergers,
-                                    acquisitions, and blockchain, redefining healthcare delivery.
-                                    <br/><br/><b>Global Trends Insights:</b> Explore exclusive insights in XRP
-                                    Healthcare {FixText('Magazine\'s 4th  issue, featuring in-depth')} analysis and
-                                    expert commentary on emerging healthcare trends.
-                                    <br/><br/><b>Flexible Access Anywhere:</b> Download or order a physical copy to
-                                    enjoy convenient access to our free quarterly magazine. Stay informed about evolving
-                                    healthcare, including interviews with NASDAQ and {FixText('NYSE-listed')} companies.
-                                </p>
-                                <MyButton buttonText={'Access Now'} buttonUrl={'https://xrphmagazine.ai/magazine/'}
-                                          target={'_blank'}/>
-                            </div>
-                        </div>
+                            <DialogContent>
+                                <DialogHeader>
+                                    <DialogTitle className="text-gradient text-xl">XRP Healthcare Magazine Issue
+                                        5</DialogTitle>
+                                    <DialogDescription className="text-lg text-black border-t border-gray-200 py-5">
+                                        Subscribe here so you could be notified when ISSUE 5 is available.
+                                        <div className="mt-3">
+                                            <GhostSignupISSUE5 id={'ghost-signup-issue5'}/>
+                                        </div>
+                                    </DialogDescription>
+                                </DialogHeader>
+                            </DialogContent>
+                        </Dialog>
                     </div>
                 </div>
-            </section>
 
-            <section className="px-6 sm:px-0">
-                <div className="container py-24 mx-auto">
+                <div className="container py-10 mx-auto">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                        <ThemeLogo lightLogo={'/xrph-logos/xrph-ai.png'} darkLogo={'/xrph-logos/xrph-ai-dark.png'}
-                                   width={500} height={200}/>
+                        <Logo lightLogo={'/xrph-logos/xrph-ai.png'} darkLogo={'/xrph-logos/xrph-ai-dark.png'}
+                              width={500} height={200}/>
                     </div>
                     <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
                         <div className="lg:w-1/2 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
@@ -361,16 +383,13 @@ export default function Home() {
                         </Dialog>
                     </div>
                 </div>
-            </section>
 
-
-            <div className="px-6">
-                <div className="pb-32">
-                    <div className="max-w-full mx-auto ">
-                        <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                            <ThemeLogo lightLogo={'/xrph-logos/news.png'} darkLogo={'/xrph-logos/news-dark.png'}
-                                       width={500} height={200}/>
-                        </div>
+                <div className="container py-10 mx-auto">
+                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                        <Logo lightLogo={'/xrph-logos/news.png'} darkLogo={'/xrph-logos/news-dark.png'}
+                              width={500} height={200}/>
+                    </div>
+                    <div className="lg:w-5/6 mx-auto">
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
                             {NewsData.slice(0, 3).map((post, index) => (
                                 <Link href={post.link} key={index + 1} target="_blank">
@@ -414,33 +433,32 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="pb-32">
-                <div className="max-w-7xl px-6 mx-auto text-center">
-                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                        <ThemeLogo lightLogo={'/xrph-logos/buy-xrph.png'} darkLogo={'/xrph-logos/buy-xrph-dark.png'}
-                                   width={500} height={200}/>
-                    </div>
 
-                    <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 lg:gap-6">
-                        {Exchanges.map((exchange) => (
-                            <Link href={exchange.link} key={exchange.id} title={exchange.name}
-                                  className="basis-full sm:basis-[48%] md:basis-[48%] lg:basis-[32%]">
-                                <div className="relative h-[130px] group">
-                                    <div
-                                        className="bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa p-1 rounded-2xl">
+                <div className="container py-10 mx-auto text-center">
+                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                        <Logo lightLogo={'/xrph-logos/buy-xrph.png'} darkLogo={'/xrph-logos/buy-xrph-dark.png'}
+                              width={500} height={200}/>
+                    </div>
+                    <div className="lg:w-5/6 mx-auto">
+                        <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 lg:gap-6">
+                            {Exchanges.map((exchange) => (
+                                <Link href={exchange.link} key={exchange.id} title={exchange.name}
+                                      className="basis-full sm:basis-[48%] md:basis-[48%] lg:basis-[32%]">
+                                    <div className="relative h-[130px] group">
                                         <div
-                                            className="bg-white dark:bg-gray-400 rounded-2xl overflow-hidden transition-all flex items-center justify-center h-[125px]">
-                                            <Image
-                                                src={exchange.image}
-                                                alt={exchange.name}
-                                                width={300}
-                                                height={200}
-                                                className="transition-all duration-300 group-hover:scale-90 object-contain"
-                                            />
+                                            className="bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa p-1 rounded-2xl">
+                                            <div
+                                                className="bg-white dark:bg-gray-400 rounded-2xl overflow-hidden transition-all flex items-center justify-center h-[125px]">
+                                                <Image
+                                                    src={exchange.image}
+                                                    alt={exchange.name}
+                                                    width={300}
+                                                    height={200}
+                                                    className="transition-all duration-300 group-hover:scale-90 object-contain"
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
-                                    {/*<div
+                                        {/*<div
                                         className="absolute left-0 right-0 bottom-0 w-[160px] mx-auto rounded-full p-2 bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa">
                                         <div
                                             className="text-center font-bold flex items-center justify-between text-white px-3">
@@ -448,18 +466,21 @@ export default function Home() {
                                             className="group-hover:translate-x-2 duration-300 transition-all"/>
                                         </div>
                                     </div>*/}
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                    <div className="flex items-center justify-center mt-10">
-                        <MyButton
-                            buttonText={'View All Exchanges'} buttonUrl={'buy-xrph'} target={'_self'}/>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                        <div className="flex items-center justify-center mt-10">
+                            <MyButton buttonText={'View All Exchanges'} buttonUrl={'buy-xrph'} target={'_self'}/>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="max-w-4xl mx-auto">
-                <ElfsightWidget/>
+
+                <div className="container pt-10 ">
+                    <div className="max-w-4xl mx-auto">
+                        <ElfsightWidget/>
+                    </div>
+                </div>
             </div>
         </>
     );

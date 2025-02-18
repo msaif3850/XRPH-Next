@@ -6,14 +6,14 @@ import Link from "next/link";
 import Image from "next/image";
 import {DayOfDate, MonthOfDate} from "@/variables";
 import {FixText} from "@/components/FixText";
-import SEO from "@/components/SEO";
+import HeadTag from "@/components/HeadTag";
 import React from "react";
 
 export default function News() {
     return (
         <>
-            <SEO title="News" canonical="https://www.xrphealthcare.ai/news"/>
-            <PageTitleImage image={'/xrph-logos/logo-news.webp'} alt={'XRPHealthcare news'}/>
+            <HeadTag title="News" canonical="https://www.xrphealthcare.ai/news"/>
+            <PageTitleImage image={'/xrph-logos/news.png'} imageDark={'/xrph-logos/news-dark.png'} alt={'XRPHealthcare news'}/>
             <div className="px-6">
                 <h2 className="text-jamni text-2xl">As featured in:</h2>
                 <div className="border-t border-b border-black">

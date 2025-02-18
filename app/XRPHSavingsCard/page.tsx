@@ -13,12 +13,12 @@ import MyButton from "@/components/layout/MyButton";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
 import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
 import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
-import SEO from "@/components/SEO";
+import HeadTag from "@/components/HeadTag";
 
 export default function XRPHSavingsCard() {
     return (
         <>
-            <SEO title="XRPH Prescription Savings Card & App" canonical="https://www.xrphealthcare.ai/XRPHSavingsCard"/>
+            <HeadTag title="XRPH Prescription Savings Card & App" canonical="https://www.xrphealthcare.ai/XRPHSavingsCard"/>
             <div className="px-6 py-24 sm:py-22 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
                     <h1 className="text-3xl lg:text-5xl lg:leading-[1.2] -text-5xl font-semibold tracking-tight text-gradient ">XRPH Prescription

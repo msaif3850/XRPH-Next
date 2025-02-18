@@ -1,3 +1,4 @@
+"use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -11,7 +12,7 @@ interface ThemeLogoProps {
     className?: string;
 }
 
-export default function ThemeLogo({
+export default function Logo({
                                       lightLogo,
                                       darkLogo,
                                       alt = "Logo",
@@ -24,7 +25,7 @@ export default function ThemeLogo({
 
     useEffect(() => setMounted(true), []);
 
-    if (!mounted) return null; // Prevents hydration mismatch
+    if (!mounted) return null;
 
     return (
         <Image

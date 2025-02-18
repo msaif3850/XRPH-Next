@@ -6,10 +6,11 @@ import {FooterMenu2} from "@/variables";
 import FooterLogos from "@/components/layout/FooterLogos";
 import {SocialLinks} from "@/variables";
 import BackToTopButton from "@/components/layout/BackToTopButton";
-import ThemeLogo from "@/components/layout/ThemeLogo";
-import GhostSignup from "@/components/layout/GhostSignup";
+import Logo from "@/components/layout/Logo";
 import SecurityBadges from "@/components/layout/SecurityBadges";
 
+/*import dynamic from "next/dynamic";
+const GhostSignup = dynamic(() => import("@/components/layout/GhostSignup"), { ssr: false });*/
 export default function Footer() {
     return (
         <>
@@ -19,7 +20,7 @@ export default function Footer() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-16 gap-8 items-start">
                         <div className="lg:flex lg:items-center">
                             <Link href="/">
-                                <ThemeLogo
+                                <Logo
                                     lightLogo="/logo.png"
                                     darkLogo="/logo-dark.png"
                                     width={250}
@@ -74,7 +75,7 @@ export default function Footer() {
                             </ul>
                             {/* Adjusting signup form container */}
                             <div className="mt-6 flex justify-center">
-                                <GhostSignup id={'ghost-signup-form-1'}/>
+                                {/*<GhostSignup id={'ghost-signup-form-1'}/>*/}
                             </div>
                         </div>
                     </div>

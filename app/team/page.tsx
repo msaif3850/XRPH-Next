@@ -14,19 +14,19 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog";
 import {FaAngleRight} from "react-icons/fa6";
-import SEO from "@/components/SEO";
+import HeadTag from "@/components/HeadTag";
 
 export default function Exchanges() {
 
     return (
         <>
-            <SEO title="Team" canonical="https://www.xrphealthcare.ai/team"/>
+            <HeadTag title="Team" canonical="https://www.xrphealthcare.ai/team"/>
             <Placeholder title={'Meet Our Team'} key={'team'} description={''}/>
             <div className="pb-20 px-2">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-10 lg:gap-y-20 lg:gap-x-16">
                         {TeamMembers.map((member, index) => (
-                            <div key={index + 1} className="group text-center">
+                            <div key={index + 1} id={member.id} className="group text-center">
                                 <div className="flex justify-center items-center mb-0.5">
                                     <Image src={member.img} alt={member.name} width={200} height={200}
                                            className="rounded-full grayscale group-hover:grayscale-0"/>
@@ -35,7 +35,7 @@ export default function Exchanges() {
                                     <h2 className="text-2xl font-bold text-gradient uppercase mb-2">{member.name}</h2>
                                     <h3 className="uppercase text-sm font-bold">{member.role}</h3>
                                 </div>
-                                <div className="flex justify-center items-center gap-2">
+                                <div className="flex justify-center items-center gap-3">
                                     <Link href={member.link} key={member.link} target="_blank" className="text-xl">
                                         <member.icon className="h-5 w-5" aria-hidden="true"/>
                                     </Link>
@@ -44,7 +44,7 @@ export default function Exchanges() {
                                     <Dialog>
                                         <DialogTrigger asChild>
                                             <Button variant="outline"
-                                                    className="border-0  shadow-none hover:bg-transparent">Read
+                                                    className="border-0 px-0 shadow-none hover:bg-transparent hover:underline">Read
                                                 Bio<FaAngleRight
                                                     className="group-hover:translate-x-2 duration-300 transition-all"/></Button>
                                         </DialogTrigger>

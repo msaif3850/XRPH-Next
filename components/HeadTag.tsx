@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const SEO = ({
+const HeadTag = ({
                  title = "XRP Healthcare  | AI | Mergers & Acquisitions",
                  description = "XRP Healthcare, built on the XRP Ledger, enhances access with a US Prescription Card and expands African healthcare via AI-driven acquisitions",
                  keywords = "XRP Healthcare, blockchain healthcare, crypto health, XRP Healthcare, XRPH AI, XRP Healthcare AI, Mergers & Acquisitions, Healthcare Solutions, XRP Healthcare, XRPH, AI scalable solutions provider, revolutionizing the Pharma, Healthcare industry, Pharma, Healthcare services, AI, XRPH AI, XRP Healthcare, XRPH, AI,XRPH AI, scalable solutions provider, revolutionizing the Pharma, Healthcare industry, Pharma, Healthcare services",
@@ -77,13 +77,13 @@ const SEO = ({
             <meta property="og:url" content={canonical}/>
             <meta property="og:title" content={title}/>
             <meta property="og:description" content={description}/>
-            <meta property="og:image" content="/SEO/meta-image.png"/>
+            <meta property="og:image" content="/HeadTag/meta-image.png"/>
 
-            {/* Twitter SEO */}
+            {/* Twitter HeadTag */}
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content={title}/>
             <meta name="twitter:description" content={description}/>
-            <meta name="twitter:image" content="/SEO/meta-image.png"/>
+            <meta name="twitter:image" content="/HeadTag/meta-image.png"/>
 
             {/* Canonical URL */}
             <link rel="canonical" href={canonical}/>
@@ -91,9 +91,8 @@ const SEO = ({
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(organizationSchema)}}/>
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(websiteSchema)}}/>
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbSchema)}}/>
-
         </Head>
     );
 };
 
-export default SEO;
+export default HeadTag;

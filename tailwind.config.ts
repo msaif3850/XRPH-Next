@@ -11,6 +11,7 @@ export default {
   	extend: {
 		backgroundImage: {
 			'waves': "url('/waves.webp')",
+			'waves-dark': "url('/waves-dark.png')",
 			'waves-ai': "url('/ai/xrph-ai-banner-mobile.jpg')",
 			'waves-ai-dark': "url('/ai/xrph-ai-banner-mobile-dark.png')",
 			'waves-wallet': "url('/xrph-wallet-app-home-banner.webp')",

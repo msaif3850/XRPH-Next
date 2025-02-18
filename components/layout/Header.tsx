@@ -1,7 +1,6 @@
 'use client'
 import {useState, useEffect} from "react";
 import Link from "next/link";
-
 import {
     Sheet,
     SheetContent,
@@ -12,10 +11,11 @@ import {
 import {NavLinks} from "@/variables"
 //import HeaderTopBar from "@/components/layout/HeaderTopBar";
 import ModeToggler from "@/components/layout/ModeToggler";
-import ThemeLogo from "@/components/layout/ThemeLogo";
+import Logo from "@/components/layout/Logo";
 
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
+    const [isSheetOpen, setIsSheetOpen] = useState<boolean | undefined>()
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -31,7 +31,7 @@ export default function Header() {
                 }`}
             >
                 <Link href="/">
-                    <ThemeLogo
+                    <Logo
                         lightLogo="/logo.png"
                         darkLogo="/logo-dark.png"
                         width={250}
@@ -46,23 +46,21 @@ export default function Header() {
                 </div>
                 {/*<Button><Link href={"/XRPH-Wallet"} className="">App</Link></Button>*/}
                 {/* Mobile Menu Button */}
-                <Sheet>
+                <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                     <div className="flex items-center justify-center gap-2">
-                        <ModeToggler/>
+                        <ModeToggler />
                         <SheetTrigger asChild className="order-last">
-                            <button className="lg:hidden ">
-                                <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                     viewBox="0 0 24 24"
-                                     stroke="currentColor" strokeWidth={2}>
+                            <button className="lg:hidden " onClick={() => setIsSheetOpen(true)}>
+                                <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
                                 </svg>
                             </button>
                         </SheetTrigger>
                     </div>
-                    <SheetContent side="right" className="p-6">
+                    <SheetContent side="right" className="p-6 w-full">
                         <SheetHeader>
-                            <Link href="/">
-                                <ThemeLogo
+                            <Link href="/" onClick={() => setIsSheetOpen(false)}>
+                                <Logo
                                     lightLogo="/logo.png"
                                     darkLogo="/logo-dark.png"
                                     width={170}
@@ -71,14 +69,16 @@ export default function Header() {
                                 />
                             </Link>
                         </SheetHeader>
-                        <nav className="mt-6 text-center text-lg space-y-4">
+                        <nav className="mt-6 text-center text-lg --space-y-4">
                             {NavLinks.map((link) => (
-                                <Link key={link.key} href={link.link}
-                                      className="block">{link.text}</Link>
+                                <Link key={link.key} href={link.link} className="block py-3 border-b" onClick={() => setIsSheetOpen(false)}>
+                                    {link.text}
+                                </Link>
                             ))}
                         </nav>
                     </SheetContent>
                 </Sheet>
+
             </div>
         </>
     );

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-export default function GhostSignup({id='ghost-signup-form'}: {id: string}) {
+export default function GhostSignup({id='ghost-signup-issue5'}: {id: string}) {
     useEffect(() => {
         // Create the script element dynamically
         const script = document.createElement("script");
@@ -10,10 +10,12 @@ export default function GhostSignup({id='ghost-signup-form'}: {id: string}) {
         script.setAttribute("data-button-text-color", "#FFFFFF");
         script.setAttribute("data-site", "https://xrp-healthcare.ghost.io/");
         script.setAttribute("data-locale", "en");
+        script.setAttribute("data-label-1", "XRPH Magazine");
+        script.setAttribute("data-label-2", "ISSUE 5");
         script.async = true;
 
         // Append to the container div
-        const container = document.getElementById("ghost-signup-form");
+        const container = document.getElementById("ghost-signup-issue5");
         if (container) {
             container.appendChild(script);
         }

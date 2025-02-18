@@ -18,12 +18,12 @@ const logos = [
     {name: "XRP Healthcare Africa logo white vertical", imgSrc: "/xrph-logos/logo-v-dark.png"},
 ];
 import {FixText} from "@/components/FixText";
-import SEO from "@/components/SEO";
+import HeadTag from "@/components/HeadTag";
 import React from "react";
 export default function MediaCenter() {
     return (
         <>
-            <SEO title="Media Center" canonical="https://www.xrphealthcare.ai/media-center"/>
+            <HeadTag title="Media Center" canonical="https://www.xrphealthcare.ai/media-center"/>
             <Placeholder title={'Media Center'} key={'media'} description={''}/>
             <div className="pb-20 pt-14 px-6">
                 <div className="container mx-auto">

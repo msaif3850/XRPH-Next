@@ -1,14 +1,12 @@
-'use client'
+//'use client'
 import Placeholder from "@/components/layout/Placeholder";
 import {FaEnvelope} from "react-icons/fa6";
 import {SocialLinks} from "@/variables";
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
-import ThemeLogo from "@/components/layout/ThemeLogo";
-import GhostSignup from "@/components/layout/GhostSignup";
-import SEO from "@/components/SEO";
-import React from "react";
+import Logo from "@/components/layout/Logo";
 
+import React from "react";
 const emails = [
     {
         mailto: "mailto:support@xrphealthcare.com",
@@ -18,16 +16,25 @@ const emails = [
     {mailto: "mailto:info@xrphealthcare.com", title: "General", prefix: "info"},
     {mailto: "mailto:press@xrphealthcare.com", title: "Media", prefix: "press"},
 ];
+import { Metadata } from "next";
+
+import ClientSignup from "@/components/layout/ClientSignup";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "Links",
+        description: "Contact XRP Healthcare built on the XRP Ledger, enhances access with a US Prescription Card and expands African healthcare via AI-driven acquisitions.",
+        alternates: { canonical: "https://www.xrphealthcare.ai/contact" },
+    };
+};
 export default function Contact() {
     return (
         <>
-            <SEO title="Links" canonical="https://www.xrphealthcare.ai/contact"/>
             <Placeholder title={'Contact Us'} key={'contact'} description={''}/>
             <div className=" mx-auto px-10 lg:px-40" id="contact">
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col items-center text-center space-y-5">
                         <div className="flex flex-col justify-center items-center gap-y-1">
-                            <ThemeLogo
+                            <Logo
                                 lightLogo="/logo.png"
                                 darkLogo="/logo-dark.png"
                                 width={400}
@@ -72,7 +79,7 @@ export default function Contact() {
                         {/* Subscription Form */}
                         <div className="mt-6">
                             <h2 className="text-lg font-semibold mb-2">Subscribe to our newsletter:</h2>
-                            <GhostSignup id={'ghost-signup-form'}/>
+                            <ClientSignup/>
                         </div>
                     </div>
                 </div>

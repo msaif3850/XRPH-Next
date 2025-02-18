@@ -2,8 +2,9 @@
 import {motion, useScroll, useTransform} from 'framer-motion';
 import {FaCircle, FaCheckCircle, FaCheckDouble} from 'react-icons/fa';
 import {useRef} from 'react';
+import {FixText} from "@/components/FixText";
 
-function fixText(text: string) {
+/*function fixText(text: string) {
     return (
         <>
             {text.split("").map((char, i) =>
@@ -15,7 +16,7 @@ function fixText(text: string) {
             )}
         </>
     );
-}
+}*/
 
 const milestones = [
     {
@@ -28,16 +29,16 @@ const milestones = [
                     {text: 'Encryption layer implemented to ensure user data protection', checked: true},
                     {text: '1.2M XRPH distributed as staking rewards', checked: false},
                 ].map((item, i) => (
-                    <li key={i} className="flex items-center">
+                    <li key={i} className="flex items-start">
                         <div>
                             {item.checked ? (
-                                <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
+                                <FaCheckDouble className="text-xs text-purple-500 mr-2 mt-1.5"/>
                             ) : (
-                                <FaCircle className="text-xs mr-2"/>
+                                <FaCircle className="text-xs mr-2 mt-1.5"/>
                             )}
                         </div>
                         <div>
-                            {fixText(item.text)}
+                            {FixText(item.text)}
                         </div>
                     </li>
                 ))}
@@ -66,16 +67,16 @@ const milestones = [
                     {text: '700K XRPH distributed as staking rewards in March', checked: false},
                     {text: '870K XRPH distributed as staking rewards in April', checked: false},
                 ].map((item, i) => (
-                    <li key={i} className="flex items-center">
+                    <li key={i} className="flex items-start">
                         <div>
                             {item.checked ? (
-                                <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
+                                <FaCheckDouble className="text-xs text-purple-500 mr-2 mt-1.5"/>
                             ) : (
-                                <FaCircle className="text-xs mr-2"/>
+                                <FaCircle className="text-xs mr-2 mt-1.5"/>
                             )}
                         </div>
                         <div>
-                            {fixText(item.text)}
+                            {FixText(item.text)}
                         </div>
                     </li>
                 ))}
@@ -105,16 +106,16 @@ const milestones = [
                     {text: "1.1M XRPH distributed as staking rewards in June", checked: false},
 
                 ].map((item, i) => (
-                    <li key={i} className="flex items-center">
+                    <li key={i} className="flex items-start">
                         <div>
                             {item.checked ? (
-                                <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
+                                <FaCheckDouble className="text-xs text-purple-500 mr-2 mt-1.5"/>
                             ) : (
-                                <FaCircle className="text-xs mr-2"/>
+                                <FaCircle className="text-xs mr-2 mt-1.5"/>
                             )}
                         </div>
                         <div>
-                            {fixText(item.text)}
+                            {FixText(item.text)}
                         </div>
                     </li>
                 ))}
@@ -137,16 +138,16 @@ const milestones = [
                     {text: "285K XRPH distributed as staking rewards in July", checked: false},
 
                 ].map((item, i) => (
-                    <li key={i} className="flex items-center">
+                    <li key={i} className="flex items-start">
                         <div>
                             {item.checked ? (
-                                <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
+                                <FaCheckDouble className="text-xs text-purple-500 mr-2 mt-1.5"/>
                             ) : (
-                                <FaCircle className="text-xs mr-2"/>
+                                <FaCircle className="text-xs mr-2 mt-1.5"/>
                             )}
                         </div>
                         <div>
-                            {fixText(item.text)}
+                            {FixText(item.text)}
                         </div>
                     </li>
                 ))}
@@ -173,16 +174,16 @@ const milestones = [
                         checked: false
                     },
                 ].map((item, i) => (
-                    <li key={i} className="flex items-center">
+                    <li key={i} className="flex items-start">
                         <div>
                             {item.checked ? (
-                                <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
+                                <FaCheckDouble className="text-xs text-purple-500 mr-2 mt-1.5"/>
                             ) : (
-                                <FaCircle className="text-xs mr-2"/>
+                                <FaCircle className="text-xs mr-2 mt-1.5"/>
                             )}
                         </div>
                         <div>
-                            {fixText(item.text)}
+                            {FixText(item.text)}
                         </div>
                     </li>
                 ))}
@@ -208,16 +209,16 @@ const milestones = [
                         checked: false
                     },
                 ].map((item, i) => (
-                    <li key={i} className="flex items-center">
+                    <li key={i} className="flex items-start">
                         <div>
                             {item.checked ? (
-                                <FaCheckDouble className="text-xs text-purple-500 mr-2"/>
+                                <FaCheckDouble className="text-xs text-purple-500 mr-2 mt-1.5"/>
                             ) : (
-                                <FaCircle className="text-xs mr-2"/>
+                                <FaCircle className="text-xs mr-2 mt-1.5"/>
                             )}
                         </div>
                         <div>
-                            {fixText(item.text)}
+                            {FixText(item.text)}
                         </div>
                     </li>
                 ))}
@@ -235,19 +236,20 @@ export default function RoadmapTimeline() {
     return (
         <>
             <div ref={timelineRef} className="relative h-full min-h-screen">
-                <motion.div className="absolute md:left-1/2 sm:left-0 w-1 h-full -translate-x-1/2"
+                <motion.div className="absolute md:left-1/2 sm:left-0 w-1 h-full -translate-x-1/2 "
                             style={{backgroundColor: lineColor}}/>
                 {milestones.map((milestone, index) => (
                     <motion.div
                         key={index}
                         initial={{opacity: 0, y: 20}}
                         whileInView={{opacity: 1, y: 0}}
-                        viewport={{once: true, margin: '0px 0px -100px 0px'}}
+                        viewport={{once: false, margin: '0px 0px -100px 0px'}}
                         transition={{duration: 0.5, delay: index * 0.15}}
-                        className={`relative mb-12 flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
+                        className={`relative mb-12 flex w-full items-center ${index % 2 === 0 ? 'justify-start' : 'justify-start sm:justify-end'}`}
                     >
                         <div
-                            className={`z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-gray-800 ring-4 ${milestone.completed ? 'ring-haraa/30' : 'ring-jamni/20'} shadow-lg absolute md:left-1/2 sm:left-0 -translate-x-6`}>
+                            className={`z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white dark:bg-gray-800 ring-4 
+                            ${milestone.completed ? 'ring-haraa/30' : 'ring-jamni/20'} shadow-lg absolute md:left-1/2 sm:left-0 -translate-x-6`}>
                             {milestone.completed ? <FaCheckCircle className="h-6 w-6 text-haraa"/> :
                                 <FaCircle className="h-6 w-6 text-jamni dark:text-purple-400"/>}
                         </div>
@@ -255,7 +257,7 @@ export default function RoadmapTimeline() {
                             className={`w-[90%] ml-auto md:ml-0 rounded-xl bg-white/90 dark:bg-gray-800/90 md:p-6 p-4 shadow-xl backdrop-blur-sm sm:w-[calc(50%-6rem)]  ${index % 2 === 0 ? 'sm:mr-16' : 'sm:ml-16'} transition-all hover:shadow-2xl hover:scale-[1.02] dark:hover:bg-gray-700/90`}>
                             <div
                                 className="flex items-center gap-2 text-2xl font-semibold text-purple-600 dark:text-purple-300">
-                                <span>{fixText(milestone.date)}</span>
+                                <span>{FixText(milestone.date)}</span>
                                 {milestone.completed ? <span
                                         className="rounded-full bg-green-100 dark:bg-green-900/30 px-2 py-1 text-xs text-green-700 dark:text-green-400">Completed</span> :
                                     <span
@@ -269,10 +271,12 @@ export default function RoadmapTimeline() {
             <div className="">
                 <h3 className="text-2xl">Staking Rewards and Token Supply:</h3>
                 <p>
-                    To date, XRP Healthcare has distributed 2.{fixText('4')}M XRPH in staking rewards, with an additional 6.9M XRPH
+                    To date, XRP Healthcare has distributed 2.{FixText('4')}M XRPH in staking rewards, with an
+                    additional 6.9M XRPH
                     distributed over the course of this roadmap, culminating in 9.3M XRPH rewards provided to our
                     community by July 2025.
-                    <br/><br/>To ensure the long{fixText('-')}term sustainability of XRP Healthcare and to preserve the value of XRPH
+                    <br/><br/>To ensure the long{FixText('-')}term sustainability of XRP Healthcare and to preserve the
+                    value of XRPH
                     tokens, the staking facility has now been discontinued. This strategic decision protects the finite
                     supply of tokens and aligns with our commitment to maintaining the token’s integrity. <br/><br/>
                 </p>
@@ -280,7 +284,7 @@ export default function RoadmapTimeline() {
                 <p>The XRPH token is a scarce asset, with only 100 million tokens ever created. The XRPH account has
                     been blackholed, ensuring that no additional tokens can ever be minted. This guarantees the token’s
                     limited supply and reinforces its value as a deflationary digital asset.
-                    Our focus remains on building trust and delivering long-term value to our ecosystem, ensuring that
+                    Our focus remains on building trust and delivering long{FixText('-')}term value to our ecosystem, ensuring that
                     XRP Healthcare continues to grow while honoring the commitments made to our community.</p>
             </div>
         </>
