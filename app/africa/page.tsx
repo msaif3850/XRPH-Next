@@ -81,6 +81,7 @@ const AfricaPosts = [
 import {Metadata} from "next";
 import Logo from "@/components/layout/Logo";
 import {FixText} from "@/components/FixText";
+import {RiContactsLine} from "react-icons/ri";
 
 export const generateMetadata = (): Metadata => {
     return {
@@ -92,48 +93,76 @@ export const generateMetadata = (): Metadata => {
 export default function Africa() {
     return (
         <>
-            <div className="px-6 py-24 sm:py-16 lg:px-8">
-                <div className="mx-auto max-w-7xl text-center">
-                    <Image src="/africa/xrph-africa-top.webp" alt={'XRP Healthcare Africa'} width={1500} height={1200}/>
-                    <p className="text-xl mt-2">XRP Healthcare is making significant advancements in Africa, concentrating
-                        efforts in Uganda to transform the private healthcare sector through mergers, acquisitions, and
-                        blockchain technology. Follow our progress here:</p>
+            <div className="px-6">
+                <div className="py-24 sm:py-16 lg:px-8">
+                    <div className="mx-auto max-w-7xl text-center">
+                        <Image src="/africa/xrph-africa-top.webp" alt={'XRP Healthcare Africa'} width={1500}
+                               height={1200}/>
+                        <p className="text-xl mt-2">XRP Healthcare is making significant advancements in Africa,
+                            concentrating
+                            efforts in Uganda to transform the private healthcare sector through mergers, acquisitions,
+                            and
+                            blockchain technology. Follow our progress here:</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="bg-map dark:bg-waves-dark bg-fixed bg-center bg-cover  py-20">
-                <div className="max-w-screen-xl mx-auto px-6">
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
-                        {AfricaPosts.map((post, index) => (
-                            <Link href={post.link} key={index + 1} title={post.title} target={'_blank'}>
-                                <div className="text-center group">
-                                    <Card className="rounded-none border-0">
-                                        <div className="dark:border-gray-700 group-hover:border-b-jamni border-b     relative overflow-hidden">
-                                            <Logo lightLogo={post.img} darkLogo={post.imgDark} width={1500} height={1103}
-                                                  className="group-hover:scale-105 duration-300 transition-all"/>
-                                            {/*<Image src={post.img} alt={post.img_alt} width={1500} height={1103} className="group-hover:scale-105 duration-300 transition-all"/>*/}
-                                            {/*<Image src={'/icon.png'} alt={'icon'} height={50} width={50} className="absolute  group-hover:scale-95 duration-300 transition-all"/>*/}
-                                        </div>
-                                        <CardHeader>
-                                            <CardTitle
-                                                className="line-clamp-2 h-[3.5rem] text-lg/normal overflow-hidden">{FixText(post.title)}</CardTitle>
-                                            <CardDescription
-                                                className="line-clamp-2">{FixText(post.paragraph)}</CardDescription>
-                                        </CardHeader>
-                                        <CardFooter>
+                <div className="bg-map dark:bg-waves-dark bg-fixed bg-center bg-cover  py-20">
+                    <div className="max-w-screen-xl mx-auto">
+                        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+                            {AfricaPosts.map((post, index) => (
+                                <Link href={post.link} key={index + 1} title={post.title} target={'_blank'}>
+                                    <div className="text-center group">
+                                        <Card className="rounded-none border-0">
                                             <div
-                                                className="w-[160px] mx-auto rounded-full p-2 bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa">
-                                                <div
-                                                    className="text-center font-bold flex items-center justify-between text-white px-3">
-                                                    Read More <FaAngleRight
-                                                    className="group-hover:translate-x-2 duration-300 transition-all"/>
-                                                </div>
+                                                className="dark:border-gray-700 group-hover:border-b-jamni border-b     relative overflow-hidden">
+                                                <Logo lightLogo={post.img} darkLogo={post.imgDark} width={1500}
+                                                      height={1103}
+                                                      className="group-hover:scale-105 duration-300 transition-all"/>
+                                                {/*<Image src={post.img} alt={post.img_alt} width={1500} height={1103} className="group-hover:scale-105 duration-300 transition-all"/>*/}
+                                                {/*<Image src={'/icon.png'} alt={'icon'} height={50} width={50} className="absolute  group-hover:scale-95 duration-300 transition-all"/>*/}
                                             </div>
-                                        </CardFooter>
-                                    </Card>
+                                            <CardHeader>
+                                                <CardTitle
+                                                    className="line-clamp-2 h-[3.5rem] text-lg/normal overflow-hidden">{FixText(post.title)}</CardTitle>
+                                                <CardDescription
+                                                    className="line-clamp-2">{FixText(post.paragraph)}</CardDescription>
+                                            </CardHeader>
+                                            <CardFooter>
+                                                <div
+                                                    className="w-[160px] mx-auto rounded-full p-2 bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa">
+                                                    <div
+                                                        className="text-center font-bold flex items-center justify-between text-white px-3">
+                                                        Read More <FaAngleRight
+                                                        className="group-hover:translate-x-2 duration-300 transition-all"/>
+                                                    </div>
+                                                </div>
+                                            </CardFooter>
+                                        </Card>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <div className="max-w-full mx-auto pt-20">
+                    <h2 className="text-jamni text-4xl mb-2">About XRP Healthcare</h2>
+                    <p>XRP Healthcare is the first healthcare platform built on the XRPL, transforming global health
+                        with mergers, acquisitions, blockchain and AI.</p>
+                    <div className="lg:w-1/3 md:w-1/2 w-full mx-auto- mt-6">
+                        <h2 className="text-jamni text-4xl mb-2">{FixText('Press & Media contact')}</h2>
+                        <Link href={'mailto:press@xrphealthcare.com'} target={'_blank'}>
+                            <div
+                                className="h-full flex items-center border-gray-200 dark:border-gray-700 border p-4 rounded-lg group shadow-lg hover:shadow-2xl dark:bg-gray-800">
+                                {/*<Image alt={"Press & Media contact"} width={64} height={64} className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src={'/icon.png'}/>*/}
+                                <RiContactsLine
+                                    className="flex-shrink-0 mr-4 ring-2 ring-gray-500 p-2 rounded-lg text-5xl text-gray-500 group-hover:text-jamni"/>
+
+                                <div className="flex-grow">
+                                    <h2 className="text-lg/normal font-medium group-hover:underline">{FixText('Press@xrphealthcare.com')}</h2>
+                                    <p className="text-gray-600">Hellen Mucheru</p>
                                 </div>
-                            </Link>
-                        ))}
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
