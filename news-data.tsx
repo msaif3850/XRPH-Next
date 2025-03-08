@@ -66,7 +66,7 @@ const NewsData = [
     {
         title: 'XRP Healthcare Magazine Unveils Groundbreaking AI Development in 4<sup>th</sup> Issue, Featuring Elon Musk',
         titleHmtl: 'XRP Healthcare Magazine Unveils Groundbreaking AI Development in <span class="sp-font">4</span><sup>th</sup> Issue, Featuring Elon Musk',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/09/n40932182/xrp-healthcare-magazine-unveils-groundbreaking-ai-development-in-4th-issue-featuring-elon-musk',
         imgClass: '',
         date: '2024-09-19 00:00:00',
@@ -141,7 +141,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Secures Major Media Partnership with Global Exhibition Titans',
-        img: '/news/indiatoday.webp',
+        img: '/news/indiatoday.png',
         link: 'https://www.indiatoday.in/pr-newswire?rkey=20240726EN70206&filter=4315',
         imgClass: '',
         date: '2024-07-26 00:00:00',
@@ -237,7 +237,7 @@ const NewsData = [
     },
     {
         title: 'After Just 18 Months, Is XRP Healthcare (XRPH) One of the Fastest Growing Companies on the Blockchain?',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/06/n39449504/after-just-18-months-is-xrp-healthcare-xrph-one-of-the-fastest-growing-companies-on-the-blockchain',
         imgClass: '',
         date: '2024-06-24 10:30:00',
@@ -260,7 +260,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Magazine Issue 3: Featuring Ugandan Innovator Peter Waiswa, NHS Collaborator ISANSYS, Ehlers-Danlos Society & Top 10 African Hospitals',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/06/n39349849/xrp-healthcare-magazine-issue-3-featuring-ugandan-innovator-peter-waiswa-nhs-collaborator-isansys-',
         imgClass: '',
         date: '2024-06-17 13:30:00',
@@ -356,7 +356,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Sponsors The Ehlers-Danlos Society, with Vital Support via its Prescription Savings Card',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/05/n38864117/xrp-healthcare-sponsors-the-ehlers-danlos-society-with-vital-support-via-its-prescription-savings-',
         imgClass: '',
         date: '2024-05-16 01:30:00',
@@ -409,7 +409,7 @@ const NewsData = [
     },
     {
         title: 'Renowned Industry Expert Peter Kyobe Waiswa Joins XRP Healthcare to transform Private Healthcare in Uganda',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/04/n38263299/renowned-industry-expert-peter-kyobe-waiswa-joins-xrp-healthcare-to-transform-private-healthcare-i',
         imgClass: '', date: '2024-04-16 10:30:00',
         description: ' XRP Healthcare, a UAE<span class="sp-font">-</span>based M<span class="sp-font">&</span>A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
@@ -430,7 +430,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Unveils Revolutionary Swap Facility in Open-Source XRPH Wallet, Encouraging Autonomy Across XRPL Projects',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/04/n38176372/xrp-healthcare-unveils-revolutionary-swap-facility-in-open-source-xrph-wallet-encouraging-autonomy',
         imgClass: '', date: '2024-04-10 00:00:00',
         description: ' XRP Healthcare, an innovative web3 healthcare solution, is proud to introduce a groundbreaking swap facility ...'
@@ -459,7 +459,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare move forward as one entity for African M&A venture',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/03/n37975447/xrp-healthcare-move-forward-as-one-entity-for-african-m-a-venture',
         imgClass: '', date: '2024-03-28 01:30:00',
         description: ' In a bold move to address the challenges of the highly fragmented African healthcare sector, XRP Healthcare is excited to announce the incorporation of XRP Healthcare Africa, in Uganda...'
@@ -480,7 +480,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare move forward as one entity for African M&A venture',
-        img: '/news/ceo.ca.webp',
+        img: '/news/ceo.ca.png',
         link: 'https://ceo.ca/@newswire/xrp-healthcare-move-forward-as-one-entity-for-african',
         imgClass: 'bg-danger p-2', date: '2024-03-28 00:00:00',
         description: ' In a bold move to address the challenges of the highly fragmented African healthcare sector, XRP Healthcare is excited to announce the incorporation of XRP Healthcare Africa, in Uganda...'
@@ -531,7 +531,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Partner with NHS collaborator Isansys Lifecare to Revolutionize Healthcare Services in Uganda',
-        img: '/news/ceo.ca.webp',
+        img: '/news/ceo.ca.png',
         link: 'https://ceo.ca/@newswire/xrp-healthcare-partner-with-nhs-collaborator-isansys',
         imgClass: 'bg-danger p-2', date: '2024-03-25 10:30:00',
         description: ' XRP Healthcare is thrilled to announce a strategic partnership with Isansys Lifecare, a leading innovator in the digital healthcare...'
@@ -580,7 +580,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Announces Strategic Partnership with Expogroup to Expand Presence in Africa',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/03/n37864074/xrp-healthcare-announces-strategic-partnership-with-expogroup-to-expand-presence-in-africa',
         imgClass: '', date: '2024-03-21 04:30:00',
         description: ' XRP Healthcare, an innovative force on a mission to transform healthcare through mergers, acquisitions and blockchain...'
@@ -608,7 +608,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare release 2nd issue of its highly anticipated Magazine',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/03/n37815396/xrp-healthcare-release-2nd-issue-of-its-highly-anticipated-magazine',
         imgClass: '', date: '2024-03-19 06:11:00',
         description: 'XRP Healthcare Magazine proudly announces the release of its highly anticipated 2nd issue, delving into ...'
@@ -672,7 +672,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare Appoints Digital Healthcare Evangelist and Isansys Founder Keith Errey as Strategic Advisor',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/23/12/n36343152/xrp-healthcare-appoints-digital-healthcare-evangelist-and-isansys-founder-keith-errey-as-strategic',
         imgClass: '',
         date: '2023-12-21 08:55:00',
@@ -814,7 +814,7 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare List on MEXC strategically positioning itself for imminent Crypto Bull Run',
-        img: '/news/logos_5.jpg',
+        img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/amp/content/34719517',
         imgClass: '', date: '2023-10-19 06:00:00',
         description: 'XRP Healthcare &lbbrk;XRPH&rbbrk; The first Pharma and Healthcare Platform to be built on the XRP Ledger, an innovative ...'

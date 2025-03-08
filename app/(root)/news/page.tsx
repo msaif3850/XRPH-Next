@@ -6,13 +6,18 @@ import Link from "next/link";
 import Image from "next/image";
 import {DayOfDate, MonthOfDate} from "@/variables";
 import {FixText} from "@/components/FixText";
-import HeadTag from "@/components/HeadTag";
 import React from "react";
-
+import { Metadata } from "next";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "News",
+        description: "Stay updated with the latest news, insights, and developments from XRP Healthcare. Explore breaking stories, industry trends, and exclusive updates on our journey in revolutionizing healthcare with blockchain technology.",
+        alternates: { canonical: "https://www.xrphealthcare.ai/news" },
+    };
+};
 export default function News() {
     return (
         <>
-            <HeadTag title="News" canonical="https://www.xrphealthcare.ai/news"/>
             <PageTitleImage image={'/xrph-logos/news.png'} imageDark={'/xrph-logos/news-dark.png'} alt={'XRPHealthcare news'}/>
             <div className="px-6">
                 <h2 className="text-jamni text-2xl">As featured in:</h2>
@@ -27,13 +32,13 @@ export default function News() {
                             <Link href={post.link} key={index + 1} target="_blank">
                                 <div className="group">
                                     <div className="group-hover:border-t-jamni h-72 relative ">
-                                        <div className={`min-h-32 flex items-center bg-gray-100 dark:bg-gray-900 p-2 ${post.imgClass}`}>
+                                        <div className={`min-h-32 flex items-center bg-gray-100 dark:bg-gray-800 p-2 ${post.imgClass}`}>
                                             <Image
                                                 src={post.img}
                                                 alt={post.title}
                                                 width={250}
                                                 height={150}
-                                                className="group-hover:scale-95 duration-300 transition-all mx-auto"
+                                                className="group-hover:scale-95 duration-300 transition-all mx-auto "
                                             />
                                         </div>
                                         <div

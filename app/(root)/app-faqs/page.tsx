@@ -1,4 +1,3 @@
-//'use client'
 import Placeholder from "@/components/layout/Placeholder";
 import Link from "next/link";
 import React from "react";
@@ -57,7 +56,7 @@ import { Metadata } from "next";
 export const generateMetadata = (): Metadata => {
     return {
         title: "App FAQs",
-        description: "Frequently Asked Questions for the XRPH Mobile Wallet App built on the XRP Ledger, enhances access with a US Prescription Card and expands African healthcare via AI-driven acquisitions.",
+        description: "Got questions about the XRPH AI App or XRPH Wallet built on the XRP Ledger? Explore our App FAQs to learn about features, installation, troubleshooting, and more.",
         alternates: { canonical: "https://www.xrphealthcare.ai/app-faqs" },
     };
 };

@@ -11,10 +11,18 @@ import {
 import Image from "next/image";
 import MyButton from "@/components/layout/MyButton";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
-import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
-import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
 import HeadTag from "@/components/HeadTag";
-
+import {FixText} from "@/components/FixText";
+import AppiOS from "@/components/layout/AppiOS";
+import AppAndroid from "@/components/layout/AppAndroid";
+import { Metadata } from "next";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "XRPH Prescription Savings Card & App",
+        description: "Save on prescriptions with the XRPH Prescription Savings Card & App. Get exclusive discounts, compare prices, and access affordable medications easily. Start saving today!",
+        alternates: { canonical: "https://www.xrphealthcare.ai/XRPHSavingsCard" },
+    };
+};
 export default function XRPHSavingsCard() {
     return (
         <>
@@ -22,7 +30,7 @@ export default function XRPHSavingsCard() {
             <div className="px-6 py-24 sm:py-22 lg:px-8">
                 <div className="mx-auto max-w-5xl text-center">
                     <h1 className="text-3xl lg:text-5xl lg:leading-[1.2] -text-5xl font-semibold tracking-tight text-gradient ">XRPH Prescription
-                        Savings Card <span className="font-sans">&</span> App</h1>
+                        Savings Card {FixText('&')} App</h1>
                 </div>
             </div>
             <div className="flex flex-col md:flex-row gap-8 items-center px-6">
@@ -85,8 +93,10 @@ export default function XRPHSavingsCard() {
                             </li>
                         </ul>
                         <div className="flex justify-center md:justify-start gap-4 mt-6">
-                            <AppleDownloadButton link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
-                            <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                            <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
+                            <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                            {/*<AppleDownloadButton link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
+                            <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>*/}
                         </div>
                     </div>
                 </div>
@@ -118,7 +128,7 @@ export default function XRPHSavingsCard() {
                         Introducing Brochure
                     </h6>
                     <h1 className="font-bold text-4xl mb-4">Affordable Healthcare</h1>
-                    <p className="text-2xl mb-6">
+                    <p className="text-lg mb-6">
                         At XRP Healthcare, we believe everyone deserves access to affordable
                         medication. Our Prescription Savings Card offers significant discounts
                         on medication and prescription drugs, helping you save money and manage
@@ -169,7 +179,7 @@ export default function XRPHSavingsCard() {
                         Introducing Brochure
                     </h6>
                     <h1 className="font-bold text-4xl mb-4">Affordable Healthcare</h1>
-                    <p className="text-2xl mb-6">
+                    <p className="text-lg mb-6">
                         <b>NOTE: </b> When picking up your prescription or medication from any one of the 68,000
                         pharmacies
                         we have partnered with, make sure to give them your unique ID number located on image of your

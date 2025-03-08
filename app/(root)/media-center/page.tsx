@@ -15,15 +15,21 @@ const logos = [
     {name: "XRP Healthcare Africa logo black horizontal", imgSrc: "/xrph-logos/africa.png"},
     {name: "XRP Healthcare Africa logo white horizontal", imgSrc: "/xrph-logos/africa-dark.png"},
     {name: "XRP Healthcare Africa logo black vertical", imgSrc: "/xrph-logos/africa-v.png"},
-    {name: "XRP Healthcare Africa logo white vertical", imgSrc: "/xrph-logos/logo-v-dark.png"},
+    {name: "XRP Healthcare Africa logo white vertical", imgSrc: "/xrph-logos/africa-v-dark.png"},
 ];
 import {FixText} from "@/components/FixText";
-import HeadTag from "@/components/HeadTag";
 import React from "react";
+import { Metadata } from "next";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "Media Center",
+        description: "Stay updated with the latest news, press releases, and media coverage about XRP Healthcare. Explore our Media Center for insights and updates.",
+        alternates: { canonical: "https://www.xrphealthcare.ai/media-center" },
+    };
+};
 export default function MediaCenter() {
     return (
         <>
-            <HeadTag title="Media Center" canonical="https://www.xrphealthcare.ai/media-center"/>
             <Placeholder title={'Media Center'} key={'media'} description={''}/>
             <div className="pb-20 pt-14 px-6">
                 <div className="container mx-auto">
@@ -88,7 +94,7 @@ export default function MediaCenter() {
                                         <div className="h-auto flex items-center ">
                                             <Image src={post.img} alt={post.title}
                                                    width={250} height={150}
-                                                   className="group-hover:scale-105 duration-300 transition-all w-full mx-auto"
+                                                   className="font-sans group-hover:scale-105 duration-300 transition-all w-full mx-auto"
                                             />
                                         </div>
                                         <div

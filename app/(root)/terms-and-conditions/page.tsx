@@ -1,19 +1,25 @@
 import Placeholder from "@/components/layout/Placeholder";
 import Link from "next/link";
-import HeadTag from "@/components/HeadTag";
 import React from "react";
+import { Metadata } from "next";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "Terms and Conditions",
+        description: "Review the Terms and Conditions of XRP Healthcare to understand our policies, user responsibilities, and legal agreements for using our services.",
+        alternates: { canonical: "https://www.xrphealthcare.ai/terms-and-conditions" },
+    };
+};
 
 export default function TermsAndConditions() {
     return (
         <>
-            <HeadTag title="Terms and Conditions" canonical="https://www.xrphealthcare.ai/terms-and-conditions"/>
             <Placeholder title={'XRPH Terms and Conditions'} key={'terms'} description={''}/>
             <div className="px-6 mx-auto max-w-screen-lg">
                 <div className="">
                     <p><b>Welcome to www.xrphealthcare.ai<span className="font-sans">!</span></b><br/>
                         These terms and conditions outline the rules and regulations for the use of XRP
                         Healthcare<span className="font-sans">&#39;</span>s
-                        Website, located at <Link href={'/'}>https<span className="font-mono">://</span>www.xrphealthcare.ai</Link>.
+                        Website, located at <Link href={'/public'}>https<span className="font-mono">://</span>www.xrphealthcare.ai</Link>.
                         By accessing this website, we assume you accept these terms and conditions. Do not continue
                         to use
                         www.xrphealthcare.ai if you do not agree to take all of the terms and conditions stated on

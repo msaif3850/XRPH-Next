@@ -1,12 +1,17 @@
 import Placeholder from "@/components/layout/Placeholder";
-import HeadTag from "@/components/HeadTag";
 import React from "react";
-
+import { Metadata } from "next";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "Privacy Policy",
+        description: "Read our Privacy Policy to understand how XRP Healthcare collects, uses, and protects your personal information. Your privacy is our priority.",
+        alternates: { canonical: "https://www.xrphealthcare.ai/privacy-policy" },
+    };
+};
 
 export default function PrivacyPolicyPage() {
     return (
         <>
-            <HeadTag title="Privacy Policy" canonical="https://www.xrphealthcare.ai/privacy-policy"/>
             <Placeholder title={'XRPH Privacy Policy'} key={'faq'} description={''}/>
             <div className="px-6 mx-auto max-w-screen-lg">
                 <div className="">

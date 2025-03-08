@@ -86,7 +86,7 @@ import {RiContactsLine} from "react-icons/ri";
 export const generateMetadata = (): Metadata => {
     return {
         title: "Africa",
-        description: "XRP Healthcare africa, XRP Healthcare built on the XRP Ledger, enhances access with a US Prescription Card and expands African healthcare via AI-driven acquisitions.",
+        description: "XRP Healthcare africa, Discover XRPH Healthcare’s impact in Africa. Learn about our initiatives, partnerships, and efforts to enhance healthcare accessibility and innovation across the continent.",
         alternates: {canonical: "https://www.xrphealthcare.ai/africa"},
     };
 };

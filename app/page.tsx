@@ -14,13 +14,13 @@ import {
 } from "@/components/ui/dialog";
 import {FaPlayCircle} from "react-icons/fa";
 import React from "react";
-import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
-import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
 import Logo from "@/components/layout/Logo";
 import {FixText} from "@/components/FixText";
 import ElfsightWidget from "@/components/layout/ElfsightWidget";
 import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
 import GhostSignupISSUE5 from "@/components/layout/GhostSignupISSUE5";
+import AppiOS from "@/components/layout/AppiOS";
+import AppAndroid from "@/components/layout/AppAndroid";
 
 
 export default function Home() {
@@ -34,15 +34,17 @@ export default function Home() {
                         {/* Left Column */}
                         <div className="text-center w-full md:w-1/2 lg:w-2/5">
                             <h1 className="text-4xl font-extrabold mb-0">XRPH AI APP</h1>
-                            <h4 className="text-xl lg:text-2xl font-light px-4 md:px-0">
-                                Holistic <span className="font-sans font-normal">&amp;</span> Traditional
+                            <h4 className="text-xl lg:text-2xl font-normal px-4 md:px-0">
+                                Holistic {FixText('&')} Traditional
                                 Medical Insights, Powered by AI
                             </h4>
                             {/* App Store Buttons (Hidden on Mobile) */}
                             <div className="hidden md:flex justify-center gap-3 mt-4">
-                                <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
+                                <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                {/*<AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
                                 <GoogleDownloadButton
-                                    link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                    link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>*/}
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 lg:w-2/5 text-center">
@@ -60,9 +62,10 @@ export default function Home() {
 
                             {/* App Store Buttons (Visible on Mobile) */}
                             <div className="md:hidden flex justify-center gap-4 mt-4">
-                                <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                                <GoogleDownloadButton
-                                    link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
+                                <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                {/*<AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>*/}
                             </div>
                             {/* Horizontal Separator (Visible on Mobile) */}
                             <div className="md:hidden mt-6">
@@ -122,7 +125,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className="px-6 py-20 lg:px-28">
+            <div className="px-6 py-20 lg:px-28 container mx-auto">
                 <div className="mx-auto max-w-7xl text-center mb-8 ">
                     <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center text-center">
                         Introducing the <Logo
@@ -200,9 +203,8 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row gap-4 items-center mt-8">
                     <div className="w-full md:w-5/12 lg:pl-7 order-2 sm:order-1">
                         <div className="flex justify-center md:justify-start gap-5">
-                            <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                            <GoogleDownloadButton
-                                link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                            <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
+                            <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                         </div>
                     </div>
                     <div className="w-full md:w-7/12 order-1 sm:order-2">
@@ -251,9 +253,8 @@ export default function Home() {
                             </div>
                             {/* App Store & Play Store Links */}
                             <div className="flex items-center justify-center gap-3 mt-6 md:mt-10">
-                                <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                                <GoogleDownloadButton
-                                    link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
+                                <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
                             </div>
                         </div>
                     </div>
@@ -366,7 +367,7 @@ export default function Home() {
                         </div>
                         <Dialog>
                             <DialogTrigger className="lg:w-1/2 w-full order-1 sm:order-2 mb-6 sm:mb-0">
-                                <Image className="object-cover object-center hover:scale-95 transition-all duration-200"
+                                <Image className="object-cover object-center hover:scale-95 transition-all duration-300"
                                        src={'/ai/projected-growth-of-AI-in-healthcare-2024-2030.webp'} width={'500'}
                                        height={'500'} alt={'Projected growth of AI in healthcare 2024-2030'}/>
                             </DialogTrigger>
@@ -476,7 +477,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="container pt-10 ">
+                <div className="container pt-10 mx-auto">
                     <div className="max-w-4xl mx-auto">
                         <ElfsightWidget/>
                     </div>

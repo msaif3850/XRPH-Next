@@ -8,6 +8,9 @@ import {SocialLinks} from "@/variables";
 import BackToTopButton from "@/components/layout/BackToTopButton";
 import Logo from "@/components/layout/Logo";
 import SecurityBadges from "@/components/layout/SecurityBadges";
+import React from "react";
+import GhostSignup from "@/components/layout/GhostSignup";
+import {FixText} from "@/components/FixText";
 
 /*import dynamic from "next/dynamic";
 const GhostSignup = dynamic(() => import("@/components/layout/GhostSignup"), { ssr: false });*/
@@ -15,7 +18,7 @@ export default function Footer() {
     return (
         <>
             <FooterLogos/>
-            <footer className="bg-footerbg dark:bg-transparent pt-12 pb-6 px-6 tracking-wide">
+            <footer className="bg-footerbg dark:bg-transparent pt-12 pb-6 px-6 tracking-wide container-fluid mx-auto">
                 <div className="max-w-screen-xl- mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-16 gap-8 items-start">
                         <div className="lg:flex lg:items-center">
@@ -75,14 +78,14 @@ export default function Footer() {
                             </ul>
                             {/* Adjusting signup form container */}
                             <div className="mt-6 flex justify-center">
-                                {/*<GhostSignup id={'ghost-signup-form-1'}/>*/}
+                                <GhostSignup id={'ghost-signup-form'}/>
                             </div>
                         </div>
                     </div>
                     <p className='text-gray-600 text-lg mt-10 text-center'>
-                        XRP HEALTHCARE L.L.C <span className="font-sans">|</span> License Number:
-                        2312867.01 <span className="font-sans">|</span> Dubai <span className="font-sans">|</span> ©
-                        Copyright {new Date().getFullYear()} <span className="font-sans">|</span> All Rights Reserved
+                        XRP HEALTHCARE L.L.C {FixText('|')} License Number:
+                        2312867.01 {FixText('|')} Dubai {FixText('|')} ©
+                        Copyright {new Date().getFullYear()} {FixText('|')} All Rights Reserved
                     </p>
                 </div>
             </footer>

@@ -5,15 +5,13 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 export function NewsSlider() {
     // Initialize the autoplay plugin
     const plugin = React.useRef(
-        Autoplay({ delay: 1000, stopOnInteraction: false }) // Adjust delay as needed
+        Autoplay({ delay: 3000, stopOnInteraction: false }) // Adjust delay as needed
     );
 
     return (
@@ -23,7 +21,7 @@ export function NewsSlider() {
                 loop: true,
             }}
             plugins={[plugin.current]}
-            className="w-full max-w-7xl mx-auto"
+            className="w-full max-w-screen mx-auto"
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
         >
@@ -42,8 +40,8 @@ export function NewsSlider() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            {/*<CarouselPrevious />
+            <CarouselNext />*/}
         </Carousel>
     );
 }

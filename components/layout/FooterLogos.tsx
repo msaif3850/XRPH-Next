@@ -25,11 +25,11 @@ const footerLogos = [
 export default function FooterLogos() {
     return (
         <div className="py-24 sm:pt-28 sm:pb-20">
-            <div className="mx-auto max-w-7xl px-6 sm:px-0">
+            <div className="mx-auto max-w-7xl-- px-6 container">
                 <div className="flex items-center justify-center">
                     <hr className="w-1/3 border-black dark:border-gray-400"/>
                 </div>
-                <div className="flex flex-wrap justify-center items-center mt-10 mx-auto">
+                <div className="flex flex-wrap justify-center items-center mt-10 mx-auto ">
                     {footerLogos.map((logo, index) => (
                         <div key={index} className={`group flex items-center overflow-hidden justify-center  bg-white dark:bg-transparent border border-gray-200 dark:border-gray-800 h-32 ${logo.width}`}>
                             {/*<Image src={logo.img} alt={logo.alt} width={180} height={80} className="object-cover w-full h-auto p-2"/>*/}

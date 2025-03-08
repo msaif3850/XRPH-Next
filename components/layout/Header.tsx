@@ -9,25 +9,22 @@ import {
 } from "@/components/ui/sheet";
 
 import {NavLinks, SocialLinks} from "@/variables"
-//import HeaderTopBar from "@/components/layout/HeaderTopBar";
 import ThemeToggleMobile from "@/components/layout/ThemeTogglerMobile";
 import Logo from "@/components/layout/Logo";
 import {SheetMenu} from "@/variables";
-import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-} from "@/components/ui/hover-card"
+
 import Image from "next/image";
-import AppleDownloadButton from "@/components/layout/AppleDownloadButton";
-import GoogleDownloadButton from "@/components/layout/GoogleDownloadButton";
-import {FaMobileAlt, FaBars} from "react-icons/fa";
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+
 import {usePathname} from "next/navigation";
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
+import QrImage from "@/components/layout/QrImage";
+import AppiOS from "@/components/layout/AppiOS";
+import AppAndroid from "@/components/layout/AppAndroid";
 
 
 export default function Header() {
@@ -64,65 +61,88 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="flex items-center gap-3">
-                    <HoverCard>
-                        <HoverCardTrigger>
-                            <FaMobileAlt
-                                className="cursor-pointer text-jamni2 bg-gray-200 dark:bg-gray-800 rounded p-1 text-2xl"/>
-                        </HoverCardTrigger>
-                        <HoverCardContent className="w-[380px]">
-                            <div className="text-center">
-                                <h2 className="text-base mb-2">
-                                    Scan to download the app
-                                </h2>
-                                <div>
-                                    <Image
-                                        src={"/XRPHWalletQRCode.svg"}
-                                        alt={"Download XRPH Wallet"}
-                                        width={200}
-                                        height={200}
-                                        className="w-1/2 mx-auto border p-2 bg-gradient-to-r from-haraa to-jamni"
-                                    />
-                                </div>
-                                <div className="my-4 relative">
-                                    <div className="absolute inset-0 flex items-center">
-                                        <div className="w-full border-t border-2 border-jamni"></div>
-                                    </div>
-                                    <div className="relative flex justify-center">
-                                        <span className="bg-white dark:bg-black px-2 ">OR</span>
-                                    </div>
-                                </div>
-                                <div className="flex justify-center gap-1">
-                                    <AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                                    <GoogleDownloadButton
-                                        link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
-                                </div>
-                            </div>
-                        </HoverCardContent>
-                    </HoverCard>
+                    {/*<AppScanIcon/>*/}
                     <div className="hidden lg:block">
                         <DropdownMenu>
                             <DropdownMenuTrigger>
                                 <div
-                                    className="flex items-center justify-center gap-1 cursor-pointer border  border-gray-200 dark:border-gray-800 rounded-full px-2 py-1">
-                                    <FaBars className=""/>
+                                    className="flex items-center justify-center gap-1 cursor-pointer border bg-black border-gray-800 dark:border-gray-800 rounded-full px-2 py-0.5">
+                                    {/*<FaBars className=""/>*/}
                                     <Image src={'/icon.png'} alt={'XRPH'} width={'20'} height={'20'}/>
+                                    <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
+                                    </svg>
                                 </div>
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent className="right-0 absolute w-[300px] px-3 py-6">
-                                {/*<DropdownMenuLabel>XRP Healthcare</DropdownMenuLabel>*/}
-                                <div className="flex items-center justify-center mb-4">
-                                    <Logo lightLogo={'/xrph-logos/logo-v.png'} darkLogo={'/xrph-logos/logo-v-dark.png'}
-                                          width={190} height={100} className=""/>
-                                </div>
-                                {/*<DropdownMenuSeparator />*/}
+                            <DropdownMenuContent className="w-[400px] px-3 py-6">
+                                <Tabs defaultValue="xrph-ai" className="mb-2">
+                                    <TabsList className="w-full flex justify-center --bg-jamni/20 dark:bg-jamni/20 px-0">
+                                        <TabsTrigger
+                                            value="xrph-ai"
+                                            className="text-black dark:text-white w-1/2 py-1 text-md rounded-md transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-haraa data-[state=active]:to-jamni data-[state=active]:text-white data-[state=active]:shadow-xl"
+                                        >
+                                            XRPH AI App
+                                        </TabsTrigger>
+                                        <TabsTrigger
+                                            value="xrph-wallet"
+                                            className="text-black dark:text-white w-1/2 py-1 text-md rounded-md transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-haraa data-[state=active]:to-jamni data-[state=active]:text-white data-[state=active]:shadow-xl"
+                                        >
+                                            XRPH Wallet
+                                        </TabsTrigger>
+                                    </TabsList>
+                                    <TabsContent value="xrph-ai" className="pt-2 pb-1 bg-jamni/10 rounded-lg">
+                                        <div className="flex items-center justify-center mb-4">
+                                            <div className="text-center">
+                                                {/*<h2 className="text-base mb-2">Scan to download the app</h2>*/}
+                                                <div>
+                                                    <QrImage type={'ai'} height={150} width={150}/>
+                                                </div>
+                                                <div className="my-4 relative">
+                                                    <div className="absolute inset-0 flex items-center">
+                                                        <div className="w-full border-t border-2 border-jamni"></div>
+                                                    </div>
+                                                    <div className="relative flex justify-center text-sm">
+                                                        <span className="bg-white dark:bg-black px-2 ">Scan Above OR</span>
+                                                    </div>
+                                                </div>
+                                                <div className="flex flex-wrap justify-center gap-1">
+                                                    <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                                    <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </TabsContent>
+                                    <TabsContent value="xrph-wallet" className="pt-2 pb-1 bg-haraa/10 rounded-lg">
+                                        <div className="flex items-center justify-center mb-4">
+                                            <div className="text-center">
+                                                {/*<h2 className="text-base mb-2">Scan to download the app</h2>*/}
+                                                <div>
+                                                    <QrImage type={'ai'} height={150} width={150}/>
+                                                </div>
+                                                <div className="my-4 relative">
+                                                    <div className="absolute inset-0 flex items-center">
+                                                        <div className="w-full border-t border-2 border-jamni"></div>
+                                                    </div>
+                                                    <div className="relative flex justify-center text-sm">
+                                                        <span className="bg-white dark:bg-black px-2 ">Scan Above OR</span>
+                                                    </div>
+                                                </div>
+                                                <div className="flex flex-wrap justify-center gap-1">
+                                                    <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                                    <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </TabsContent>
+                                </Tabs>
                                 <ThemeToggleMobile/>
-                                {/*<DropdownMenuSeparator/>*/}
-                                <ul className="flex flex-wrap items-center justify-center gap-3 mt-4">
+                                <ul className="flex flex-wrap items-center justify-center gap-4 mt-4">
                                     {SocialLinks.map((social) => (
                                         <li key={social.key}>
                                             <Link href={social.link} target={'_blank'}>
                                                 <social.icon
-                                                    className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 text-xl  transition-all duration-300"/>
+                                                    className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 text-sm  transition-all duration-300"/>
                                             </Link>
                                         </li>
                                     ))}

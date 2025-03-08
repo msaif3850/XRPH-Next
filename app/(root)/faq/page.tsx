@@ -1,7 +1,14 @@
 import Placeholder from "@/components/layout/Placeholder";
 import Link from "next/link";
-import HeadTag from "@/components/HeadTag";
 import React from "react";
+import { Metadata } from "next";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "FAQs",
+        description: "Find answers to common questions about XRPH Healthcare, our services, partnerships, and more. Get the information you need in our comprehensive FAQ section.",
+        alternates: { canonical: "https://www.xrphealthcare.ai/faq" },
+    };
+};
 
 const faqs = [
     {
@@ -99,7 +106,6 @@ const faqs = [
 export default function FAQs() {
     return (
         <>
-            <HeadTag title="FAQ" canonical="https://www.xrphealthcare.ai/faq"/>
             <Placeholder title={'Frequently Asked Questions'} key={'faq'} description={''}/>
             <div className=" px-6 mx-auto max-w-screen-lg">
                 <div className="space-y-16 max-w-4xl">

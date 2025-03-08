@@ -1,4 +1,3 @@
-'use client';
 import Placeholder from "@/components/layout/Placeholder";
 import {TeamMembers} from "@/variables";
 import Link from "next/link";
@@ -14,13 +13,18 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog";
 import {FaAngleRight} from "react-icons/fa6";
-import HeadTag from "@/components/HeadTag";
-
+import { Metadata } from "next";
+export const generateMetadata = (): Metadata => {
+    return {
+        title: "Team",
+        description: "Meet the visionary team behind XRPH Healthcare. Learn about our experts, leaders, and innovators dedicated to transforming the future of healthcare and blockchain technology.",
+        alternates: { canonical: "https://www.xrphealthcare.ai/team" },
+    };
+};
 export default function Exchanges() {
 
     return (
         <>
-            <HeadTag title="Team" canonical="https://www.xrphealthcare.ai/team"/>
             <Placeholder title={'Meet Our Team'} key={'team'} description={''}/>
             <div className="pb-20 px-2">
                 <div className="max-w-6xl mx-auto">

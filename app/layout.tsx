@@ -7,21 +7,82 @@ import Footer from "@/components/layout/Footer";
 import localFont from 'next/font/local'
 import {ThemeProvider} from "@/components/theme-provider";
 
-
 const biennale = localFont({
     src: [
+        {
+            path: './fonts/biennale-black.otf',
+            weight: '900',
+            style: 'normal',
+        },
+        {
+            path: './fonts/biennale-blackit.otf',
+            weight: '900',
+            style: 'italic',
+        },
+        {
+            path: './fonts/biennale-bold.otf',
+            weight: '700',
+            style: 'normal',
+        },
+        {
+            path: './fonts/biennale-boldit.otf',
+            weight: '700',
+            style: 'italic',
+        },
+
+        {
+            path: './fonts/biennale-light.otf',
+            weight: '300',
+            style: 'normal',
+        },
+        {
+            path: './fonts/biennale-lightit.otf',
+            weight: '300',
+            style: 'italic',
+        },
+        {
+            path: './fonts/biennale-medium.otf',
+            weight: '500',
+            style: 'normal',
+        },
+        {
+            path: './fonts/biennale-mediumit.otf',
+            weight: '500',
+            style: 'italic',
+        },
         {
             path: './fonts/biennale-regular.otf',
             weight: '400',
             style: 'normal',
         },
         {
-            path: './fonts/biennale-semibold.otf',
+            path: './fonts/biennale-regularit.otf',
             weight: '400',
             style: 'italic',
         },
+        {
+            path: './fonts/biennale-semibold.otf',
+            weight: '600',
+            style: 'normal',
+        },
+        {
+            path: './fonts/biennale-semiboldit.otf',
+            weight: '600',
+            style: 'italic',
+        },
+        {
+            path: './fonts/biennale-thin.otf',
+            weight: '100',
+            style: 'normal',
+        },
+        {
+            path: './fonts/biennale-thinit.otf',
+            weight: '100',
+            style: 'italic',
+        },
     ],
-})
+});
+
 
 /*const geistSans = Geist({
     variable: "--font-geist-sans",

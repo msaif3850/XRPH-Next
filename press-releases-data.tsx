@@ -1,6 +1,6 @@
 const PressReleases = [
     {
-        title: 'XRPH AI App Goes Live - Instant Multilingual Medical Guidance at Users&apos; Fingertips',
+        title: 'XRPH AI App Goes Live - Instant Multilingual Medical Guidance at Users\' Fingertips',
         img: '/press-releases/xrph-ai-app-goes-live.webp',
         link: 'https://www.prnewswire.com/news-releases/xrph-ai-app-goes-live--instant-multilingual-medical-guidance-at-users-fingertips-302372861.html',
         date: '2025-02-11',
@@ -19,7 +19,7 @@ const PressReleases = [
     },
     {
         title: 'XRP Healthcare Magazine Unveils Groundbreaking AI Development in 4th Issue, Featuring Elon Musk',
-        img: '/magazines/xrp_healthcare_magazine_issue_4.webp',
+        img: '/press-releases/xrp_healthcare_magazine_issue_4.webp',
         link: 'https://www.prnewswire.com/news-releases/xrp-healthcare-magazine-unveils-groundbreaking-ai-development-in-4th-issue-featuring-elon-musk-302252413.html',
         date: '2024-09-19',
     },
@@ -62,7 +62,7 @@ const PressReleases = [
     },
     {
         title: 'XRP Healthcare Magazine Issue 3: Featuring Ugandan Innovator Peter Waiswa, NHS Collaborator ISANSYS, Ehlers-Danlos Society & Top 10 African Hospitals',
-        img: '/magazines/xrp_healthcare_magazine_issue_3.webp',
+        img: '/press-releases/xrp_healthcare_magazine_issue_3.webp',
         link: 'https://www.prnewswire.com/news-releases/xrp-healthcare-magazine-issue-3-featuring-ugandan-innovator-peter-waiswa-nhs-collaborator-isansys-ehlers-danlos-society--top-10-african-hospitals-302173663.html',
         date: '2024-06-17',
     },
@@ -122,7 +122,7 @@ const PressReleases = [
     },
     {
         title: 'XRP Healthcare release 2nd issue of its highly anticipated Magazine',
-        img: '/magazines/xrp_healthcare_magazine_issue_2.webp',
+        img: '/press-releases/xrp_healthcare_magazine_issue_2.webp',
         link: 'https://www.prnewswire.com/news-releases/xrp-healthcare-release-2nd-issue-of-its-highly-anticipated-magazine-302092751.html',
         date: '2024-03-19',
     },
@@ -182,7 +182,7 @@ const PressReleases = [
     },
     {
         title: 'XRP Healthcare enters Africa to revolutionize the multi-billion-dollar Healthcare industry',
-        img: '/press-releases/media/xrph-africa.png',
+        img: '/xrph-logos/africa-v.png',
         link: 'https://www.prnewswire.com/news-releases/xrp-healthcare-enters-africa-to-revolutionize-the-multi-billion-dollar-healthcare-industry-301786257.html',
         date: '2023-03-30',
     },

@@ -18,7 +18,7 @@ const emails = [
 ];
 import { Metadata } from "next";
 
-import ClientSignup from "@/components/layout/ClientSignup";
+import GhostSignupContactPage from "@/components/layout/GhostSignupContactPage";
 export const generateMetadata = (): Metadata => {
     return {
         title: "Links",
@@ -79,7 +79,7 @@ export default function Contact() {
                         {/* Subscription Form */}
                         <div className="mt-6">
                             <h2 className="text-lg font-semibold mb-2">Subscribe to our newsletter:</h2>
-                            <ClientSignup/>
+                            <GhostSignupContactPage id={'ghost-signup-form-contact'}/>
                         </div>
                     </div>
                 </div>
