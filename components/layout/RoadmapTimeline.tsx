@@ -4,30 +4,16 @@ import {FaCircle, FaCheckCircle, FaCheckDouble} from 'react-icons/fa';
 import {useRef} from 'react';
 import {FixText} from "@/components/FixText";
 
-/*function fixText(text: string) {
-    return (
-        <>
-            {text.split("").map((char, i) =>
-                /[-!@#$%^&*(/)4]/.test(char) ? (
-                    <span key={i} className="font-sans">{char}</span>
-                ) : (
-                    char
-                )
-            )}
-        </>
-    );
-}*/
-
 const milestones = [
     {
         date: 'Q1 2025',
         description: (
             <ul className="space-y-3">
                 {[
-                    {text: 'XRP Healthcare Global Announcement', checked: false},
+                    {text: 'XRP Healthcare Global Announcement', checked: true},
                     {text: 'XRPH AI App launched on Google Play and Apple Store', checked: true},
                     {text: 'Encryption layer implemented to ensure user data protection', checked: true},
-                    {text: '1.2M XRPH distributed as staking rewards', checked: false},
+                    {text: '1.2M XRPH distributed as staking rewards', checked: true},
                 ].map((item, i) => (
                     <li key={i} className="flex items-start">
                         <div>
@@ -51,20 +37,15 @@ const milestones = [
         description: (
             <ul className="space-y-3">
                 {[
-                    {text: "USD $3 Million raised to fund mergers and acquisitions (M&A)", checked: false},
-                    {text: 'First batch of Pharmacies acquired', checked: false},
-                    {text: 'Existing teams retained and overseen by corporate management', checked: false},
-                    {text: 'Pharmacies rebranded under the XRP Healthcare Trademark', checked: false},
-                    {text: 'Upgrades initiated for acquired businesses services, and equipment', checked: false},
-                    {text: 'Doctor feature launched on the XRPH AI App for mobile and web platforms', checked: false},
-                    {
-                        text: 'XRPH token integrated as a payment method for services and medication within the ecosystem',
-                        checked: false
-                    },
-                    {text: '‘Super Fund’ established to accelerate M&A activities', checked: false},
-                    {text: 'Streamlined M&A operations to achieve cost savings and efficiency', checked: false},
-                    {text: 'Ongoing upgrades to healthcare facilities', checked: false},
-                    {text: '700K XRPH distributed as staking rewards in March', checked: false},
+                    {text: "USD $3 Million raised to fund mergers and acquisitions (M&A)", checked: true},
+                    {text: 'First batch of Pharmacies acquired', checked: true},
+                    {text: 'Existing teams retained and overseen by corporate management', checked: true},
+                    {text: 'Upgrades initiated for acquired businesses services, and equipment', checked: true},
+                    {text: 'Image feature launched on the XRPH AI App for mobile and web platforms', checked: true},
+                    {text: 'XRPH & RLUSD token ready to use as a digital payment method for products and services within the ecosystem', checked: true},
+                    {text: 'Streamlined M&A operations to achieve cost savings and efficiency', checked: true},
+                    {text: 'Ongoing upgrades to healthcare facilities', checked: true},
+                    {text: '700K XRPH distributed as staking rewards in March', checked: true},
                     {text: '870K XRPH distributed as staking rewards in April', checked: false},
                 ].map((item, i) => (
                     <li key={i} className="flex items-start">
@@ -82,7 +63,7 @@ const milestones = [
                 ))}
             </ul>
         ),
-        completed: false,
+        completed: true,
     },
     {
         date: 'Q3 2025',
@@ -90,14 +71,14 @@ const milestones = [
             <ul className="space-y-3">
                 {[
                     {
-                        text: "Photo-based medical answer feature launched on the XRPH AI App for mobile and web platforms",
+                        text: "Doctor search and connect feature launched in the XRPH AI App for mobile and web platforms",
                         checked: false
                     },
                     {
                         text: "Expanded due diligence conducted for identifying new healthcare investment targets",
                         checked: false
                     },
-                    {text: "Partnerships established with international healthcare organizations", checked: false},
+                    {text: "Partnerships established with international healthcare organizations", checked: true},
                     {
                         text: "Further development and feature enhancements for the XRPH AI App and XRPH Wallet",
                         checked: false
@@ -128,6 +109,8 @@ const milestones = [
         description: (
             <ul className="space-y-3">
                 {[
+                    {text: "Pharmacies rebranded under the XRP Healthcare Trademark", checked: false},
+                    {text: "‘Super Fund’ established to accelerate M&A activities", checked: false},
                     {text: "Strategic promotion and marketing of M&A activities across Africa", checked: false},
                     {text: "Continued upgrades to healthcare facilities, services, and equipment", checked: false},
                     {text: "XRPH token usage expanded across the growing healthcare network", checked: false},
@@ -196,18 +179,9 @@ const milestones = [
         description: (
             <ul className="space-y-3">
                 {[
-                    {
-                        text: "Preparation begins to prepare XRP Healthcare for IPO or acquisition by a larger conglomerate",
-                        checked: false
-                    },
-                    {
-                        text: "Work closely with our legal advisors and investment bankers to optimize exit strategy and valuation",
-                        checked: false
-                    },
-                    {
-                        text: "Execute exit plan and achieve the best outcome for investors, shareholders and token holders",
-                        checked: false
-                    },
+                    {text: "Preparation begins to prepare XRP Healthcare for IPO", checked: true},
+                    {text: "Work closely with our legal advisors and investment bankers to optimize valuation", checked: true},
+                    {text: "Execute exit plan and achieve the best outcome for investors, shareholders and token holders", checked: false},
                 ].map((item, i) => (
                     <li key={i} className="flex items-start">
                         <div>

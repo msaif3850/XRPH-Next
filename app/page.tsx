@@ -262,32 +262,6 @@ export default function Home() {
             </section>
 
             <div className="px-6 sm:px-0">
-                <div className="container px-5 py-10 mx-auto">
-                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                        <Logo lightLogo={'/xrph-logos/africa.png'} darkLogo={'/xrph-logos/africa-dark.png'}
-                              width={500} height={200}/>
-                    </div>
-                    <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
-                        <div className="lg:w-2/3 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
-                            <p className="leading-relaxed text-lg mb-4">
-                                XRP Healthcare Africa is transforming healthcare across Africa with advanced AI
-                                technology, unifying privately owned healthcare businesses through strategic mergers and
-                                acquisitions.
-                                <br/><br/>Our mission is to improve healthcare accessibility and efficiency by
-                                integrating these fragmented sectors into a cohesive, AI{FixText("-")}driven system.
-                                We{FixText("'")}re
-                                setting a
-                                new standard for healthcare delivery, making quality care more accessible to all.
-                                Discover how our innovative approach is shaping the future of healthcare.
-                            </p>
-                            <MyButton buttonText={'Read More'} buttonUrl={'/africa'} target={'_self'}/>
-                        </div>
-                        <Image
-                            className="lg:w-1/3 w-full lg:h-auto h-64 object-cover-object-center rounded order-1 sm:order-2 mb-6 sm:mb-0"
-                            src={'/africa/map-africa.webp'} width={'500'} height={'500'} alt={'Africa map'}/>
-                    </div>
-                </div>
-
                 <div className="container py-10 mx-auto flex flex-col">
                     <div className="lg:w-4/6 mx-auto">
                         <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
@@ -297,36 +271,36 @@ export default function Home() {
                         <Dialog>
                             <div className="flex flex-col items-center sm:flex-row">
                                 <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                                    <DialogTrigger>
+                                    {/*<DialogTrigger>
                                         <Image src={'/press-releases/xrp_healthcare_magazine_issue_5.webp'}
                                                className="hover:scale-95 transition-all duration-200"
                                                alt={'XRP Healthcare Magazine issue 5'} width={'500'} height={'150'}/>
-                                    </DialogTrigger>
-                                    {/*<Link
-                                        href={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_4?fr=sNGJmMjY5MjQ4MTQ'}
+                                    </DialogTrigger>*/}
+                                    <Link
+                                        href={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_5?fr=xKAE9_zU1NQ'}
                                         target={'_blank'}>
-                                        <Image src={'/press-releases/xrp_healthcare_magazine_issue_5.webp'} className="hover:scale-95 transition-all duration-200" alt={'XRP Healthcare Magazine issue 5'} width={'500'} height={'150'}/>
-                                    </Link>*/}
+                                        <Image src={'/press-releases/xrp_healthcare_magazine_issue_5.webp'}
+                                               className="hover:scale-95 transition-all duration-200"
+                                               alt={'XRP Healthcare Magazine issue 5'} width={'500'} height={'150'}/>
+                                    </Link>
                                 </div>
                                 <div
                                     className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 --border-t mt-4 pt-4 sm:mt-0 ">
-                                    <p className="leading-relaxed text-lg mb-4"><b>XRP Healthcare: A New Milestone
-                                        Approaches:</b> XRP Healthcare continues to drive change through strategic
-                                        mergers, acquisitions, and AI innovation. Next month’s Special Edition Magazine
-                                        takes an exclusive deep dive into our latest progress and future vision.</p>
-                                    <p className="leading-relaxed text-lg mb-4"><b>Exclusive Global
-                                        Announcement:</b> This upcoming issue is fully dedicated to XRP Healthcare’s
-                                        evolution, featuring a major global announcement set to reshape the future of
-                                        healthcare.</p>
-                                    <p className="leading-relaxed text-lg mb-4"><b>Sign Up Now:</b> Be the first to
-                                        access it{FixText('!')} Sign up today to <DialogTrigger
-                                            className="underline">download </DialogTrigger> or <DialogTrigger
-                                            className="underline">receive a physical copy</DialogTrigger> as soon as
-                                        it’s released next month. Don’t miss this {FixText('game-changing edition!')}
+                                    <p className="leading-relaxed text-lg mb-4"><b>XRP Healthcare: A Defining
+                                        Moment:</b> XRP Healthcare continues to break new ground through strategic
+                                        mergers and acquisitions across Africa. Our Special Edition Magazine is out now,
+                                        offering an exclusive look at our latest milestones and vision for the future.
                                     </p>
-                                    <DialogTrigger>
-                                        <MyButtonSimple buttonText={'Access Now'}/>
-                                    </DialogTrigger>
+                                    <p className="leading-relaxed text-lg mb-4"><b>Global Announcement Revealed:</b> In
+                                        this issue, we announce our bold next step — XRP Healthcare is officially on the
+                                        path to going public, marking a major milestone in our mission to transform
+                                        healthcare across the region.</p>
+                                    <p className="leading-relaxed text-lg mb-4"><b>Read It Today:</b> Download your
+                                        digital copy or order a physical version now. Don’t miss this landmark edition —
+                                        the future of healthcare starts here.</p>
+                                    <MyButton buttonText={'Access Now'}
+                                              buttonUrl={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_5?fr=xKAE9_zU1NQ'}
+                                              target={'_blank'}/>
                                 </div>
                             </div>
                             <DialogContent>
@@ -342,6 +316,24 @@ export default function Home() {
                                 </DialogHeader>
                             </DialogContent>
                         </Dialog>
+                    </div>
+                </div>
+                <div className="container py-10 mx-auto">
+                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                        <Logo lightLogo={'/xrph-logos/africa.png'} darkLogo={'/xrph-logos/africa-dark.png'}
+                              width={500} height={200}/>
+                    </div>
+                    <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
+                        <div className="lg:w-2/3 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
+                            <p className="leading-relaxed text-lg mb-4">XRP Healthcare has completed its first retail and wholesale pharmacy chain acquisition in Africa, accelerating our expansion strategy.
+                                <br/><br/>This strengthens our position by integrating medication, distribution, and pharmaceutical operations under one framework.
+                                <br/><br/>Through strategic acquisitions, we’re improving efficiency and expanding access to high{FixText('-')}quality care.
+                                <br/><br/>With AI{FixText('-')}driven integration, we’re building a connected, scalable healthcare ecosystem. Read more to see how this milestone drives our vision for healthcare in Africa.</p>
+                            <MyButton buttonText={'Read More'} buttonUrl={'/africa'} target={'_self'}/>
+                        </div>
+                        <Image
+                            className="lg:w-1/3 w-full lg:h-auto h-64 object-cover-object-center rounded order-1 sm:order-2 mb-6 sm:mb-0"
+                            src={'/africa/map-africa.webp'} width={'500'} height={'500'} alt={'Africa map'}/>
                     </div>
                 </div>
 
@@ -373,7 +365,7 @@ export default function Home() {
                             </DialogTrigger>
                             <DialogContent>
                                 <DialogHeader>
-                                    <DialogDescription>
+                                    <DialogDescription className="">
                                         <Image className="lg:h-auto h-64 object-cover-object-center"
                                                src={'/ai/projected-growth-of-AI-in-healthcare-2024-2030-graph.webp'}
                                                width={'1000'}

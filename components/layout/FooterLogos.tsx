@@ -19,16 +19,21 @@ const footerLogos = [
     { img: '/footer-logos/shonubi-musoke.png',imgDark: '/footer-logos/shonubi-musoke.png', alt: 'shonubi musoke', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/footer-logos/riteaid.png', imgDark: '/footer-logos/riteaid.png',alt: 'riteaid', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/footer-logos/ace-group.png', imgDark: '/footer-logos/ace-group-dark.png',alt: 'ace-group', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
+
+    { img: '/footer-logos/safeway.png', imgDark: '/footer-logos/safeway-dark.png',alt: 'safeway', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
+    { img: '/footer-logos/amanta.png', imgDark: '/footer-logos/amanta.png',alt: 'amanta healthcare', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
+    { img: '/footer-logos/arc-group.png', imgDark: '/footer-logos/arc-group.png',alt: 'arc group', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/xrph-logos/africa.png',imgDark: '/xrph-logos/africa-dark.png', alt: 'XRPHealthcare Africa', width: 'w-full md:w-2/3 lg:w-2/6' },
+    { img: '/footer-logos/ms-uganda.png', imgDark: '/footer-logos/ms-uganda.png',alt: 'ms uganda', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
 ];
 
 export default function FooterLogos() {
     return (
         <div className="py-24 sm:pt-28 sm:pb-20">
-            <div className="mx-auto max-w-7xl-- px-6 container">
-                <div className="flex items-center justify-center">
+            <div className="mx-auto px-6 container">
+                {/*<div className="flex items-center justify-center">
                     <hr className="w-1/3 border-black dark:border-gray-400"/>
-                </div>
+                </div>*/}
                 <div className="flex flex-wrap justify-center items-center mt-10 mx-auto ">
                     {footerLogos.map((logo, index) => (
                         <div key={index} className={`group flex items-center overflow-hidden justify-center  bg-white dark:bg-transparent border border-gray-200 dark:border-gray-800 h-32 ${logo.width}`}>

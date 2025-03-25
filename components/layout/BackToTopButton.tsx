@@ -30,7 +30,6 @@ const BackToTopButton: React.FC = () => {
             >
                 <FaAngleUp className="text-xl"/>
             </button>
-
         )
     );
 };
