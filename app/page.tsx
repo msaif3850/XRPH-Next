@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import MyButton from "@/components/layout/MyButton";
-import MyButtonSimple from "@/components/layout/MyButtonSimple";
 import {NewsData} from "@/news-data";
 import {Exchanges} from "@/variables";
 import {
