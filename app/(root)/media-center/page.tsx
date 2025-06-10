@@ -20,7 +20,8 @@ import {FixText} from "@/components/FixText";
 import React from "react";
 import {Metadata} from "next";
 import MediaStickyButtons from "@/components/layout/MediaStickyButtons";
-import Logo from "@/components/layout/Logo";
+import ImageGallery from "@/components/layout/MediaCenterGallery";
+import {HoverCard, HoverCardContent, HoverCardTrigger} from "@/components/ui/hover-card";
 
 export const generateMetadata = (): Metadata => {
     return {
@@ -41,8 +42,11 @@ export default function MediaCenter() {
                 <div className="pb-20" id='press-releases'>
                     <div className="container max-w-full mx-auto ">
                         <div className="text-center pb-8">
-                            <h2 className="inline-block"><Logo lightLogo={'/logo.png'} darkLogo={'/logo-dark.png'} width={150} height={50}/></h2>
-                            <h3 className="mt-0 font-semibold text-2xl md:text-4xl">
+                            {/*<h2 className="inline-block"><Logo lightLogo={'/logo.png'} darkLogo={'/logo-dark.png'} width={260} height={120}/></h2>*/}
+                            <h2 className="text-[0.7rem] font-semibold tracking-wide px-5 py-2 bg-jamni2/10 text-jamni inline-block rounded-full">
+                                XRP Healthcare
+                            </h2>
+                            <h3 className="mt-3 font-semibold text-2xl md:text-4xl">
                                 Press <span className="text-jamni">Releases</span>
                             </h3>
                         </div>
@@ -81,7 +85,7 @@ export default function MediaCenter() {
                 <div id='logos'>
                     <div className="container mx-auto py-16">
                         <div className="text-center pb-8">
-                            <h2 className="text-[0.7rem] font-semibold tracking-wide px-5 py-2 bg-jamni2/10 text-jamni inline-block uppercase rounded-full">
+                            <h2 className="text-[0.7rem] font-semibold tracking-wide px-5 py-2 bg-jamni2/10 text-jamni inline-block rounded-full">
                                 XRP Healthcare Logos
                             </h2>
                             <h3 className="mt-3 font-semibold text-2xl md:text-4xl">
@@ -119,42 +123,48 @@ export default function MediaCenter() {
                         </div>
                     </div>
                 </div>
-
                 <div id='images'>
                     <div className="container mx-auto py-16">
                         <div className="text-center pb-8">
-                            <h2 className="text-[0.7rem] font-semibold tracking-wide px-5 py-2 bg-jamni2/10 text-jamni inline-block uppercase rounded-full">
+                            <h2 className="text-[0.7rem] font-semibold tracking-wide px-5 py-2 bg-jamni2/10 text-jamni inline-block rounded-full">
                                 XRP Healthcare Owners
                             </h2>
                             <h3 className="mt-3 font-semibold text-2xl md:text-4xl">
                                 Laban Roomes {FixText('&')} <span className="text-jamni">Kain Roomes</span>
                             </h3>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
-                            {/* First Three Images (Each in One Column) */}
+                        <div className="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 items-center">
                             <div className="lg:col-span-1">
-                                <Image src={"/owners/laban-roomes.jpg"} alt="Laban Roomes" width={500} height={500} className="w-full h-auto object-cover"/>
+                                <div className="relative overflow-hidden">
+                                    <Image src={"/owners/laban-roomes.jpg"} alt="Laban Roomes" width={500} height={500} className="w-full h-auto object-cover hover:scale-[1.15] transition-all duration-300"/>
+                                </div>
                             </div>
                             <div className="lg:col-span-1">
-                                <Image src={"/owners/kain-roomes.jpg"} alt="Kain Roomes" width={500} height={500} className="w-full h-auto object-cover"/>
+                                <div className="relative overflow-hidden">
+                                <Image src={"/owners/kain-roomes.jpg"} alt="Kain Roomes" width={500} height={500} className="w-full h-auto object-cover hover:scale-[1.15] transition-all duration-300"/>
+                            </div>
                             </div>
                             <div className="lg:col-span-1">
-                                <Image src={"/owners/laban-kain-3.jpg"} alt="Laban Roomes and Kain Roomes" width={500} height={500} className="w-full h-auto object-cover"/>
+                                <div className="relative overflow-hidden">
+                                <Image src={"/owners/laban-kain-3.jpg"} alt="Laban Roomes and Kain Roomes" width={500} height={500} className="w-full h-auto object-cover hover:scale-[1.15] transition-all duration-300"/>
                             </div>
-
-                            {/* Last Two Images Stacked in One Column */}
-                            <div className="lg:col-span-1 flex flex-col gap-1">
-                                <Image src={"/owners/laban-kain-1.jpg"} alt="Laban Roomes and Kain Roomes" width={500} height={500} className="w-full h-auto object-cover"/>
-                                <Image src={"/owners/laban-kain-2.jpg"} alt="Laban Roomes and Kain Roomes" width={500} height={500} className="w-full h-auto object-cover"/>
+                            </div>
+                            <div className="lg:col-span-1 flex flex-col gap-3">
+                                <div className="relative overflow-hidden">
+                                    <Image src={"/owners/thumbs/4.webp"} alt="Laban Roomes and Kain Roomes" width={500} height={500} className="w-full h-auto object-cover hover:scale-[1.15] transition-all duration-300"/>
+                                </div>
+                                <div className="relative overflow-hidden">
+                                    <Image src={"/owners/thumbs/5.webp"} alt="Laban Roomes and Kain Roomes" width={500} height={500} className="w-full h-auto object-cover hover:scale-[1.15] transition-all duration-300"/>
+                                </div>
                             </div>
                         </div>
-
                     </div>
+                    <ImageGallery/>
                 </div>
                 <div id='about'>
                     <div className="container mx-auto py-16">
                         <div className="text-center pb-8">
-                            <h2 className="text-[0.7rem] font-semibold tracking-wide px-5 py-2 bg-jamni2/10 text-jamni inline-block uppercase rounded-full">
+                            <h2 className="text-[0.7rem] font-semibold tracking-wide px-5 py-2 bg-jamni2/10 text-jamni inline-block rounded-full">
                                 Press {FixText('&')} Media
                             </h2>
                             <h3 className="mt-3 font-semibold text-2xl md:text-4xl">

@@ -20,8 +20,8 @@ export default function Footer() {
             <FooterLogos/>
             <footer className="bg-footerbg dark:bg-transparent pt-12 pb-6 px-6 tracking-wide container-fluid mx-auto">
                 <div className="max-w-screen-xl- mx-auto">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-16 gap-8 items-start">
-                        <div className="lg:flex lg:items-center">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 lg:gap-16 gap-8 items-start">
+                        <div className="lg:flex lg:items-center col-span-2 sm:col-span-1">
                             <Link href="/">
                                 <Logo
                                     lightLogo="/logo.png"
@@ -32,7 +32,7 @@ export default function Footer() {
                                 />
                             </Link>
                         </div>
-                        <div>
+                        <div className="col-span-1">
                             <h4 className="text-xl mb-3">Company:</h4>
                             <ul className="space-y-1">
                                 {FooterMenu1.map((menu) => (
@@ -44,7 +44,7 @@ export default function Footer() {
                                 ))}
                             </ul>
                         </div>
-                        <div>
+                        <div className="col-span-1">
                             <h4 className="text-xl mb-3">Support:</h4>
                             <ul className="space-y-1">
                                 {FooterMenu2.map((menu) => (
@@ -56,7 +56,7 @@ export default function Footer() {
                                 ))}
                             </ul>
                         </div>
-                        <div>
+                        <div className="col-span-2 sm:col-span-1">
                             <h4 className="text-xl mb-3">Social Media:</h4>
                             <ul className="flex justify-between gap-1">
                                 {SocialLinks.map((social) => (
@@ -76,7 +76,6 @@ export default function Footer() {
                                     </Link>
                                 </li>
                             </ul>
-                            {/* Adjusting signup form container */}
                             <div className="mt-6 flex justify-center">
                                 <GhostSignup id={'ghost-signup-form'}/>
                             </div>
