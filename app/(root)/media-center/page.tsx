@@ -21,7 +21,6 @@ import React from "react";
 import {Metadata} from "next";
 import MediaStickyButtons from "@/components/layout/MediaStickyButtons";
 import ImageGallery from "@/components/layout/MediaCenterGallery";
-import {HoverCard, HoverCardContent, HoverCardTrigger} from "@/components/ui/hover-card";
 
 export const generateMetadata = (): Metadata => {
     return {
@@ -133,7 +132,8 @@ export default function MediaCenter() {
                                 Laban Roomes {FixText('&')} <span className="text-jamni">Kain Roomes</span>
                             </h3>
                         </div>
-                        <div className="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 items-center">
+                        <ImageGallery/>
+                        {/*<div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 items-center">
                             <div className="lg:col-span-1">
                                 <div className="relative overflow-hidden">
                                     <Image src={"/owners/laban-roomes.jpg"} alt="Laban Roomes" width={500} height={500} className="w-full h-auto object-cover hover:scale-[1.15] transition-all duration-300"/>
@@ -157,9 +157,9 @@ export default function MediaCenter() {
                                     <Image src={"/owners/thumbs/5.webp"} alt="Laban Roomes and Kain Roomes" width={500} height={500} className="w-full h-auto object-cover hover:scale-[1.15] transition-all duration-300"/>
                                 </div>
                             </div>
-                        </div>
+                        </div>*/}
                     </div>
-                    <ImageGallery/>
+
                 </div>
                 <div id='about'>
                     <div className="container mx-auto py-16">
