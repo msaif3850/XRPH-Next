@@ -1,6 +1,9 @@
 'use client';
 
 import Script from 'next/script';
+declare let Weglot: {
+    initialize: (options: { api_key: string }) => void;
+};
 
 export default function WeglotLoader() {
     return (
