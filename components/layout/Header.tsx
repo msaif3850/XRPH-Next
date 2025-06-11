@@ -40,7 +40,7 @@ export default function Header() {
         <>
             {/*<HeaderTopBar/>*/}
             <div
-                className={`flex flex-wrap items-center justify-between -dark:bg-gray-900 px-6 fixed w-full z-50 transition-all duration-300 backdrop-blur ${
+                className={`flex items-center justify-between -dark:bg-gray-900 px-6 fixed w-full z-50 transition-all duration-300 backdrop-blur ${
                     scrolled ? "shadow-sm top-0 lg:py-1 py-1" : "py-2"
                 }`}
             >
@@ -52,7 +52,7 @@ export default function Header() {
                         height={100}
                     />
                 </Link>
-                <div className="hidden lg:flex flex-row items-center gap-0">
+                <div className="hidden lg:flex flex-wrap flex-row items-center gap-0">
                     {NavLinks.map((link) => (
                         <Link key={link.key} href={link.link}
                               className={`font-medium text-base px-3 py-1 rounded-full transition-all duration-0 ${
@@ -65,11 +65,11 @@ export default function Header() {
                     <div className="hidden lg:block">
                         <DropdownMenu>
                             <DropdownMenuTrigger>
-                                <div
-                                    className="flex items-center justify-center gap-1 cursor-pointer border bg-black border-gray-800 dark:border-gray-800 rounded-full px-2 py-0.5">
+                                <div className="flex items-center justify-center gap-1 cursor-pointer  px-2 py-0.5">
+                                    {/*border bg-black border-gray-800 dark:border-gray-800 rounded-full*/}
                                     {/*<FaBars className=""/>*/}
-                                    <Image src={'/icon.png'} alt={'XRPH'} width={'20'} height={'20'}/>
-                                    <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    {/*<Image src={'/icon.png'} alt={'XRPH'} width={'20'} height={'20'}/>*/}
+                                    <svg className="h-6 w-6 text-black dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
                                     </svg>
@@ -91,7 +91,7 @@ export default function Header() {
                                             XRPH Wallet
                                         </TabsTrigger>
                                     </TabsList>
-                                    <TabsContent value="xrph-ai" className="pt-2 pb-1 bg-jamni/10 rounded-lg">
+                                    <TabsContent value="xrph-ai" className="pt-2 pb-1 bg-jamni/10 dark:bg-gray-800 rounded-lg">
                                         <div className="flex items-center justify-center mb-4">
                                             <div className="text-center">
                                                 {/*<h2 className="text-base mb-2">Scan to download the app</h2>*/}
@@ -100,10 +100,10 @@ export default function Header() {
                                                 </div>
                                                 <div className="my-4 relative">
                                                     <div className="absolute inset-0 flex items-center">
-                                                        <div className="w-full border-t border-2 border-jamni"></div>
+                                                        <div className="w-full border-t border-2 border-haraa"></div>
                                                     </div>
                                                     <div className="relative flex justify-center text-sm">
-                                                        <span className="bg-white dark:bg-black px-2 ">Scan Above OR</span>
+                                                        <span className="bg-haraa dark:bg-gray-800 px-2 ">Scan Above OR</span>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-wrap justify-center gap-1">
@@ -113,19 +113,19 @@ export default function Header() {
                                             </div>
                                         </div>
                                     </TabsContent>
-                                    <TabsContent value="xrph-wallet" className="pt-2 pb-1 bg-haraa/10 rounded-lg">
+                                    <TabsContent value="xrph-wallet" className="pt-2 pb-1 bg-haraa/10 dark:bg-gray-800 rounded-lg">
                                         <div className="flex items-center justify-center mb-4">
                                             <div className="text-center">
                                                 {/*<h2 className="text-base mb-2">Scan to download the app</h2>*/}
                                                 <div>
-                                                    <QrImage type={'ai'} height={150} width={150}/>
+                                                    <QrImage type={'wallet'} height={150} width={150}/>
                                                 </div>
                                                 <div className="my-4 relative">
                                                     <div className="absolute inset-0 flex items-center">
                                                         <div className="w-full border-t border-2 border-jamni"></div>
                                                     </div>
                                                     <div className="relative flex justify-center text-sm">
-                                                        <span className="bg-white dark:bg-black px-2 ">Scan Above OR</span>
+                                                        <span className="bg-jamni dark:bg-gray-800 px-2 ">Scan Above OR</span>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-wrap justify-center gap-1">
@@ -137,12 +137,12 @@ export default function Header() {
                                     </TabsContent>
                                 </Tabs>
                                 <ThemeToggleMobile/>
-                                <ul className="flex flex-wrap items-center justify-center gap-4 mt-4">
+                                <ul className="flex flex-wrap items-center justify-center gap-4 mt-5">
                                     {SocialLinks.map((social) => (
                                         <li key={social.key}>
                                             <Link href={social.link} target={'_blank'}>
                                                 <social.icon
-                                                    className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 text-sm  transition-all duration-300"/>
+                                                    className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 text-lg transition-all duration-300"/>
                                             </Link>
                                         </li>
                                     ))}

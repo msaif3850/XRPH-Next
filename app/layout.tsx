@@ -6,6 +6,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import localFont from 'next/font/local'
 import {ThemeProvider} from "@/components/theme-provider";
+import Script from "next/script";
+import WeglotLoader from "@/components/WeglotLoader";
 
 const biennale = localFont({
     src: [
@@ -100,7 +102,7 @@ export const metadata: Metadata = {
     },
     description: "XRP Healthcare, built on the XRP Ledger, enhances access with a US Prescription Card and expands African healthcare via AI-driven acquisitions.",
     keywords: "XRP Healthcare, blockchain healthcare, crypto health, XRP Healthcare, XRPH AI, AI-driven acquisitions, Healthcare solutions, XRPH roadmap, Africa",
-    alternates: { canonical: "https://www.xrphealthcare.ai" },
+    alternates: {canonical: "https://www.xrphealthcare.ai"},
     robots: "index, follow",
 
     // Open Graph (Facebook, LinkedIn)
@@ -110,7 +112,7 @@ export const metadata: Metadata = {
         title: "XRP Healthcare | AI | Mergers & Acquisitions",
         description: "XRP Healthcare, built on the XRP Ledger, enhances access with a US Prescription Card and expands African healthcare via AI-driven acquisitions.",
         siteName: "XRP Healthcare",
-        images: [{ url: "https://www.xrphealthcare.ai/meta-image.png", width: 1200, height: 630 }],
+        images: [{url: "https://www.xrphealthcare.ai/meta-image.png", width: 1200, height: 630}],
     },
 
     // Twitter
@@ -143,17 +145,22 @@ export default function RootLayout({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "XRP Healthcare", "item": "https://xrphealthcare.ai/" },
-            { "@type": "ListItem", "position": 2, "name": "XRPH AI", "item": "https://xrph.ai/" },
-            { "@type": "ListItem", "position": 3, "name": "Roadmap", "item": "https://www.xrphealthcare.ai/roadmap" },
-            { "@type": "ListItem", "position": 4, "name": "Magazine", "item": "https://xrphmagazine.ai/magazine/" },
-            { "@type": "ListItem", "position": 5, "name": "Blog", "item": "https://www.xrphealthcare.ai/blog" },
-            { "@type": "ListItem", "position": 6, "name": "News", "item": "https://www.xrphealthcare.ai/news" },
-            { "@type": "ListItem", "position": 7, "name": "Exchanges", "item": "https://www.xrphealthcare.ai/buy-xrph" },
-            { "@type": "ListItem", "position": 8, "name": "Savings Card", "item": "https://www.xrphealthcare.ai/XRPHSavingsCard" },
-            { "@type": "ListItem", "position": 9, "name": "Contact", "item": "https://www.xrphealthcare.ai/contact" },
-            { "@type": "ListItem", "position": 10, "name": "Team", "item": "https://www.xrphealthcare.ai/team" },
-            { "@type": "ListItem", "position": 11, "name": "Africa", "item": "https://www.xrphealthcare.ai/africa" }
+            {"@type": "ListItem", "position": 1, "name": "XRP Healthcare", "item": "https://xrphealthcare.ai/"},
+            {"@type": "ListItem", "position": 2, "name": "XRPH AI", "item": "https://xrph.ai/"},
+            {"@type": "ListItem", "position": 3, "name": "Roadmap", "item": "https://www.xrphealthcare.ai/roadmap"},
+            {"@type": "ListItem", "position": 4, "name": "Magazine", "item": "https://xrphmagazine.ai/magazine/"},
+            {"@type": "ListItem", "position": 5, "name": "Blog", "item": "https://www.xrphealthcare.ai/blog"},
+            {"@type": "ListItem", "position": 6, "name": "News", "item": "https://www.xrphealthcare.ai/news"},
+            {"@type": "ListItem", "position": 7, "name": "Exchanges", "item": "https://www.xrphealthcare.ai/buy-xrph"},
+            {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "Savings Card",
+                "item": "https://www.xrphealthcare.ai/XRPHSavingsCard"
+            },
+            {"@type": "ListItem", "position": 9, "name": "Contact", "item": "https://www.xrphealthcare.ai/contact"},
+            {"@type": "ListItem", "position": 10, "name": "Team", "item": "https://www.xrphealthcare.ai/team"},
+            {"@type": "ListItem", "position": 11, "name": "Africa", "item": "https://www.xrphealthcare.ai/africa"}
         ]
     };
     const organizationSchema = {
@@ -181,7 +188,7 @@ export default function RootLayout({
         }
     };
     return (
-        <html lang="en" >
+        <html lang="en">
         {/*<body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >*/}
         <body className={`${biennale.className}  antialiased`}>
         <ThemeProvider
@@ -190,14 +197,15 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-        <Header/>
-        {children}
-        <Footer/>
+            <Header/>
+            {children}
+            <Footer/>
         </ThemeProvider>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-        <ClientProvider />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(organizationSchema)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(websiteSchema)}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbSchema)}}/>
+        <WeglotLoader/>
+        <ClientProvider/>
         </body>
         </html>
     );

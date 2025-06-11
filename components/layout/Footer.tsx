@@ -71,7 +71,7 @@ export default function Footer() {
                             <h4 className="text-xl mt-3 mb-1">XRP Healthcare:</h4>
                             <ul className="space-y-1">
                                 <li>
-                                    <Link href={'/'} className="text-gray-400 font-normal hover:underline ">
+                                    <Link href={'https://xrphmagazine.ai/magazine/'} target={'_blank'} className="text-gray-400 font-normal hover:underline ">
                                         Magazine
                                     </Link>
                                 </li>

@@ -34,6 +34,7 @@ export default function Contact() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className="flex flex-col items-center text-center space-y-5">
                         <div className="flex flex-col justify-center items-center gap-y-1">
+                            <Link href="/">
                             <Logo
                                 lightLogo="/logo.png"
                                 darkLogo="/logo-dark.png"
@@ -41,16 +42,17 @@ export default function Contact() {
                                 height={200}
                                 className=""
                             />
-                            <p className="font-medium">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai,
+                            </Link>
+                            <p className="font-medium mt-1 sm:mt-6">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai,
                                 U.A.E.</p>
                         </div>
                         {/* Social Links */}
-                        <ul className="flex justify-between gap-1">
+                        <ul className="flex justify-between gap-1 sm:gap-2">
                             {SocialLinks.map((social) => (
                                 <li key={social.key}>
                                     <Link href={social.link} target={'_blank'}>
                                         <social.icon
-                                            className="text-gray-400 hover:text-white border border-gray-400 hover:bg-gray-400 text-4xl p-2 rounded-full transition-all duration-300"/>
+                                            className="text-gray-400 hover:text-white border border-gray-400 hover:border-haraa hover:bg-gradient-to-r hover:from-haraa hover:to-jamni text-4xl p-2 rounded-full transition-all duration-300"/>
                                     </Link>
                                 </li>
                             ))}

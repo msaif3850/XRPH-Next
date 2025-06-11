@@ -19,6 +19,7 @@ export default {
 			'waves-wallet': "url('/xrph-wallet-app-home-banner.webp')",
 			'map': "url('/africa-map.webp')",
 			'thumbnail': "url('/yt-thumbnail.webp')",
+			'psca': "url('/psca/xrph-prescription-savings-card-and-app.webp')",
 		},
   		colors: {
 			haraa: '#02fd81',

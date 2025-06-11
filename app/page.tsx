@@ -26,6 +26,7 @@ export default function Home() {
 
     return (
         <>
+            <div className="py-5">&nbsp;</div>
             <section id="xrph-ai-banner" className="bg-waves-ai dark:bg-waves-ai-dark bg-cover bg-center bg-no-repeat pt-24 sm:pt-28 pb-16 sm:pb-12 -sm:py-20">
                 <div className="mx-auto xl:px-32 lg:px-20 md:px-16 px-0 ">
                     <div className="flex flex-col md:flex-row items-center gap-8">
@@ -38,8 +39,8 @@ export default function Home() {
                             </h4>
                             {/* App Store Buttons (Hidden on Mobile) */}
                             <div className="hidden md:flex justify-center gap-3 mt-4">
-                                <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
-                                <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
                                 {/*<AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
                                 <GoogleDownloadButton
                                     link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>*/}
@@ -60,8 +61,8 @@ export default function Home() {
 
                             {/* App Store Buttons (Visible on Mobile) */}
                             <div className="md:hidden flex justify-center gap-4 mt-4">
-                                <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
-                                <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                                <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
                                 {/*<AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
                                 <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>*/}
                             </div>
@@ -77,6 +78,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 lg:w-2/5 px-12 md:px-0">
+                            <p className="text-center text-xl lg:text-2xl"><span className="font-bold">XRP Healthcare</span> is an AI{FixText('-')}driven, M{FixText('&')}A{FixText('-')}focused healthcare company operating worldwide with a focus on emerging markets.</p>
+                            <div className="hidden">
                             <ul className="list-none space-y-4 pl-0 sm:pl-4">
                                 <li className="text-xl lg:text-2xl flex items-start gap-3">
                                     <Image
@@ -118,6 +121,7 @@ export default function Home() {
                                     </div>
                                 </li>
                             </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,8 +205,8 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row gap-4 items-center mt-8">
                     <div className="w-full md:w-5/12 lg:pl-7 order-2 sm:order-1">
                         <div className="flex justify-center md:justify-start gap-5">
-                            <AppiOS link={'https://apps.apple.com/gb/app/xrph-wallet/id6451218628'}/>
-                            <AppAndroid link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>
+                            <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                            <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
                         </div>
                     </div>
                     <div className="w-full md:w-7/12 order-1 sm:order-2">
