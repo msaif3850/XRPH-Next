@@ -1,16 +1,7 @@
 import React from "react";
-import {FaPlayCircle} from "react-icons/fa";
 import Link from "next/link";
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTrigger,
-} from "@/components/ui/dialog"
 import Image from "next/image";
 import MyButton from "@/components/layout/MyButton";
-import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
 import HeadTag from "@/components/HeadTag";
 import {FixText} from "@/components/FixText";
 import AppiOS from "@/components/layout/AppiOS";

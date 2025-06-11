@@ -6,7 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import localFont from 'next/font/local'
 import {ThemeProvider} from "@/components/theme-provider";
-import Script from "next/script";
+//import Script from "next/script";
 import WeglotLoader from "@/components/WeglotLoader";
 
 const biennale = localFont({
