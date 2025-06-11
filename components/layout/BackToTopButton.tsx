@@ -25,7 +25,7 @@ const BackToTopButton: React.FC = () => {
             <button
                 onClick={scrollToTop}
                 className="z-10 hover:scale-110 fixed bottom-5 left-[50%] -translate-x-1/2 border border-gray-100 dark:border-gray-500 p-2 rounded-full
-                bg-white/70 dark:bg-gray-800 shadow-lg hover:text-purple-600 transition-all duration-100"
+                bg-white/70 dark:bg-gray-800/70 shadow-lg hover:text-purple-600 transition-all duration-100"
                 aria-label="Back to top"
             >
                 <FaAngleUp className="text-xl sm:text-[2rem]" />

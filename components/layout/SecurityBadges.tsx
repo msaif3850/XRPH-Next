@@ -30,7 +30,7 @@ const SecurityBadges = () => {
                 id="sitelock-badge"
                 href="#"
                 onClick={openSiteLock}
-                className={`fixed bottom-1 sm:bottom-5 right-0 sm:left-0.5 transition-opacity duration-300 hover:scale-95 ${
+                className={`fixed bottom-1 sm:bottom-5 right-0 sm:left-0.5 transition-all duration-300 w-[60px] sm:w-[90px] hover:scale-95 ${
                     showBadges ? "opacity-100" : "opacity-0"
                 }`}
             >

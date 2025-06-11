@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
+
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -20,7 +21,8 @@ export default function Logo({
                                       height = 200,
                                       className = "",
                                   }: ThemeLogoProps) {
-    const { theme } = useTheme();
+    //const { theme } = useTheme();
+    const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => setMounted(true), []);
@@ -29,7 +31,7 @@ export default function Logo({
 
     return (
         <Image
-            src={theme === "dark" && darkLogo ? darkLogo : lightLogo}
+            src={resolvedTheme === "dark" && darkLogo ? darkLogo : lightLogo}
             alt={alt}
             width={width}
             height={height}
