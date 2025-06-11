@@ -13,7 +13,6 @@ import ThemeToggleMobile from "@/components/layout/ThemeTogglerMobile";
 import Logo from "@/components/layout/Logo";
 import {SheetMenu} from "@/variables";
 
-import Image from "next/image";
 import {
     DropdownMenu,
     DropdownMenuContent,
