@@ -1,4 +1,198 @@
+
 const NewsData = [
+    {
+        'title': 'Father-son team lists Africa’s XRP Healthcare on Canadian stock exchange',
+        'img': '/news/cointelegraph.png',
+        'imgClass': '',
+        'link': 'https://xrphealthcare.ai/father-son-team-lists-africas-xrp-healthcare-on-canadian-stock-exchange',
+        'date': '2025-05-19',
+        'description': 'Kain and Laban Roomes are using XRP Ledger to track and dispense medicines in Uganda and are listing the startup in Canada.'
+    },
+    {
+        'title': 'Ex-Footballer Lists XRP Healthcare Startup on Canada’s TSX',
+        'img': '/news/cryptotimes.webp',
+        'imgClass': '',
+        'link': 'https://www.cryptotimes.io/2025/05/19/ex-footballer-lists-xrp-healthcare-startup-on-canadas-tsx/',
+        'date': '2025-05-19',
+        'description': 'Former footballer and model Kain Roomes and his entrepreneur father Laban Roomes are taking their startup XRP Healthcare public on Canada’s TSX Venture Exchange.'
+    },
+    {
+        'title': 'XRP Healthcare Sets Stage for Cutting-Edge Public Offering',
+        'img': '/news/investorshangout.png',
+        'imgClass': '',
+        'link': 'https://investorshangout.com/xrp-healthcare-sets-stage-for-cuttingedge-public-offering-251004-/',
+        'date': '2025-03-25',
+        'description': 'XRP Healthcare, a forward-thinking company specializing in AI-driven healthcare solutions, is planning to go public by Q3 2025. This strategic shift marks a significant ...'
+    },
+    {
+        'title': 'U.A.E.-based AI healthcare company plans Canadian IPO',
+        'img': '/news/thelogic.webp',
+        'imgClass': '',
+        'link': 'https://thelogic.co/briefing/u-a-e-based-ai-health-care-company-plans-canadian-ipo/',
+        'date': '2025-03-25',
+        'description': 'XRP Healthcare plans to go public by the third quarter of 2025, speeding up its initial plan to move in 2027, according to a press release Tuesday.'
+    },
+    {
+        'title': 'XRP Healthcare Targets Q3 2025 IPO to Fuel AI and Africa Expansion',
+        'img': '/news/kenyancorporates.png',
+        'imgClass': '',
+        'link': 'https://kenyancorporates.co.ke/2025/03/25/xrp-healthcare-targets-q3-2025-ipo-to-fuel-ai-and-africa-expansion/',
+        'date': '2025-03-25',
+        'description': 'XRP Healthcare, a rapidly growing innovator in AI-driven healthcare and mergers & acquisitions, has announced plans to go public by Q3 2025.'
+    },
+    {
+        'title': 'XRP Healthcare To Go Public By Q3 On Canadian Stock Exchange',
+        'img': '/news/tradingview.png',
+        'imgClass': '',
+        'link': 'https://www.tradingview.com/news/reuters.com,2025:newsml_FWN3Q805N:0-xrp-healthcare-to-go-public-by-q3-on-canadian-stock-exchange/',
+        'date': '2025-03-25',
+        'description': 'XRP HEALTHCARE TO BECOME PUBLIC COMPANY VIA IPO BY Q3 2025, ACCELERATING AI AND M&A EXPANSION.'
+    },
+    {
+        'title': 'UAE: XRP Healthcare brings forward listing plans to Q3 2025',
+        'img': '/news/investorsinhealthcare.png',
+        'imgClass': '',
+        'link': 'https://www.investorsinhealthcare.com/articles/category/news/uae-xrp-healthcare-brings-forward-listing-plans-to-q3-2025/',
+        'date': '2025-03-25',
+        'description': 'XRP Healthcare, an AI-driven healthcare and M&A platform, built on the XRPL, dedicated to consolidating and modernizing healthcare systems across emerging markets, starting in Africa,.. '
+    },
+    {
+        'title': 'XRP Healthcare to Become Public Company via IPO by Q3 2025, Accelerating AI and M&A Expansion',
+        'img': '/news/yahoo_finance.png',
+        'imgClass': '',
+        'link': 'https://finance.yahoo.com/news/xrp-healthcare-become-public-company-053000678.html',
+        'date': '2025-03-25',
+        'description': 'XRP Healthcare, a fast-growing innovator in AI-driven healthcare and mergers & acquisitions, has announced it will be a public company by Q3 2025.'
+    },
+    {
+        'title': 'XRP Healthcare to Become Public Company via IPO by Q3 2025',
+        'img': '/news/chimpreports.png',
+        'imgClass': '',
+        'link': 'https://chimpreports.com/xrp-healthcare-to-become-public-company-via-ipo-by-q3-2025/',
+        'date': '2025-03-25',
+        'description': 'XRP Healthcare, a fast-growing innovator in AI-driven healthcare and mergers & acquisitions, has announced it will be a public company by Q3 2025.'
+    },
+    {
+        'title': 'XRP Healthcare acquires Ugandan retail and wholesale pharmacy chain Pharma Ville',
+        'img': '/news/africabusinesscommunities.jpg',
+        'imgClass': '',
+        'link': 'https://africabusinesscommunities.com/health-industry/xrp-healthcare-acquires-ugandan-retail-and-wholesale-pharmacy-chain-pharma-ville/',
+        'date': '2025-04-02',
+        'description': "XRP Healthcare, a pioneering force in healthcare innovation, has officially acquired Pharma Ville, a retail and wholesale pharmacy chain in Uganda. This strategic acquisition marks XRP Healthcare's entry into Africa's rapidly .... "
+    },
+    {
+        'title': 'XRP Healthcare acquires Uganda’s Pharma Ville',
+        'img': '/news/kbc.webp',
+        'imgClass': '',
+        'link': 'https://www.kbc.co.ke/xrp-healthcare-acquires-ugandas-pharma-ville/',
+        'date': '2025-03-17',
+        'description': 'XRP Healthcare has announced the acquisition of Uganda’s leading retail and wholesale pharmacy chain Pharma Ville for undisclosed amount.'
+    },
+
+
+
+    {
+        'title': 'XRP Healthcare acquires Pharma Ville, a Ugandan retail and wholesale pharmacy chain',
+        'img': '/news/ugbusiness.webp',
+        'link': 'https://ugbusiness.com/2025/03/company-releases/xrp-healthcare-acquires-pharma-ville-a-ugandan-retail-and-wholesale-pharmacy-chain',
+        'imgClass': '',
+        'date': '2025-03-12 00:00:00',
+        'description': 'XRP Healthcare, a pioneering force in healthcare innovation, has officially acquired Pharma Ville, a retail and wholesale pharmacy chain in Uganda.'
+    },
+    {
+        'title': 'XRP Healthcare Expands in Africa with Pharma Ville Acquisition',
+        'img': '/news/ethnews.png',
+        'link': 'https://www.ethnews.com/xrp-healthcare-expands-in-africa-with-pharma-ville-acquisition/',
+        'imgClass': ' ',
+        'date': '2025-03-12 00:00:00',
+        'description': 'XRP Healthcare has officially acquired Pharma Ville, a leading retail and wholesale pharmacy chain in Uganda. This is the company’s foray into Africa’s developing healthcare industry to transform...'
+    },
+    {
+        'title': 'XRP Healthcare expands into Africa with acquisition of Ugandan pharmacy chain',
+        'img': '/news/pmldaily.png',
+        'link': 'https://www.pmldaily.com/news/2025/03/xrp-healthcare-expands-into-africa-with-acquisition-of-ugandan-pharmacy-chain.html',
+        'imgClass': ' ',
+        'date': '2025-03-12 00:00:00',
+        'description': 'XRP Healthcare announced Tuesday it has acquired Pharma Ville, a leading Ugandan pharmacy chain, marking the company’s entry into Africa’s burgeoning healthcare sector.'
+    },
+    {
+        'title': 'XRP Healthcare acquires Ugandan pharmacy chain, Pharma Ville',
+        'img': '/news/nilepost.png',
+        'link': 'https://nilepost.co.ug/news/247332/xrp-healthcare-acquires-ugandan-pharmacy-chain-pharma-ville',
+        'imgClass': ' ',
+        'date': '2025-03-12 00:00:00',
+        'description': 'XRP Healthcare, a pioneering force in healthcare innovation, has announced the acquisition of  Pharma Ville, a leading retail and wholesale pharmacy chain in Uganda.'
+    },
+    {
+        'title': 'XRP Healthcare Acquires Uganda’s Pharma Ville Pharmacy Chain',
+        'img': '/news/financialfortunemedia.png',
+        'link': 'https://www.financialfortunemedia.com/xrp-healthcare-acquires-ugandas-pharma-ville-pharmacy-chain/',
+        'imgClass': ' ',
+        'date': '2025-03-12 00:00:00',
+        'description': 'XRP Healthcare, a company focused on healthcare improvements, has acquired Pharma Ville, a well-established retail and wholesale pharmacy chain in Uganda.'
+    },
+    {
+        'title': 'XRP Healthcare Buys Pharma Ville to Expand in Uganda',
+        'img': '/news/commerce.png',
+        'link': 'https://commerce.co.ke/xrp-healthcare-buys-pharma-ville-to-expand-in-uganda/',
+        'imgClass': ' ',
+        'date': '2025-03-12 00:00:00',
+        'description': 'KAMPALA, Uganda — XRP Healthcare, a company focused on improving healthcare, has acquired Pharma Ville, a major pharmacy chain in Uganda, marking its first step into Africa’s healthcare market.'
+    },
+    {
+        'title': 'Uganda’s Pharma Ville acquired by Dubai-Based XRP healthcare in major deal',
+        'img': '/news/kikubolane.png',
+        'link': 'https://kikubolane.com/2025/03/12/ugandas-pharma-ville-acquired-by-dubai-based-xrp-healthcare-in-major-deal/',
+        'imgClass': ' ',
+        'date': '2025-03-12 00:00:00',
+        'description': 'Dubai-based XRP Healthcare expands into Africa with acquisition of Ugandan pharmacy chain Pharma Ville, enhancing medicine accessibility and healthcare delivery'
+    },
+    {
+        'title': 'XRPH AI App Goes Live - Instant Multilingual Medical Guidance at Users\' Fingertips',
+        'img': '/news/technews24h.png',
+        'link': 'https://www.technews24h.com/2025/02/xrph-ai-app-goes-live-instant.html',
+        'imgClass': ' ',
+
+        'date': '2025-02-11 00:00:00',
+        'description': 'Healthcare guidance is entering a new era. Built to adapt and learn continuously, the ground-breaking XRPH AI App has made its official debut and is now accessible for free download on Google Play, the App Store, and directly at XRPH.ai.'
+    },
+    {
+        'title': 'XRPH AI App Goes Live - Instant Multilingual Medical Guidance at Users\' Fingertips',
+        'img': '/news/logos_5.jpg',
+        'link': 'https://www.benzinga.com/pressreleases/25/02/n43614278/xrph-ai-app-goes-live-instant-multilingual-medical-guidance-at-users-fingertips',
+        'imgClass': ' ',
+
+        'date': '2025-02-11 00:00:00',
+        'description': 'The future of healthcare guidance is here. The revolutionary XRPH AI App, built to evolve and continually learn, has officially launched and is available for free download on Google Play, the App Store, and directly via XRPH.ai.'
+    },
+    {
+        'title': 'XRPH AI App Launch: Your Multilingual Health Companion',
+        'img': '/news/investorshangout.webp',
+        'link': 'https://investorshangout.com/xrph-ai-app-launch-your-multilingual-health-companion-209932-/',
+        'imgClass': ' ',
+
+        'date': '2025-02-11 00:00:00',
+        'description': 'The healthcare landscape is changing rapidly with the introduction of the XRPH AI App, a groundbreaking technology developed by XRP Healthcare. This app is designed to provide instant, multilingual healthcare advice to users globally, marking a significant advancement in healthcare technology.'
+    },
+    {
+        'title': 'XRPH AI App Goes Live - Instant Multilingual Medical Guidance at Users\' Fingertips',
+        'img': '/news/aimagazine.png',
+        'link': 'https://aimagazine.com/pr_newswire?rkey=20250211EN16190&filter=21531',
+        'imgClass': ' ',
+        'date': '2025-02-11 00:00:00',
+        'description': 'The future of healthcare guidance is here. The revolutionary XRPH AI App, built to evolve and continually learn, has officially launched and is available for free download on Google Play, the App Store, and directly via XRPH.ai.'
+    },
+
+
+
+
+
+
+
+
+
+
+
     {
         title: 'XRP Healthcare: AI Low-Cap Gem on the XRP Ledger – Fixed Supply, True Scarcity, and Real-World Utility',
         img: '/news/bitcoin.svg', imgClass: '',
@@ -21,116 +215,102 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare and Foventa Collaborate for Africa’s Premier Lab Expo',
-        titleHmtl: 'XRP Healthcare and Foventa Collaborate for Africa’s Premier Lab Expo',
         img: '/news/ai-techpark.webp', imgClass: '', date: '2024-10-04 00:00:00',
         link: 'https://ai-techpark.com/xrp-healthcare-and-foventa-collaborate-for-africas-premier-lab-expo/',
         description: " XRP Healthcare is proud to announce its strategic partnership with Foventa for the All Things Lab and Testing Expo and Dialogue (ATLT), Africa’s foremost event dedicated to laboratory and testing services. Set to take place from October 3rd to 5th, 2024, at Nairobi’s Sarit Centre, ATLT will gather over ... "
     },
     {
         title: 'XRP Healthcare and Foventa Collaborate for Africa’s Premier Lab Expo',
-        titleHmtl: 'XRP Healthcare and Foventa Collaborate for Africa’s Premier Lab Expo',
         img: '/news/aitechtrend.webp', imgClass: '', date: '2024-10-03 00:00:00',
         link: 'https://aitechtrend.com/xrp-healthcare-and-foventa-collaborate-for-africas-premier-lab-expo/',
-        description: ' XRP Healthcare is proud to announce its strategic partnership with Foventa for the All Things Lab and Testing Expo and Dialogue <span class="sp-font">(</span>ATLT<span class="sp-font">)</span>, Africa’s foremost event dedicated to laboratory and testing services. Set to take place from October 3rd to 5th, <span class="sp-font">2024</span>, at Nairobi’s Sarit Centre, ATLT will gather over ... ',
+        description: ' XRP Healthcare is proud to announce its strategic partnership with Foventa for the All Things Lab and Testing Expo and Dialogue (ATLT), Africa’s foremost event dedicated to laboratory and testing services. Set to take place from October 3rd to 5th, 2024, at Nairobi’s Sarit Centre, ATLT will gather over ... ',
     },
     {
         title: 'XRP Healthcare Partners with Foventa for Africa’s Leading Healthcare Expo',
-        titleHmtl: 'XRP Healthcare Partners with Foventa for Africa’s Leading Healthcare Expo',
         img: '/news/blockchainreporter.webp', imgClass: '', date: '2024-10-03 00:00:00',
         link: 'https://blockchainreporter.net/xrp-healthcare-partners-with-foventa-for-africas-leading-healthcare-expo/',
-        description: ' XRP Healthcare has entered into a strategic partnership with Foventa for the upcoming All Things Lab and Testing Expo and Dialogue <span class="sp-font">(</span>ATLT<span class="sp-font">)</span>. It is set to take place from October 3rd to 5th, <span class="sp-font">2024</span>, at Nairobi’s Sarit Centre. The event is regarded as Africa’s leading gathering for laboratory and testing services. ',
+        description: ' XRP Healthcare has entered into a strategic partnership with Foventa for the upcoming All Things Lab and Testing Expo and Dialogue (ATLT). It is set to take place from October 3rd to 5th, 2024, at Nairobi’s Sarit Centre. The event is regarded as Africa’s leading gathering for laboratory and testing services. ',
     },
     {
         title: 'XRP Healthcare Revolutionizes Healthcare with AI and Blockchain Integration',
-        titleHmtl: 'XRP Healthcare Revolutionizes Healthcare with AI and Blockchain Integration',
         img: '/news/healthcarecurated.webp', imgClass: '', date: '2024-09-12 00:00:00',
         link: 'https://healthcarecurated.com/tech-and-innovation/xrp-healthcare-revolutionizes-healthcare-with-ai-and-blockchain-integration/',
-        description: ' The healthcare sector is on the verge of a radical transformation, driven by cutting<span class="sp-font">-</span>edge technologies such as Artificial Intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span>, and blockchain. Leading this wave of innovation is XRP Healthcare, which aims to redefine healthcare delivery and expand its footprint, particularly in emerging markets like Africa. ',
+        description: ' The healthcare sector is on the verge of a radical transformation, driven by cutting-edge technologies such as Artificial Intelligence (AI), and blockchain. Leading this wave of innovation is XRP Healthcare, which aims to redefine healthcare delivery and expand its footprint, particularly in emerging markets like Africa. ',
     },
     {
         title: 'XRP Healthcare Magazine Shines Light on Innovative AI Solutions',
-        titleHmtl: 'XRP Healthcare Magazine Shines Light on Innovative AI Solutions',
         img: '/news/investorshangout.webp', imgClass: '', date: '2024-09-19 00:00:00',
         link: 'https://investorshangout.com/xrp-healthcare-magazine-shines-light-on-innovative-ai-solutions-28040-',
-        description: ' The latest edition of XRP Healthcare Magazine brings exciting advancements in artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span>, showcasing the growth of XRP Healthcare. The company has made remarkable strides despite its relative youth, particularly highlighting the launch of the XRPH AI chatbot. ',
+        description: ' The latest edition of XRP Healthcare Magazine brings exciting advancements in artificial intelligence (AI), showcasing the growth of XRP Healthcare. The company has made remarkable strides despite its relative youth, particularly highlighting the launch of the XRPH AI chatbot. ',
     },
     {
         title: 'XRP Healthcare Magazine Unveils Groundbreaking AI Development in 4<sup>th</sup> Issue, Featuring Elon Musk',
-        titleHmtl: 'XRP Healthcare Magazine Unveils Groundbreaking AI Development in <span class="sp-font">4</span><sup>th</sup> Issue, Featuring Elon Musk',
         img: '/news/hipther.webp',
         link: 'https://hipther.com/artificial-intelligence/2024/09/19/78771/xrp-healthcare-magazine-unveils-groundbreaking-ai-development-in-4th-issue-featuring-elon-musk/?utm_source=dlvr.it&utm_medium=linkedin',
         imgClass: '',
         date: '2024-09-19 00:00:00',
-        description: ' The highly anticipated fourth edition of XRP Healthcare Magazine has arrived, featuring an exciting and innovative update on XRP Healthcare’s rapid progress in artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span>. Despite being less than two years old, the company continues to ... ',
+        description: ' The highly anticipated fourth edition of XRP Healthcare Magazine has arrived, featuring an exciting and innovative update on XRP Healthcare’s rapid progress in artificial intelligence (AI). Despite being less than two years old, the company continues to ... ',
     },
     {
         title: 'XRP Healthcare Magazine Unveils Groundbreaking AI Development in 4<sup>th</sup> Issue, Featuring Elon Musk',
-        titleHmtl: 'XRP Healthcare Magazine Unveils Groundbreaking AI Development in <span class="sp-font">4</span><sup>th</sup> Issue, Featuring Elon Musk',
         img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/09/n40932182/xrp-healthcare-magazine-unveils-groundbreaking-ai-development-in-4th-issue-featuring-elon-musk',
         imgClass: '',
         date: '2024-09-19 00:00:00',
-        description: ' The highly anticipated fourth edition of XRP Healthcare Magazine has arrived, featuring an exciting and innovative update on XRP Healthcare’s rapid progress in artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span>. Despite being less than two years old, the company continues to make incredible strides in healthcare innovation... '
+        description: ' The highly anticipated fourth edition of XRP Healthcare Magazine has arrived, featuring an exciting and innovative update on XRP Healthcare’s rapid progress in artificial intelligence (AI). Despite being less than two years old, the company continues to make incredible strides in healthcare innovation... '
     },
     {
         title: 'XRP Healthcare Ventures into the Expansive Realm of AI',
-        titleHmtl: 'XRP Healthcare Ventures into the Expansive Realm of AI',
         img: '/news/hospitals-management.webp?nocache',
         link: 'https://www.hospitals-management.com/news/xrp-healthcare-ventures-into-the-expansive-realm-of-ai',
         imgClass: '',
         date: '2024-09-10 00:00:00',
-        description: ' XRP Healthcare is advancing the integration of artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span> and blockchain technology in the healthcare sector with the introduction of the XRPH AI Chatbot. This new platform offers personalized, region<span class="sp-font">-</span>specific healthcare advice and is accessible through the company<span class="sp-font">&apos;</span>s newly launched websites, XRPH.ai and XRPHealthcare.ai ... '
+        description: ' XRP Healthcare is advancing the integration of artificial intelligence (AI) and blockchain technology in the healthcare sector with the introduction of the XRPH AI Chatbot. This new platform offers personalized, region-specific healthcare advice and is accessible through the company\'s newly launched websites, XRPH.ai and XRPHealthcare.ai ... '
     },
     {
         title: 'XRP Healthcare Enters the Limitless World of AI',
-        titleHmtl: 'XRP Healthcare Enters the Limitless World of AI',
         img: '/news/thetechgossip.png',
         link: 'https://thetechgossip.com/xrp-healthcare-enters-the-limitless-world-of-ai/',
         imgClass: '',
         date: '2024-09-11 00:00:00',
-        description: ' XRP Healthcare is taking bold steps to become a leader in the integration of artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span> and blockchain within the healthcare industry. At the heart of this transformation is the launch of the company’s groundbreaking XRPH AI Chatbot ... '
+        description: ' XRP Healthcare is taking bold steps to become a leader in the integration of artificial intelligence (AI) and blockchain within the healthcare industry. At the heart of this transformation is the launch of the company’s groundbreaking XRPH AI Chatbot ... '
     },
     {
         title: 'XRP Healthcare Enters the Limitless World of AI',
-        titleHmtl: 'XRP Healthcare Enters the Limitless World of AI',
         img: '/news/ai-techpark.webp?nocache',
         link: 'https://ai-techpark.com/xrp-healthcare-enters-the-limitless-world-of-ai/',
         imgClass: '',
         date: '2024-09-10 00:00:00',
-        description: ' XRP Healthcare is taking bold steps to become a leader in the integration of artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span> and blockchain within the healthcare industry. At the heart of this transformation is the launch of the company’s groundbreaking XRPH AI Chatbot ... ',
+        description: ' XRP Healthcare is taking bold steps to become a leader in the integration of artificial intelligence (AI) and blockchain within the healthcare industry. At the heart of this transformation is the launch of the company’s groundbreaking XRPH AI Chatbot ... ',
     },
     {
         title: 'XRP Healthcare Launches AI Chatbot to Provide Personalize Healthcare Advice',
-        titleHmtl: 'XRP Healthcare Launches AI Chatbot to Provide Personalize Healthcare Advice',
         img: '/news/nextdigitalhealth.webp?nocache',
         link: 'https://nextdigitalhealth.com/healthcaretechnology/digitalhealth/xrp-healthcare-launches-ai-chatbot-to-provide-personalize-healthcare-advice/',
         imgClass: '', date: '2024-09-11 00:00:00',
-        description: ' XRP Healthcare, a health tech company integrating artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span> and blockchain in the healthcare sector globally, has launched a revolutionary XRPH AI Chatbot to provide region<span class="sp-font">-</span>specific healthcare advice tailored to personal healthcare needs. '
+        description: ' XRP Healthcare, a health tech company integrating artificial intelligence (AI) and blockchain in the healthcare sector globally, has launched a revolutionary XRPH AI Chatbot to provide region-specific healthcare advice tailored to personal healthcare needs. '
     },
     {
         title: 'XRP Healthcare Ventures into AI Innovations',
-        titleHmtl: 'XRP Healthcare Ventures into AI Innovations',
         img: '/news/ai-tech365.webp?nocache',
         link: 'https://aitech365-com.cdn.ampproject.org/c/s/aitech365.com/automation-in-ai/healthcare-automation/xrp-healthcare-ventures-into-ai-innovations/?amp=1',
         imgClass: '', date: '2024-09-11 00:00:00',
-        description: ' XRP Healthcare is taking bold steps to become a leader in the integration of artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span> and blockchain within the healthcare industry.'
+        description: ' XRP Healthcare is taking bold steps to become a leader in the integration of artificial intelligence (AI) and blockchain within the healthcare industry.'
     },
     {
         title: 'XRP Healthcare Leaps Forward with AI and Blockchain, Expands into Africa',
-        titleHmtl: 'XRP Healthcare Leaps Forward with AI and Blockchain, Expands into Africa',
         img: '/news/blockchainreporter.webp',
         link: 'https://blockchainreporter.net/xrp-healthcare-leaps-forward-with-ai-and-blockchain-expands-into-africa/',
         imgClass: '',
         date: '2024-09-11 00:00:00',
-        description: ' XRP Healthcare is advancing its position in the healthcare sector by integrating artificial intelligence <span class="sp-font">(</span>AI<span class="sp-font">)</span> and blockchain technologies. The company has recently introduced the XRPH AI Chatbot.'
+        description: ' XRP Healthcare is advancing its position in the healthcare sector by integrating artificial intelligence (AI) and blockchain technologies. The company has recently introduced the XRPH AI Chatbot.'
     },
     {
         title: 'XRPL-Based XRP Healthcare Embraces AI with New Integration, Leading to 5% XRPH Price Surge',
-        titleHmtl: 'XRPL<span class="sp-font">-</span>Based XRP Healthcare Embraces AI with New Integration, Leading to 5<span class="sp-font">%</span> XRPH Price Surge',
         img: '/news/crypto-news-flash.png', imgClass: 'px-2 py-1 bg-dark',
         link: 'https://www.crypto-news-flash.com/xrpl-based-xrp-healthcare-embraces-ai-with-new-integration-leading-to-5-xrph-price-surge/?amp=1',
         date: '2024-09-11 00:00:00',
-        description: ' XRP Healthcare, a pharma and healthcare platform built on the XRP Ledger <span class="sp-font">(</span>XRPL<span class="sp-font">)</span>, has announced the launch of an AI tool that offers personalized and region<span class="sp-font">-</span>specific advice to its users.'
+        description: ' XRP Healthcare, a pharma and healthcare platform built on the XRP Ledger (XRPL), has announced the launch of an AI tool that offers personalized and region-specific advice to its users.'
     },
     {
         title: 'XRP Healthcare Revolutionizes Healthcare with AI and Blockchain Integration',
@@ -169,7 +349,7 @@ const NewsData = [
         link: 'https://www.centralcharts.com/en/news/4763321-xrp-healthcare-halts-new-staking-of-xrph-token-to-preserve-finite-supply-shifts-focus-to-real-world-healthcare-ventures',
         imgClass: '',
         date: '2024-07-23 10:30:00',
-        description: ' XRP Healthcare Halts New Staking of XRPH Token to Preserve Finite Supply, Shifts Focus to Real<span class="sp-font">-</span>World Healthcare Ventures.'
+        description: ' XRP Healthcare Halts New Staking of XRPH Token to Preserve Finite Supply, Shifts Focus to Real-World Healthcare Ventures.'
     },
     {
         title: 'XRP Healthcare Stops New Staking Of XRPH Token',
@@ -177,7 +357,7 @@ const NewsData = [
         link: 'https://coinpedia.org/crypto-live-news/xrp-healthcare-stops-new-staking-of-xrph-token/amp/?utm_source=thecryptoapp',
         imgClass: 'bg-coinpedia',
         date: '2024-07-23 10:30:00',
-        description: ' XRP Healthcare halts new staking activities for its XRPH token. The decision to stop new staking<span class="sp-font">-</span>related activities mirrors the blockchain<span class="sp-font">-</span>based healthcare firm’s commitment to focus on real<span class="sp-font">-</span>world healthcare business operations rather than just digital token<span class="sp-font">-</span>based activities.'
+        description: ' XRP Healthcare halts new staking activities for its XRPH token. The decision to stop new staking-related activities mirrors the blockchain-based healthcare firm’s commitment to focus on real-world healthcare business operations rather than just digital token-based activities.'
     },
     {
         title: 'XRP Healthcare to Expand to UAE with Successful Patent Registration',
@@ -193,7 +373,7 @@ const NewsData = [
         link: 'https://coingape.com/xrp-healthcare-hits-major-milestone-with-uae-trademark-registration/',
         imgClass: '',
         date: '2024-07-12 01:00:00',
-        description: ' The XRPL<span class="sp-font">-</span>based pharma and medical platform XRP Healthcare has again marked a significant milestone, securing a trademark in the UAE.'
+        description: ' The XRPL-based pharma and medical platform XRP Healthcare has again marked a significant milestone, securing a trademark in the UAE.'
     },
     {
         title: 'XRP Healthcare Hits Major Milestone With UAE Trademark Registration',
@@ -233,7 +413,7 @@ const NewsData = [
         link: 'https://finance.yahoo.com/news/just-18-months-xrp-healthcare-053000462.html',
         imgClass: '',
         date: '2024-06-24 10:30:00',
-        description: ' Since its ambitious launch at the Sologenic Meet<span class="sp-font">-</span>up event in London on November 22, 2022, XRP Healthcare has rapidly positioned itself as a trailblazer in the intersection of blockchain and healthcare. In just 18 months,...'
+        description: ' Since its ambitious launch at the Sologenic Meet-up event in London on November 22, 2022, XRP Healthcare has rapidly positioned itself as a trailblazer in the intersection of blockchain and healthcare. In just 18 months,...'
     },
     {
         title: 'After Just 18 Months, Is XRP Healthcare (XRPH) One of the Fastest Growing Companies on the Blockchain?',
@@ -241,7 +421,7 @@ const NewsData = [
         link: 'https://www.benzinga.com/pressreleases/24/06/n39449504/after-just-18-months-is-xrp-healthcare-xrph-one-of-the-fastest-growing-companies-on-the-blockchain',
         imgClass: '',
         date: '2024-06-24 10:30:00',
-        description: ' Since its ambitious launch at the Sologenic Meet<span class="sp-font">-</span>up event in London on November 22, 2022, XRP Healthcare has rapidly positioned itself as a trailblazer in the intersection of blockchain and healthcare. In just 18 months,...'
+        description: ' Since its ambitious launch at the Sologenic Meet-up event in London on November 22, 2022, XRP Healthcare has rapidly positioned itself as a trailblazer in the intersection of blockchain and healthcare. In just 18 months,...'
     },
     {
         title: 'After Just 18 Months, Is XRP Healthcare (XRPH) One of the Fastest Growing Companies on the Blockchain?',
@@ -249,7 +429,7 @@ const NewsData = [
         link: 'https://seekingalpha.com/pr/19766042-after-just-18-months-is-xrp-healthcare-xrph-one-of-fastest-growing-companies-on-blockchain',
         imgClass: '',
         date: '2024-06-24 01:30:00',
-        description: ' Since its ambitious launch at the Sologenic Meet<span class="sp-font">-</span>up event in London on November 22, 2022, XRP Healthcare has rapidly positioned itself as a trailblazer in the intersection of blockchain and healthcare. In just 18 months,...'
+        description: ' Since its ambitious launch at the Sologenic Meet-up event in London on November 22, 2022, XRP Healthcare has rapidly positioned itself as a trailblazer in the intersection of blockchain and healthcare. In just 18 months,...'
     },
     {
         title: 'XRP Healthcare Magazine Issue 3: Featuring Ugandan Innovator Peter Waiswa, NHS Collaborator ISANSYS, Ehlers-Danlos Society & Top 10 African Hospitals',
@@ -288,7 +468,7 @@ const NewsData = [
         link: 'https://coingape.com/xrp-news-today-xrp-healthcare-makes-big-move-in-mergers-acquisitions/',
         imgClass: '',
         date: '2024-06-10 12:30:00',
-        description: ' XRP Ledger<span class="sp-font">-</span>based first pharma and healthcare platform XRP Healthcare on Monday announced the appointment of mergers and acquisitions specialist Whitney Lynn as its new chairman...'
+        description: ' XRP Ledger-based first pharma and healthcare platform XRP Healthcare on Monday announced the appointment of mergers and acquisitions specialist Whitney Lynn as its new chairman...'
     },
     {
         title: 'Ripple News: XRP Healthcare Appoints M&A Veteran Lynn to Lead African Expansion',
@@ -296,7 +476,7 @@ const NewsData = [
         link: 'https://coinpedia.org/news/xrp-healthcare-appoints-whitney-lynn-as-new-chairman-to-drive-african-expansion/',
         imgClass: 'bg-coinpedia',
         date: '2024-06-10 18:48:00',
-        description: ' XRP Healthcare, an innovative pharma and healthcare platform using the XRP Ledger, has announced a significant leadership change. Whitney Lynn, a mergers and acquisitions <span class="sp-font">(M&A)</span> specialist with <span class="sp-font">45</span> years of experience...'
+        description: ' XRP Healthcare, an innovative pharma and healthcare platform using the XRP Ledger, has announced a significant leadership change. Whitney Lynn, a mergers and acquisitions (M&A) specialist with 45 years of experience...'
     },
     {
         title: 'XRP Healthcare Suspends XRP to XRPH Swap. Here’s Why',
@@ -312,7 +492,7 @@ const NewsData = [
         link: 'https://thecryptobasic.com/2024/05/28/xrp-healthcare-suspends-xrp-swap-facility-less-than-a-month-after-launch/',
         imgClass: '',
         date: '2024-05-28 01:00:00',
-        description: 'XRP Healthcare, a platform focused on blockchain<span class="sp-font">-</span>based pharma and healthcare services, announces the suspension of the XRP to XRPH swap facility.'
+        description: 'XRP Healthcare, a platform focused on blockchain-based pharma and healthcare services, announces the suspension of the XRP to XRPH swap facility.'
     },
     {
         title: 'XRP Healthcare Ceases XRP To XRPH Swap Facility Amid Supply Crunch, What’s Happening?',
@@ -352,7 +532,7 @@ const NewsData = [
         link: 'https://finance.yahoo.com/news/xrp-healthcare-sponsors-ehlers-danlos-053000935.html',
         imgClass: '',
         date: '2024-05-16 01:30:00',
-        description: ' XRP Healthcare proudly announces its sponsorship of the upcoming Ehlers<span class="sp-font">-</span>Danlos Society event in Philadelphia this July 17<sup>th</sup>   – 21<sup>st</sup>.'
+        description: ' XRP Healthcare proudly announces its sponsorship of the upcoming Ehlers-Danlos Society event in Philadelphia this July 17<sup>th</sup>   – 21<sup>st</sup>.'
     },
     {
         title: 'XRP Healthcare Sponsors The Ehlers-Danlos Society, with Vital Support via its Prescription Savings Card',
@@ -360,7 +540,7 @@ const NewsData = [
         link: 'https://www.benzinga.com/pressreleases/24/05/n38864117/xrp-healthcare-sponsors-the-ehlers-danlos-society-with-vital-support-via-its-prescription-savings-',
         imgClass: '',
         date: '2024-05-16 01:30:00',
-        description: ' XRP Healthcare proudly announces its sponsorship of the upcoming Ehlers<span class="sp-font">-</span>Danlos Society event in Philadelphia this July 17<sup>th</sup>   – 21<sup>st</sup>.'
+        description: ' XRP Healthcare proudly announces its sponsorship of the upcoming Ehlers-Danlos Society event in Philadelphia this July 17<sup>th</sup>   – 21<sup>st</sup>.'
     },
     {
         title: 'XRP Healthcare’s Bold Move: Revolutionizing Uganda’s Medical Scene with New Trademark and Expansion Plans',
@@ -398,21 +578,21 @@ const NewsData = [
         img: '/news/yahoo_finance.png',
         link: 'https://finance.yahoo.com/news/renowned-industry-expert-peter-kyobe-053000444.html',
         imgClass: '', date: '2024-04-16 10:30:00',
-        description: ' XRP Healthcare, a UAE<span class="sp-font">-</span>based M<span class="sp-font">&</span>A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
+        description: ' XRP Healthcare, a UAE-based M&A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
     },
     {
         title: 'Renowned Industry Expert Peter Kyobe Waiswa Joins XRP Healthcare to transform Private Healthcare in Uganda',
         img: '/news/seekingalpha.png',
         link: 'https://seekingalpha.com/pr/19687867-renowned-industry-expert-peter-kyobe-waiswa-joins-xrp-healthcare-to-transform-private',
         imgClass: '', date: '2024-04-16 10:30:00',
-        description: ' XRP Healthcare, a UAE<span class="sp-font">-</span>based M<span class="sp-font">&</span>A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
+        description: ' XRP Healthcare, a UAE-based M&A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
     },
     {
         title: 'Renowned Industry Expert Peter Kyobe Waiswa Joins XRP Healthcare to transform Private Healthcare in Uganda',
         img: '/news/benzinga.png',
         link: 'https://www.benzinga.com/pressreleases/24/04/n38263299/renowned-industry-expert-peter-kyobe-waiswa-joins-xrp-healthcare-to-transform-private-healthcare-i',
         imgClass: '', date: '2024-04-16 10:30:00',
-        description: ' XRP Healthcare, a UAE<span class="sp-font">-</span>based M<span class="sp-font">&</span>A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
+        description: ' XRP Healthcare, a UAE-based M&A healthcare investment and management firm, proudly announces the appointment of Peter Kyobe Waiswa as a Healthcare Industry Expert....'
     },
     {
         title: 'XRP Healthcare Unveils Revolutionary Swap Facility in Open-Source XRPH Wallet, Encouraging Autonomy Across XRPL Projects',
@@ -487,7 +667,6 @@ const NewsData = [
     },
     {
         title: 'XRP Healthcare move forward as one entity for African M&A venture',
-        titleHmtl: 'XRP Healthcare move forward as one entity for African M<span class="sp-font">&amp;</span>A venture',
         img: '/news/finanznachrichten.svg',
         link: 'https://www.finanznachrichten.de/nachrichten-2024-03/61805635-xrp-healthcare-move-forward-as-one-entity-for-african-m-a-venture-008.htm',
         imgClass: '',
@@ -630,7 +809,7 @@ const NewsData = [
         title: 'XRPL Network Welcomes XRP Healthcare as a Validator Node',
         img: '/news/coingape.png', imgClass: '', date: '2024-01-15 00:00:00',
         link: 'https://coingape.com/xrp-healthcare-secures-position-as-xrpl-validator/amp/',
-        description: 'In a blitz of breakthroughs witnessed across the Web3 landscape, XRP Healthcare, a blockchain<span class="sp-font">-</span>based healthcare platform utilizing Web3 ...'
+        description: 'In a blitz of breakthroughs witnessed across the Web3 landscape, XRP Healthcare, a blockchain-based healthcare platform utilizing Web3 ...'
     },
     {
         title: 'XRP Healthcare Becomes XRPL Validator to Ensure a ‘Secure and Transparent Healthcare Ecosystem’',
@@ -645,7 +824,7 @@ const NewsData = [
         description: 'In a recent proclamation, XRP Healthcare, a trailblazer in healthcare, blockchain, and cryptocurrency, proudly declares ...'
     },
     {
-        title: 'XRP Healthcare Advances as XRPL Validator <span class="sp-font">-</span> Strengthening Crypto Transparency',
+        title: 'XRP Healthcare Advances as XRPL Validator - Strengthening Crypto Transparency',
         img: '/news/yahoo_finance.png', imgClass: '', date: '2024-01-15 13:30:00',
         link: 'https://finance.yahoo.com/news/xrp-healthcare-advances-xrpl-validator-083000059.html',
         description: 'XRP Healthcare, an innovative force at the convergence of healthcare, blockchain, and cryptocurrency, ...'
@@ -700,7 +879,7 @@ const NewsData = [
         link: 'https://www.nasdaq.com/articles/xrp-news:-secs-$770-million-penalty-target-and-dubais-healthcare-leap',
         imgClass: '',
         date: '2023-10-30 10:05:00',
-        description: 'The SEC is eying a mouthwatering <span class="sp-font">$</span>770 million penalty for the illegal sales of XRP to institutional investors...'
+        description: 'The SEC is eying a mouthwatering $770 million penalty for the illegal sales of XRP to institutional investors...'
     },
     {
         title: 'Bill Morgan announces XRP healthcare’s middle east expansion',
@@ -738,7 +917,7 @@ const NewsData = [
         link: 'https://amp.fxempire.com/en/xrp-news-secs-770-million-penalty-target-and-dubais-healthcare-leap/1385029',
         imgClass: '',
         date: '2023-10-31 02:05:00',
-        description: 'The SEC is eying a mouthwatering <span class="sp-font">$</span>770 million penalty for the illegal sales of XRP to institutional investors. ...'
+        description: 'The SEC is eying a mouthwatering $770 million penalty for the illegal sales of XRP to institutional investors. ...'
     },
     {
         title: 'XRP Healthcare takes Ripple&apos;s Lead with Expansion into Dubai and Middle East',
@@ -761,7 +940,7 @@ const NewsData = [
         img: '/news/coingape.png',
         link: 'https://coingape.com/xrp-lawyer-shares-exciting-development-with-ripple-community/',
         imgClass: '', date: '2023-10-30 00:00:00',
-        description: 'According to a press release, XRPL<span class="sp-font">-</span>based XRP Healthcare announces expansion into Dubai and the Middle ...'
+        description: 'According to a press release, XRPL-based XRP Healthcare announces expansion into Dubai and the Middle ...'
     },
     {
         title: 'Transformative Partnership Established to Bring NASA-Designed Ventilators to African Medical Facilities',
@@ -908,14 +1087,14 @@ const NewsData = [
         img: '/news/healthcaremea.png',
         link: 'https://www.healthcaremea.com/xrp-healthcare-partners-with-spiritus-medical-to-bring-nasa-co-developed-medical-technology-to-east-africa/',
         imgClass: '', date: '2023-08-03 00:00:00',
-        description: 'UGANDA— XRP Healthcare Africa and Spiritus Medical, a U.S.<span class="sp-font">-</span>based medical technology company, have ...'
+        description: 'UGANDA— XRP Healthcare Africa and Spiritus Medical, a U.S.-based medical technology company, have ...'
     },
     {
         title: 'XRP Healthcare Enters African Healthcare Sector as an Acquisition Company',
         img: '/news/exchange-logo-africa.png',
         link: 'https://theexchange.africa/tech-business/xrp-healthcare-enters-african-healthcare-sector-as-an-acquisition-company/?amp=1',
         imgClass: '', date: '2023-03-31 00:00:00',
-        description: 'In order to build a sustainable, first<span class="sp-font">-</span>rate healthcare network, XRP Healthcare has declared its entrance into Africa’s ...'
+        description: 'In order to build a sustainable, first-rate healthcare network, XRP Healthcare has declared its entrance into Africa’s ...'
     },
     {
         title: 'XRP Healthcare expands into Africa',
@@ -978,14 +1157,14 @@ const NewsData = [
         img: '/news/logos_9.svg',
         link: 'https://www.binance.com/en/price/xrp-healthcare',
         imgClass: 'bg-dark py-3 px-1', date: '2023-03-08 00:00:00',
-        description: 'The live price of XRP Healthcare is <span class="sp-font">$</span>0.027181 per <span class="sp-font">(XRPH / USD)</span> with a current market cap of <span class="sp-font">$</span>0 USD.'
+        description: 'The live price of XRP Healthcare is $0.027181 per (XRPH / USD) with a current market cap of $0 USD.'
     },
     {
         title: 'XRP Healthcare Price ',
         img: '/news/crypto.png',
         link: 'https://crypto.com/price/xrp-healthcare',
         imgClass: '', date: '2023-03-08 00:00:00',
-        description: 'XRP Healthcare’s price today is USD0.02172, with a <span className="font-sans">24-</span>hour trading volume of  <span class="sp-font">$204,934</span> . XRPH is ...'
+        description: 'XRP Healthcare’s price today is USD0.02172, with a 24-hour trading volume of  $204,934. XRPH is ...'
     },
     {
         title: 'XRP Healthcare celebrates its first listing on Bitrue',
