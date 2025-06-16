@@ -103,23 +103,18 @@ export default function Africa() {
         <>
             <Image src="/africa/xrph-africa-top.webp" alt={'XRP Healthcare Africa'} width={1500} height={1200} className="pt-16"/>
             <div className="px-6">
-                <div className="py-24 sm:py-16 lg:px-8">
-                    <div className="mx-auto max-w-7xl-- text-center">
-                        <p className="text-xl mt-2">XRP Healthcare is making significant advancements in Africa,
-                            concentrating
-                            efforts in Uganda to transform the private healthcare sector through mergers, acquisitions,
-                            and
-                            blockchain technology. Follow our progress here:</p>
+                <div className="py-16 lg:px-8">
+                    <div className="mx-auto max-w-7xl text-center">
+                        <p className="text-xl mt-2">XRP Healthcare is making significant advancements in Africa, concentrating efforts in Uganda to transform the private healthcare sector through mergers, acquisitions, and blockchain technology. Follow our progress here:</p>
                     </div>
                 </div>
-
-                <div className="bg-map dark:bg-waves-dark bg-fixed bg-center bg-cover  py-20">
+                <div className="bg-map --dark:bg-waves-dark bg-fixed bg-center bg-cover  py-20">
                     <div className="max-w-screen-xl mx-auto">
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                             {AfricaPosts.map((post, index) => (
                                 <Link href={post.link} key={index + 1} title={post.title} target={'_blank'}>
                                     <div className="text-center group">
-                                        <Card className="rounded-none border-0">
+                                        <Card className="rounded-none border-0 dark:border-dark:border-gray-700">
                                             <div className="dark:border-gray-700 group-hover:border-b-jamni border-b relative overflow-hidden">
                                                 <Logo alt={post.title} lightLogo={post.img} darkLogo={post.imgDark} width={1500} height={1103} className="group-hover:scale-105 duration-300 transition-all"/>
                                             </div>
@@ -146,7 +141,7 @@ export default function Africa() {
 
                 <div className="max-w-full mx-auto pt-20">
                     <h2 className="text-jamni text-4xl mb-2">About XRP Healthcare</h2>
-                    <p>XRP Healthcare is the first healthcare platform built on the XRPL, transforming global health
+                    <p className="dark:text-gray-400">XRP Healthcare is the first healthcare platform built on the XRPL, transforming global health
                         with mergers, acquisitions, blockchain and AI.</p>
                     <div className="lg:w-1/3 md:w-1/2 w-full mx-auto- mt-6">
                         <h2 className="text-jamni text-4xl mb-2">{FixText('Press & Media contact')}</h2>

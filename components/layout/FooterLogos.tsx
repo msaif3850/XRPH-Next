@@ -25,7 +25,7 @@ const footerLogos = [
     { img: '/footer-logos/expogroup.webp', imgDark: '/footer-logos/expogroup.webp',alt: 'expogroup', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/footer-logos/riteaid.png', imgDark: '/footer-logos/riteaid.png',alt: 'riteaid', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/footer-logos/genesis.png', imgDark: '/footer-logos/genesis.png',alt: 'genesis', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
-    { img: '/footer-logos/arc-group.png', imgDark: '/footer-logos/arc-group.png',alt: 'arc group', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
+    { img: '/footer-logos/arc-group.png', imgDark: '/footer-logos/arc-group-dark.png',alt: 'arc group', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/xrph-logos/africa.png',imgDark: '/xrph-logos/africa-dark.png', alt: 'XRPHealthcare Africa', width: 'w-full md:w-2/3 lg:w-2/6 order-last sm:order-first sm:order-none' },
     { img: '/footer-logos/ms-uganda.png', imgDark: '/footer-logos/ms-uganda.png',alt: 'ms uganda', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     // { img: '/footer-logos/mind.png', imgDark: '/footer-logos/mind.png',alt: 'mind', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
