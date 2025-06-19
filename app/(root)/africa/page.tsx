@@ -108,15 +108,15 @@ export default function Africa() {
                         <p className="text-xl mt-2">XRP Healthcare is making significant advancements in Africa, concentrating efforts in Uganda to transform the private healthcare sector through mergers, acquisitions, and blockchain technology. Follow our progress here:</p>
                     </div>
                 </div>
-                <div className="bg-map --dark:bg-waves-dark bg-fixed bg-center bg-cover  py-20">
+                <div className="bg-map dark:bg-map-dark bg-fixed bg-center bg-cover  py-20">
                     <div className="max-w-screen-xl mx-auto">
                         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                             {AfricaPosts.map((post, index) => (
                                 <Link href={post.link} key={index + 1} title={post.title} target={'_blank'}>
                                     <div className="text-center group">
-                                        <Card className="rounded-none border-0 dark:border-dark:border-gray-700">
-                                            <div className="dark:border-gray-700 group-hover:border-b-jamni border-b relative overflow-hidden">
-                                                <Logo alt={post.title} lightLogo={post.img} darkLogo={post.imgDark} width={1500} height={1103} className="group-hover:scale-105 duration-300 transition-all"/>
+                                        <Card className="dark:bg-gray-800 border-0 dark:border dark:border-gray-600">
+                                            <div className="dark:border-gray-700 group-hover:border-b-jamni border-b dark:border-b-gray-600 relative overflow-hidden">
+                                                <Logo alt={post.title} lightLogo={post.img} darkLogo={post.imgDark} width={1500} height={1103} className="group-hover:scale-105 duration-300 transition-all rounded-t-lg"/>
                                             </div>
                                             <CardHeader>
                                                 <CardTitle

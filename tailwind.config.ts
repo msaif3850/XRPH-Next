@@ -18,6 +18,7 @@ export default {
 			'waves-ai-dark': "url('/ai/xrph-ai-banner-mobile-dark.png')",
 			'waves-wallet': "url('/xrph-wallet-app-home-banner.webp')",
 			'map': "url('/africa-map.webp')",
+			'map-dark': "url('/africa-map-dark.png')",
 			'thumbnail': "url('/yt-thumbnail.webp')",
 			'psca': "url('/psca/xrph-prescription-savings-card-and-app.webp')",
 		},

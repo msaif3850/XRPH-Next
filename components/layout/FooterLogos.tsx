@@ -2,7 +2,7 @@
 import Logo from "@/components/layout/Logo";
 const footerLogos = [
     { img: '/footer-logos/toros.png', imgDark: '/footer-logos/toros.png', alt: 'toros group', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
-    { img: '/footer-logos/medrull.png', imgDark: '/footer-logos/medrull.png', alt: 'medrull', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
+    { img: '/footer-logos/medrull.png', imgDark: '/footer-logos/medrull-dark.png', alt: 'medrull', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/footer-logos/incepta.png', imgDark: '/footer-logos/incepta.png', alt: 'incepta', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/footer-logos/universal.png', imgDark: '/footer-logos/universal.png', alt: 'universal', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
     { img: '/footer-logos/naari.png', imgDark: '/footer-logos/naari.png', alt: 'naari', width: 'w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6' },
