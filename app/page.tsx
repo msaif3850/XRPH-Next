@@ -11,12 +11,12 @@ import {
     DialogHeader, DialogTitle,
     DialogTrigger
 } from "@/components/ui/dialog";
-import {FaPlayCircle} from "react-icons/fa";
+//import {FaPlayCircle} from "react-icons/fa";
 import React from "react";
 import Logo from "@/components/layout/Logo";
 import {FixText} from "@/components/FixText";
 import ElfsightWidget from "@/components/layout/ElfsightWidget";
-import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
+//import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
 import GhostSignupISSUE5 from "@/components/layout/GhostSignupISSUE5";
 import AppiOS from "@/components/layout/AppiOS";
 import AppAndroid from "@/components/layout/AppAndroid";
