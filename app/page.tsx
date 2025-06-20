@@ -26,7 +26,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="py-5">&nbsp;</div>
+            <div className="py-5 hidden">&nbsp;</div>
             <section id="xrph-ai-banner" className="bg-waves-ai dark:bg-waves-ai-dark bg-cover bg-center bg-no-repeat pt-24 sm:pt-28 pb-16 sm:pb-12 -sm:py-20">
                 <div className="mx-auto xl:px-32 lg:px-20 md:px-16 px-0 ">
                     <div className="flex flex-col md:flex-row items-center gap-8">

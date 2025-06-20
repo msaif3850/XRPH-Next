@@ -7,11 +7,11 @@ export default function PageTitleImage({
                                            description = ''
                                        }: { image?: string, imageDark?: string, alt?: string, description?: string }): JSX.Element {
     return (
-        <div className="px-6 py-24 sm:py-22 lg:px-8 flex flex-col justify-center items-center w-full">
-            <div className="mx-auto max-w-3xl text-center">
-                <Logo lightLogo={image} darkLogo={imageDark} alt={alt} width={500} height={200} className={'text-center'}/>
+        <div className="px-6 pt-24 pb-10 sm:py-22 lg:px-8 w-full">
+            <div className="max-w-3xl mx-auto text-center flex flex-col justify-center items-center">
+                <Logo lightLogo={image} darkLogo={imageDark} alt={alt} width={400} height={180} className={'text-center w-60 sm:w-96'}/>
                 {/*<Image className="text-center" src={image} alt={alt} width={500} height={200}/>*/}
-                {description && <h2 className="mt-2 text-pretty text-lg sm:text-xl/8">{description}</h2>}
+                {description && <h2 className="mt-2 text-pretty text-lg sm:text-xl/8 font-semibold">{description}</h2>}
             </div>
         </div>
     )
