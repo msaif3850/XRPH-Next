@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {FaAngleRight} from "react-icons/fa6";
+//import {FaAngleRight} from "react-icons/fa6";
 import Link from "next/link";
 import {Exchanges} from "@/variables";
 import React from "react";
