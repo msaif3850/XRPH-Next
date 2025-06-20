@@ -20,6 +20,7 @@ import YouTubeEmbed from "@/components/layout/YouTubeEmbed";
 import GhostSignupISSUE5 from "@/components/layout/GhostSignupISSUE5";
 import AppiOS from "@/components/layout/AppiOS";
 import AppAndroid from "@/components/layout/AppAndroid";
+import RandomPrescriptionImage from "@/components/layout/RandomPrescriptionImage";
 
 
 export default function Home() {
@@ -127,7 +128,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className="px-6 py-20 lg:px-28 container mx-auto">
+            <div className="px-6 py-20 lg:px-14 container-fluid mx-auto">
                 <div className="mx-auto max-w-7xl text-center mb-8 ">
                     <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center text-center">
                         Introducing the <Logo
@@ -163,8 +164,7 @@ export default function Home() {
                                 <Image width={'20'} height={'20'} src={"/arrow-gradient.png"} alt={"arrow"}
                                        className="w-5 mt-1"/>
                                 <div>
-                                    Earn XRPH Rewards Every Time You Use Your Card – Straight to Your
-                                    Wallet.
+                                    Powered by XRPH AI {FixText('-')} Your Personal Multi{FixText('-')}lingual Health Assistant.
                                 </div>
                             </li>
                             <li className="text-xl leading-snug flex items-start gap-2">
@@ -179,9 +179,9 @@ export default function Home() {
                     </div>
                     <div className="w-full md:w-7/12 order-1 sm:order-2">
                         <div
-                            className="bg-gradient-to-r from-haraa to-jamni p-4 flex mb-4 md:mb-0 hover:shadow-lg transition-shadow">
-
-                            <Dialog>
+                            className="bg-gradient-to-r from-haraa to-jamni p-3 rounded-xl flex mb-4 md:mb-0 hover:shadow-lg transition-shadow">
+                            <RandomPrescriptionImage/>
+                            {/*<Dialog>
                                 <div
                                     className="w-full bg-thumbnail bg-center bg-cover flex min-h-[200px] sm:min-h-[300px] items-center justify-center rounded-lg shadow-md relative"
                                     style={{boxShadow: "6px 6px 7px 0 rgba(0, 0, 0, 0.8"}}>
@@ -197,7 +197,7 @@ export default function Home() {
                                         </DialogHeader>
                                     </DialogContent>
                                 </div>
-                            </Dialog>
+                            </Dialog>*/}
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@ export default function Home() {
                         <div className="flex justify-center items-center md:justify-between ">
                             <div>
                                 <Image height={'100'} width={'200'} src={"/psca/csv.webp"} alt={"csv"}
-                                       className="w-40 h-auto"/>
+                                       className="w-32 h-auto"/>
                             </div>
                             <div>
                                 <Image height={'100'} width={'200'} src={"/psca/walgreens.webp"} alt={"walgreens"}
@@ -221,7 +221,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <Image height={'100'} width={'200'} src={"/psca/walmart.webp"} alt={"walmart"}
-                                       className="w-50 h-auto"/>
+                                       className="w-40 h-auto"/>
                             </div>
 
                         </div>
@@ -264,15 +264,14 @@ export default function Home() {
             </section>
 
             <div className="px-6 sm:px-0">
-                <div className="container py-10 mx-auto flex flex-col">
-                    <div className="lg:w-4/6 mx-auto">
-                        <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                            <Logo lightLogo={'/xrph-logos/magazine.png'} darkLogo={'/xrph-logos/magazine-dark.png'}
-                                  width={500} height={200}/>
-                        </div>
+                <div className="container py-10 mx-auto flex-flex-col">
+                    <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
+                        <Logo lightLogo={'/xrph-logos/magazine.png'} darkLogo={'/xrph-logos/magazine-dark.png'} width={500} height={200}/>
+                    </div>
+                    <div className="lg:w-5/6 mx-auto">
                         <Dialog>
                             <div className="flex flex-col items-center sm:flex-row">
-                                <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                                <div className="sm:w-1/3 text-center">
                                     {/*<DialogTrigger>
                                         <Image src={'/press-releases/xrp_healthcare_magazine_issue_5.webp'}
                                                className="hover:scale-95 transition-all duration-200"
@@ -283,23 +282,20 @@ export default function Home() {
                                         target={'_blank'}>
                                         <Image src={'/press-releases/xrp_healthcare_magazine_issue_5.webp'}
                                                className="hover:scale-95 transition-all duration-200"
-                                               alt={'XRP Healthcare Magazine issue 5'} width={'500'} height={'150'}/>
+                                               alt={'XRP Healthcare Magazine issue 5'} width={'300'} height={'500'}/>
                                     </Link>
                                 </div>
-                                <div
-                                    className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 --border-t mt-4 pt-4 sm:mt-0 ">
-                                    <p className="leading-relaxed text-lg mb-4"><b>XRP Healthcare: A Defining
-                                        Moment:</b> XRP Healthcare continues to break new ground through strategic
-                                        mergers and acquisitions across Africa. Our Special Edition Magazine is out now,
-                                        offering an exclusive look at our latest milestones and vision for the future.
+                                <div className="sm:w-2/3">
+                                    <p className="leading-relaxed text-lg mb-4">
+                                        <b>XRP Healthcare: A Defining Moment:</b> XRP Healthcare continues to break new ground through strategic mergers and acquisitions across Africa. Our Special Edition Magazine is out now, offering an exclusive look at our latest milestones and vision for the future.
                                     </p>
-                                    <p className="leading-relaxed text-lg mb-4"><b>Global Announcement Revealed:</b> In
-                                        this issue, we announce our bold next step — XRP Healthcare is officially on the
-                                        path to going public, marking a major milestone in our mission to transform
-                                        healthcare across the region.</p>
-                                    <p className="leading-relaxed text-lg mb-4"><b>Read It Today:</b> Download your
-                                        digital copy or order a physical version now. Don’t miss this landmark edition —
+                                    <p className="leading-relaxed text-lg mb-4">
+                                        <b>Global Announcement Revealed:</b> In this issue, we announce our bold next step {FixText('-')} XRP Healthcare is officially on the path to going public, marking a major milestone in our mission to transform healthcare across the region.
+                                    </p>
+                                    <p className="leading-relaxed text-lg mb-4"><b>Read It Today:</b> <Link className="underline" href={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_5?fr=xKAE9_zU1NQ'} target={'_blank'}>Download</Link> your
+                                        digital copy or <Link className="underline" href={'https://xrphealthcare.ai/blog/cart/?add-to-cart=48'} target={'_blank'}>order</Link> a physical version now. Don’t miss this landmark edition —
                                         the future of healthcare starts here.</p>
+                                    <br/>
                                     <MyButton buttonText={'Access Now'}
                                               buttonUrl={'https://issuu.com/xrphealthcare/docs/xrp_healthcare_magazine_issue_5?fr=xKAE9_zU1NQ'}
                                               target={'_blank'}/>
@@ -325,13 +321,17 @@ export default function Home() {
                         <Logo lightLogo={'/xrph-logos/africa.png'} darkLogo={'/xrph-logos/africa-dark.png'}
                               width={500} height={200}/>
                     </div>
-                    <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
+                    <div className="lg:w-5/6 mx-auto flex flex-wrap items-center">
                         <div className="lg:w-2/3 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
                             <p className="leading-relaxed text-lg mb-4">XRP Healthcare has completed its first retail and wholesale pharmacy chain acquisition in Africa, accelerating our expansion strategy.
-                                <br/><br/>This strengthens our position by integrating medication, distribution, and pharmaceutical operations under one framework.
-                                <br/><br/>Through strategic acquisitions, we’re improving efficiency and expanding access to high{FixText('-')}quality care.
-                                <br/><br/>With AI{FixText('-')}driven integration, we’re building a connected, scalable healthcare ecosystem. Read more to see how this milestone drives our vision for healthcare in Africa.</p>
-                            <MyButton buttonText={'Read More'} buttonUrl={'/africa'} target={'_self'}/>
+                            </p>
+                            <p className="leading-relaxed text-lg mb-4">
+                                This strengthens our position by integrating medication, distribution, and pharmaceutical operations under one framework.
+                            </p>
+                            <p className="leading-relaxed text-lg mb-4">Through strategic acquisitions, we’re improving efficiency and expanding access to high{FixText('-')}quality care.
+                            </p>
+                            <p className="leading-relaxed text-lg mb-4">With AI{FixText('-')}driven integration, we’re building a connected, scalable healthcare ecosystem. Read more to see how this milestone drives our vision for healthcare in Africa.</p>
+                            <br/><MyButton buttonText={'Read More'} buttonUrl={'/africa'} target={'_self'}/>
                         </div>
                         <Image
                             className="lg:w-1/3 w-full lg:h-auto h-64 object-cover-object-center rounded order-1 sm:order-2 mb-6 sm:mb-0"
@@ -344,7 +344,7 @@ export default function Home() {
                         <Logo lightLogo={'/xrph-logos/xrph-ai.png'} darkLogo={'/xrph-logos/xrph-ai-dark.png'}
                               width={500} height={200}/>
                     </div>
-                    <div className="lg:w-4/5 mx-auto flex flex-wrap items-center">
+                    <div className="lg:w-5/6 mx-auto flex flex-wrap items-center">
                         <div className="lg:w-1/2 w-full lg:pr-16 lg:py-6 mb-6 lg:mb-0 order-2 sm:order-1">
                             <p className="leading-relaxed text-lg mb-4">XRP Healthcare is strategically positioning
                                 itself to leverage the rapid expansion of AI in healthcare. By focusing on advanced AI

@@ -35,7 +35,7 @@ const footerLogos = [
 export default function FooterLogos() {
     return (
         <div className="py-24 sm:pt-28 sm:pb-20">
-            <div className="mx-auto px-6 container">
+            <div className="mx-auto px-6 container-fluid">
                 {/*<div className="flex items-center justify-center">
                     <hr className="w-1/3 border-black dark:border-gray-400"/>
                 </div>*/}
