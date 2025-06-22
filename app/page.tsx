@@ -434,17 +434,15 @@ export default function Home() {
                         <Logo lightLogo={'/xrph-logos/buy-xrph.png'} darkLogo={'/xrph-logos/buy-xrph-dark.png'}
                               width={500} height={200}/>
                     </div>
-                    <div className="lg:w-5/6 mx-auto">
+                    {/*<div className="lg:w-5/6 mx-auto">*/}
+                    <div className="max-w-screen-xl mx-auto ">
                         <div className="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 lg:gap-6">
                             {Exchanges.map((exchange) => (
-                                <Link href={exchange.link} key={exchange.id} title={exchange.name}
-                                      className="basis-full sm:basis-[48%] md:basis-[48%] lg:basis-[32%]">
+                                <Link href={exchange.link} key={exchange.id} title={exchange.name} className="basis-full sm:basis-[48%] md:basis-[48%] lg:basis-[32%]">
                                     <div className="relative h-[130px] group">
-                                        <div
-                                            className="bg-gradient-to-r from-haraa to-jamni group-hover:from-jamni group-hover:to-haraa p-1 rounded-2xl">
-                                            <div
-                                                className="bg-white dark:bg-gray-400 rounded-2xl overflow-hidden transition-all flex items-center justify-center h-[125px]">
-                                                <Image
+                                        <div className="bg-gradient-to-r from-haraa to-jamni group-hover:from-haraa group-hover:to-jamni p-1 rounded-2xl">
+                                            <div className="bg-white group-hover:bg-transparent dark:bg-gray-400 rounded-2xl overflow-hidden transition-all duration-500 flex items-center justify-center h-[125px]">
+                                            <Image
                                                     src={exchange.image}
                                                     alt={exchange.name}
                                                     width={300}
