@@ -1,7 +1,7 @@
 import {JSX} from "react";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
-import {FaAngleRight, FaArrowRightLong} from "react-icons/fa6";
+import {FaArrowRightLong} from "react-icons/fa6";
 
 
 export default function MyButton(
