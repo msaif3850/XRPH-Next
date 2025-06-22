@@ -341,7 +341,7 @@ export default function Home() {
 
                 <div className="container py-10 mx-auto">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
-                        <Logo lightLogo={'/xrph-logos/xrph-ai.png'} darkLogo={'/xrph-logos/xrph-ai-dark.png'}
+                        <Logo lightLogo={'/xrph-logos/xrphai.png'} darkLogo={'/xrph-logos/xrphai-dark.png'}
                               width={500} height={200}/>
                     </div>
                     <div className="lg:w-5/6 mx-auto flex flex-wrap items-center">
