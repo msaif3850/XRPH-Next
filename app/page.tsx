@@ -68,8 +68,8 @@ export default function Home() {
                                 <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>*/}
                             </div>
                             {/* Horizontal Separator (Visible on Mobile) */}
-                            <div className="md:hidden mt-2">
-                                <Image src="/separator-horizontal.webp" alt="Separator" width={300} height={10} className="w-full h-auto "/>
+                            <div className="md:hidden">
+                                {/*<Image src="/separator-horizontal.webp" alt="Separator" width={300} height={10} className="w-full h-auto "/>*/}
                                 <p>&nbsp;</p>
                             </div>
                         </div>
@@ -123,7 +123,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className="px-6 py-20 lg:px-14 container-fluid mx-auto">
+            <div className="px-6 py-10 lg:px-14 container-fluid mx-auto">
                 <div className="mx-auto max-w-7xl text-center mb-8 ">
                     <h1 className="text-2xl sm:text-3xl lg:inline-flex content-center items-center gap-0 justify-center text-center">
                         Introducing the <Logo
@@ -334,7 +334,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="container py-10 mx-auto">
+                <div className="container py-0 mx-auto">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
                         <Logo lightLogo={'/xrph-logos/xrphai.png'} darkLogo={'/xrph-logos/xrphai-dark.png'}
                               width={500} height={200}/>
