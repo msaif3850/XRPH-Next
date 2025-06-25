@@ -28,9 +28,10 @@ export default function Exchanges() {
             <Placeholder title={'Meet Our Team'} key={'team'} description={''}/>
             <div className="pb-20 px-2">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-10 lg:gap-y-20 lg:gap-x-16">
+                    {/*<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-10 lg:gap-y-20 lg:gap-x-16">*/}
+                    <div className="flex flex-wrap justify-center gap-4 gap-y-10">
                         {TeamMembers.map((member, index) => (
-                            <div key={index + 1} id={member.id} className="group text-center">
+                            <div key={index + 1} id={member.id} className="group text-center basis-full sm:basis-[32%]">
                                 <div className="flex justify-center items-center mb-0.5">
                                     <Image src={member.img} alt={member.name} width={200} height={200}
                                            className="rounded-full grayscale group-hover:grayscale-0"/>

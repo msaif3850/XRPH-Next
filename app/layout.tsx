@@ -147,17 +147,12 @@ export default function RootLayout({
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "XRP Healthcare", "item": "https://xrphealthcare.ai/"},
             {"@type": "ListItem", "position": 2, "name": "XRPH AI", "item": "https://xrph.ai/"},
-            {"@type": "ListItem", "position": 3, "name": "Roadmap", "item": "https://www.xrphealthcare.ai/roadmap"},
-            {"@type": "ListItem", "position": 4, "name": "Magazine", "item": "https://xrphmagazine.ai/magazine/"},
             {"@type": "ListItem", "position": 5, "name": "Blog", "item": "https://www.xrphealthcare.ai/blog"},
+            /*{"@type": "ListItem", "position": 3, "name": "Roadmap", "item": "https://www.xrphealthcare.ai/roadmap"},
+            {"@type": "ListItem", "position": 4, "name": "Magazine", "item": "https://xrphmagazine.ai/magazine/"},
             {"@type": "ListItem", "position": 6, "name": "News", "item": "https://www.xrphealthcare.ai/news"},
-            {"@type": "ListItem", "position": 7, "name": "Exchanges", "item": "https://www.xrphealthcare.ai/buy-xrph"},
-            {
-                "@type": "ListItem",
-                "position": 8,
-                "name": "Savings Card",
-                "item": "https://www.xrphealthcare.ai/XRPHSavingsCard"
-            },
+            {"@type": "ListItem", "position": 7, "name": "Exchanges", "item": "https://www.xrphealthcare.ai/buy-xrph"},*/
+            {"@type": "ListItem", "position": 8, "name": "Savings Card", "item": "https://www.xrphealthcare.ai/XRPHSavingsCard"},
             {"@type": "ListItem", "position": 9, "name": "Contact", "item": "https://www.xrphealthcare.ai/contact"},
             {"@type": "ListItem", "position": 10, "name": "Team", "item": "https://www.xrphealthcare.ai/team"},
             {"@type": "ListItem", "position": 11, "name": "Africa", "item": "https://www.xrphealthcare.ai/africa"}

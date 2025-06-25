@@ -24,9 +24,9 @@ const NavLinks = [
     {key: 1, text: 'XRPH AI', link: 'https://xrph.ai/'},
     /*{key: 2, text: 'Roadmap', link: 'roadmap'},
     {key: 3, text: 'Magazine', link: 'https://xrphmagazine.ai/magazine/'},
-    {key: 4, text: 'News', link: 'news'},
-    {key: 5, text: 'Savings Card', link: 'XRPHSavingsCard'},*/
+    {key: 4, text: 'News', link: 'news'},*/
     /*{key: 6, text: 'Exchanges', link: 'buy-xrph'},*/
+    {key: 5, text: 'Savings Card', link: 'XRPHSavingsCard'},
     {key: 7, text: 'Africa', link: 'africa'},
     {key: 8, text: 'Team', link: 'team'},
     {key: 9, text: 'Blog', link: 'https://xrphealthcare.ai/blog/'},

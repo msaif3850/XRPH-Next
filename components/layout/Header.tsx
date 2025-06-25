@@ -12,7 +12,6 @@ import {NavLinks, SocialLinks} from "@/variables"
 import ThemeToggleMobile from "@/components/layout/ThemeTogglerMobile";
 import Logo from "@/components/layout/Logo";
 import {SheetMenu} from "@/variables";
-
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -35,12 +34,13 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
     return (
         <>
             {/*<HeaderTopBar/>*/}
             <div
                 className={`flex items-center justify-between -dark:bg-gray-900 px-6 fixed w-full z-50 transition-all duration-300 backdrop-blur ${
-                    scrolled ? "shadow-sm top-0 lg:py-1 py-1" : "py-2"
+                    scrolled ? "shadow-sm top-0 lg:py-1 py-1" : "py-2 bg-white dark:bg-transparent"
                 }`}
             >
                 <Link href="/">
@@ -52,12 +52,26 @@ export default function Header() {
                     />
                 </Link>
                 <div className="hidden lg:flex flex-wrap flex-row items-center gap-0">
-                    {NavLinks.map((link) => (
-                        <Link key={link.key} href={link.link}
-                              className={`font-medium text-base px-3 py-1 rounded-full transition-all duration-0 ${
-                                  pathname === link.link ? "text-white bg-gradient-to-r from-haraa to-jamni" : "text-black dark:text-white hover:text-white dark:hover:text-black hover:bg-gradient-to-r hover:from-haraa hover:to-jamni"
-                              }`}>{link.text}</Link>
-                    ))}
+                    {NavLinks.map((link) => {
+                        const isActive = pathname === '/' + link.link || pathname.startsWith(link.link + '/');
+                        return (
+                            <Link
+                                key={link.key}
+                                href={link.link}
+                                className={`font-medium text-base px-3 py-1 rounded-full transition-all duration-300 ${
+                                    isActive
+                                        ? "text-white bg-gradient-to-r from-haraa to-jamni"
+                                        : "text-black dark:text-white hover:text-white dark:hover:text-black hover:bg-gradient-to-r hover:from-haraa hover:to-jamni"
+                                }`}
+                            >
+                                {link.text}
+                            </Link>
+                        );
+                    })}
+
+                    {/*{NavLinks.map((link) => (
+                        <Link key={link.key} href={link.link} className={`font-medium text-base px-3 py-1 rounded-full transition-all duration-0 ${pathname === link.link ? "text-white bg-gradient-to-r from-haraa to-jamni" : "text-black dark:text-white hover:text-white dark:hover:text-black hover:bg-gradient-to-r hover:from-haraa hover:to-jamni"}`}>{link.text}</Link>
+                    ))}*/}
                 </div>
                 <div className="flex items-center gap-3">
                     {/*<AppScanIcon/>*/}
@@ -68,7 +82,8 @@ export default function Header() {
                                     {/*border bg-black border-gray-800 dark:border-gray-800 rounded-full*/}
                                     {/*<FaBars className=""/>*/}
                                     {/*<Image src={'/icon.png'} alt={'XRPH'} width={'20'} height={'20'}/>*/}
-                                    <svg className="h-6 w-6 text-black dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    <svg className="h-6 w-6 text-black dark:text-white"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
                                     </svg>
@@ -76,7 +91,8 @@ export default function Header() {
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="w-[400px] px-3 py-6">
                                 <Tabs defaultValue="xrph-ai" className="mb-2">
-                                    <TabsList className="w-full flex justify-center --bg-jamni/20 dark:bg-jamni/20 px-0">
+                                    <TabsList
+                                        className="w-full flex justify-center --bg-jamni/20 dark:bg-jamni/20 px-0">
                                         <TabsTrigger
                                             value="xrph-ai"
                                             className="text-black dark:text-white w-1/2 py-1 text-md rounded-md transition-all data-[state=active]:bg-gradient-to-r data-[state=active]:from-haraa data-[state=active]:to-jamni data-[state=active]:text-white data-[state=active]:shadow-xl"
@@ -90,7 +106,8 @@ export default function Header() {
                                             XRPH Wallet
                                         </TabsTrigger>
                                     </TabsList>
-                                    <TabsContent value="xrph-ai" className="pt-2 pb-1 bg-jamni/10 dark:bg-gray-800 rounded-lg">
+                                    <TabsContent value="xrph-ai"
+                                                 className="pt-2 pb-1 bg-jamni/10 dark:bg-gray-800 rounded-lg">
                                         <div className="flex items-center justify-center mb-4">
                                             <div className="text-center">
                                                 {/*<h2 className="text-base mb-2">Scan to download the app</h2>*/}
@@ -102,17 +119,21 @@ export default function Header() {
                                                         <div className="w-full border-t border-2 border-haraa"></div>
                                                     </div>
                                                     <div className="relative flex justify-center text-sm">
-                                                        <span className="bg-haraa dark:bg-gray-800 px-2 ">Scan Above OR</span>
+                                                        <span
+                                                            className="bg-haraa dark:bg-gray-800 px-2 ">Scan Above OR</span>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-wrap justify-center gap-1">
-                                                    <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                                                    <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
+                                                    <AppiOS
+                                                        link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                                    <AppAndroid
+                                                        link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
                                                 </div>
                                             </div>
                                         </div>
                                     </TabsContent>
-                                    <TabsContent value="xrph-wallet" className="pt-2 pb-1 bg-haraa/10 dark:bg-gray-800 rounded-lg">
+                                    <TabsContent value="xrph-wallet"
+                                                 className="pt-2 pb-1 bg-haraa/10 dark:bg-gray-800 rounded-lg">
                                         <div className="flex items-center justify-center mb-4">
                                             <div className="text-center">
                                                 {/*<h2 className="text-base mb-2">Scan to download the app</h2>*/}
@@ -124,12 +145,15 @@ export default function Header() {
                                                         <div className="w-full border-t border-2 border-jamni"></div>
                                                     </div>
                                                     <div className="relative flex justify-center text-sm">
-                                                        <span className="bg-jamni dark:bg-gray-800 px-2 ">Scan Above OR</span>
+                                                        <span
+                                                            className="bg-jamni dark:bg-gray-800 px-2 ">Scan Above OR</span>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-wrap justify-center gap-1">
-                                                    <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
-                                                    <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
+                                                    <AppiOS
+                                                        link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
+                                                    <AppAndroid
+                                                        link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
                                                 </div>
                                             </div>
                                         </div>
