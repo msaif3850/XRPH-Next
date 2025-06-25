@@ -33,7 +33,7 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row items-center gap-3 sm:gap-8">
                         {/* Left Column */}
                         <div className="text-center w-full md:w-1/2 lg:w-2/5">
-                            <h1 className="text-4xl font-extrabold mb-0">XRPH AI APP</h1>
+                            <h1 className="text-3xl sm:text-4xl font-extrabold mb-0">XRPH AI APP</h1>
                             <h4 className="text-xl/6 lg:text-2xl font-normal px-4 md:px-0 ">
                                 Holistic {FixText('&')} Traditional
                                 Medical Insights, Powered by AI
@@ -61,7 +61,7 @@ export default function Home() {
                             </div>
 
                             {/* App Store Buttons (Visible on Mobile) */}
-                            <div className="md:hidden flex justify-center gap-4 mt-3">
+                            <div className="md:hidden flex justify-center gap-4 mt-3 ">
                                 <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
                                 <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
                                 {/*<AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
@@ -69,13 +69,8 @@ export default function Home() {
                             </div>
                             {/* Horizontal Separator (Visible on Mobile) */}
                             <div className="md:hidden mt-2">
-                                <Image
-                                    src="/separator-horizontal.webp"
-                                    alt="Separator"
-                                    width={300}
-                                    height={10}
-                                    className="w-full h-auto"
-                                />
+                                <Image src="/separator-horizontal.webp" alt="Separator" width={300} height={10} className="w-full h-auto "/>
+                                <p>&nbsp;</p>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 lg:w-2/5 px-12 md:px-0">
