@@ -27,14 +27,14 @@ export default function Home() {
 
     return (
         <>
-            <div className="py-5 hidden">&nbsp;</div>
-            <section id="xrph-ai-banner" className="bg-waves-ai dark:bg-waves-ai-dark bg-cover bg-center bg-no-repeat pt-24 sm:pt-28 pb-16 sm:pb-12 -sm:py-20">
+            {/*<div className="py-5 hidden sm:block">&nbsp;</div>*/}
+            <section id="xrph-ai-banner" className="bg-waves-ai dark:bg-waves-ai-dark bg-cover bg-center bg-no-repeat pt-20 sm:pt-28 pb-16 sm:pb-12 -sm:py-20">
                 <div className="mx-auto xl:px-32 lg:px-20 md:px-16 px-0 ">
-                    <div className="flex flex-col md:flex-row items-center gap-8">
+                    <div className="flex flex-col md:flex-row items-center gap-3 sm:gap-8">
                         {/* Left Column */}
                         <div className="text-center w-full md:w-1/2 lg:w-2/5">
                             <h1 className="text-4xl font-extrabold mb-0">XRPH AI APP</h1>
-                            <h4 className="text-xl lg:text-2xl font-normal px-4 md:px-0">
+                            <h4 className="text-xl/6 lg:text-2xl font-normal px-4 md:px-0 ">
                                 Holistic {FixText('&')} Traditional
                                 Medical Insights, Powered by AI
                             </h4>
@@ -49,7 +49,7 @@ export default function Home() {
                         </div>
                         <div className="w-full md:w-1/2 lg:w-2/5 text-center">
                             <div className="flex justify-center">
-                                <div className="w-11/12 md:w-full">
+                                <div className="w-9/12 md:w-full">
                                     <Image
                                         src={"/ai/xrph-ai-new-app.webp"}
                                         alt={"XRPH AI APP"}
@@ -61,14 +61,14 @@ export default function Home() {
                             </div>
 
                             {/* App Store Buttons (Visible on Mobile) */}
-                            <div className="md:hidden flex justify-center gap-4 mt-4">
+                            <div className="md:hidden flex justify-center gap-4 mt-3">
                                 <AppiOS link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
                                 <AppAndroid link={'https://play.google.com/store/apps/details?id=ai.xrph'}/>
                                 {/*<AppleDownloadButton link={'https://apps.apple.com/us/app/xrph-ai/id6739782817'}/>
                                 <GoogleDownloadButton link={'https://play.google.com/store/apps/details?id=com.xrphwallet'}/>*/}
                             </div>
                             {/* Horizontal Separator (Visible on Mobile) */}
-                            <div className="md:hidden mt-6">
+                            <div className="md:hidden mt-2">
                                 <Image
                                     src="/separator-horizontal.webp"
                                     alt="Separator"
@@ -229,7 +229,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <section className="bg-waves-wallet dark:bg-waves-dark bg-cover bg-center bg-no-repeat">
+            <section className="hidden bg-waves-wallet dark:bg-waves-dark bg-cover bg-center bg-no-repeat">
                 <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
                     <Logo lightLogo={'/xrph-logos/wallet-app.png'} darkLogo={'/xrph-logos/wallet-app-dark.png'}
                           width={500} height={200}/>
@@ -264,7 +264,7 @@ export default function Home() {
             </section>
 
             <div className="px-6 sm:px-0">
-                <div className="container py-10 mx-auto flex-flex-col">
+                <div className="hidden container py-10 mx-auto flex-flex-col">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
                         <Logo lightLogo={'/xrph-logos/magazine.png'} darkLogo={'/xrph-logos/magazine-dark.png'} width={500} height={200}/>
                     </div>
@@ -379,7 +379,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="container py-10 mx-auto">
+                <div className="hidden container py-10 mx-auto">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
                         <Logo lightLogo={'/xrph-logos/news.png'} darkLogo={'/xrph-logos/news-dark.png'}
                               width={500} height={200}/>
@@ -429,7 +429,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="container py-10 mx-auto text-center">
+                <div className="hidden container py-10 mx-auto text-center">
                     <div className="flex justify-center items-center h-40 md:h-52 w-60 lg:w-full mx-auto">
                         <Logo lightLogo={'/xrph-logos/buy-xrph.png'} darkLogo={'/xrph-logos/buy-xrph-dark.png'}
                               width={500} height={200}/>
@@ -469,7 +469,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="container pt-10 mx-auto">
+                <div className="hidden container pt-10 mx-auto">
                     <div className="max-w-4xl mx-auto">
                         <ElfsightWidget/>
                     </div>

@@ -22,45 +22,45 @@ const SocialLinks = [
 ];
 const NavLinks = [
     {key: 1, text: 'XRPH AI', link: 'https://xrph.ai/'},
-    {key: 2, text: 'Roadmap', link: 'roadmap'},
+    /*{key: 2, text: 'Roadmap', link: 'roadmap'},
     {key: 3, text: 'Magazine', link: 'https://xrphmagazine.ai/magazine/'},
     {key: 4, text: 'News', link: 'news'},
-    {key: 5, text: 'Savings Card', link: 'XRPHSavingsCard'},
-    {key: 6, text: 'Exchanges', link: 'buy-xrph'},
+    {key: 5, text: 'Savings Card', link: 'XRPHSavingsCard'},*/
+    /*{key: 6, text: 'Exchanges', link: 'buy-xrph'},*/
     {key: 7, text: 'Africa', link: 'africa'},
     {key: 8, text: 'Team', link: 'team'},
     {key: 9, text: 'Blog', link: 'https://xrphealthcare.ai/blog/'},
-    {key: 10, text: 'FAQ', link: 'faq'},
+    /*{key: 10, text: 'FAQ', link: 'faq'},*/
     {key: 11, text: 'Contact', link: 'contact'},
     {key: 12, text: 'Apps', link: 'XRPH-Wallet'},
 ]
 const FooterMenu1 = [
-    {key: 1, text: 'Roadmap', link: 'roadmap', blank: false},
-    {key: 2, text: 'Exchanges', link: 'buy-xrph', blank: false},
+    /*{key: 1, text: 'Roadmap', link: 'roadmap', blank: false},
+    {key: 2, text: 'Exchanges', link: 'buy-xrph', blank: false},*/
     {key: 3, text: 'Savings Card', link: 'XRPHSavingsCard', blank: false},
     {key: 4, text: 'Africa', link: 'africa', blank: false},
     {key: 5, text: 'Media', link: 'media-center', blank: false},
-    {key: 6, text: 'News', link: 'news', blank: false},
+    /*{key: 6, text: 'News', link: 'news', blank: false},*/
     {key: 7, text: 'Blog', link: 'https://xrphealthcare.ai/blog/', blank: true},
     {key: 8, text: 'Team', link: 'team', blank: false},
-    {key: 9, text: 'Magazine', link: 'https://xrphmagazine.ai/magazine/', blank: true},
+    /*{key: 9, text: 'Magazine', link: 'https://xrphmagazine.ai/magazine/', blank: true},*/
 ]
 const FooterMenu2 = [
     {key: 1, text: 'Contact', link: 'contact', blank: false},
-    {key: 2, text: 'Linktree', link: 'https://linktr.ee/xrphealthcare', blank: true},
+    /*{key: 2, text: 'Linktree', link: 'https://linktr.ee/xrphealthcare', blank: true},*/
     {key: 3, text: ' Terms', link: 'terms-and-conditions', blank: false},
-    {key: 4, text: 'FAQ', link: 'faq', blank: false},
+    /*{key: 4, text: 'FAQ', link: 'faq', blank: false},*/
     {key: 5, text: 'APP FAQ', link: 'app-faqs', blank: false},
     {key: 6, text: 'Privacy', link: 'privacy-policy', blank: false},
-    {key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},
-    {key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},
+    /*{key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},
+    {key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},*/
     {key: 9, text: 'AI Chat Bot', link: 'https://xrph.ai/', blank: true},
 ]
 const SheetMenu = [
-    {key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},
+    /*{key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},*/
     {key: 3, text: 'Terms', link: 'terms-and-conditions', blank: false},
     {key: 6, text: 'Privacy', link: 'privacy-policy', blank: false},
-    {key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},
+    /*{key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},*/
 ]
 const Exchanges = [
     {id: 1, name: 'LBANK', link: 'https://www.lbank.com/trade/xrph_usdt/', image: '/exchanges/lbank.png'},
@@ -217,7 +217,7 @@ const TeamMembers = [
             borrow a leaf from them and reach out to the locals since he is certain this could save more lives based on
             his broad experience.</>)
     },
-    {
+    /*{
         id: 'keith-errey', img: '/team/keith-errey.webp',
         name: 'Keith Errey', role: 'Chief Technology Officer', icon: FaLinkedin,
         link: 'https://www.linkedin.com/in/keith-errey-698a2428/',
@@ -261,7 +261,7 @@ const TeamMembers = [
             a point of reference for various blockchain communities, with hundreds of thousands of users. Moreover, he
             has been involved in conducting numerous presentations for large audiences and possesses a considerable
             social media following.</>)
-    },
+    },*/
     {
         id: 'laban-roomes',
         img: '/team/laban-roomes.jpg',
