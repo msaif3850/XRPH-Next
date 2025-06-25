@@ -40,7 +40,7 @@ export default function Header() {
             {/*<HeaderTopBar/>*/}
             <div
                 className={`flex items-center justify-between -dark:bg-gray-900 px-6 fixed w-full z-50 transition-all duration-300 backdrop-blur ${
-                    scrolled ? "shadow-sm top-0 lg:py-1 py-1" : "py-2 bg-white dark:bg-transparent"
+                    scrolled ? "shadow-sm top-0 lg:py-1 py-1" : "py-2 "
                 }`}
             >
                 <Link href="/">
