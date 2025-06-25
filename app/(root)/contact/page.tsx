@@ -36,15 +36,15 @@ export default function Contact() {
                         <div className="flex flex-col justify-center items-center gap-y-1">
                             <Link href="/">
                             <Logo
-                                lightLogo="/logo.png"
-                                darkLogo="/logo-dark.png"
+                                lightLogo="/xrph-logos/ma.png"
+                                darkLogo="/xrph-logos/ma-dark.png"
                                 width={400}
                                 height={200}
                                 className=""
                             />
                             </Link>
-                            <p className="font-medium mt-1 sm:mt-6">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai,
-                                U.A.E.</p>
+                            {/*<p className="font-medium mt-1 sm:mt-6">Meydan Grandstand, 6th floor, Meydan Road, Nad Al Sheba, Dubai, U.A.E.</p>*/}
+                            <p className="font-medium mt-1 sm:mt-6">Office Number 510, Al Moosa Tower 1, Trade Center 1st Dubai United Arab Emirates</p>
                         </div>
                         {/* Social Links */}
                         <ul className="flex justify-between gap-1 sm:gap-2">
