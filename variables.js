@@ -50,10 +50,10 @@ const FooterMenu2 = [
     /*{key: 2, text: 'Linktree', link: 'https://linktr.ee/xrphealthcare', blank: true},*/
     {key: 3, text: ' Terms', link: 'terms-and-conditions', blank: false},
     /*{key: 4, text: 'FAQ', link: 'faq', blank: false},*/
-    {key: 5, text: 'APP FAQ', link: 'app-faqs', blank: false},
+    /*{key: 5, text: 'APP FAQ', link: 'app-faqs', blank: false},*/
+    {key: 8, text: 'Disclaimer', link: 'docs/disclaimer.pdf', blank: true},
     {key: 6, text: 'Privacy', link: 'privacy-policy', blank: false},
-    /*{key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},
-    {key: 8, text: 'Disclaimer', link: 'docs/XRPH-disclaimer.pdf', blank: true},*/
+    /*{key: 7, text: 'Legal Opinion', link: 'docs/XRPH-Legal-opinion.pdf', blank: true},*/
     {key: 9, text: 'AI Chat Bot', link: 'https://xrph.ai/', blank: true},
 ]
 const SheetMenu = [

@@ -33,8 +33,8 @@ export default function Footer() {
                         <div className="lg:flex-lg:items-start col-span-12 sm:col-span-4">
                             <Link href="/">
                                 <Logo
-                                    lightLogo="/logo.png"
-                                    darkLogo="/logo-dark.png"
+                                    lightLogo="/xrph-logos/ma.png"
+                                    darkLogo="/xrph-logos/ma-dark.png"
                                     width={300}
                                     height={100}
                                     className="custom-class"
@@ -109,9 +109,8 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <p className='text-gray-600 text-lg mt-10 text-center'>
-                        XRP HEALTHCARE L.L.C {FixText('|')} License Number:
-                        2312867.01 {FixText('|')} Dubai {FixText('|')} ©
+                    <p className='text-gray-600 text-xl mt-10 text-center'>
+                        XRP Healthcare M{FixText('&')}A Holding Inc {FixText('|')} Registration Number: ICC202501{FixText('4')}0 {FixText('|')} Dubai {FixText('|')} ©
                         Copyright {new Date().getFullYear()} {FixText('|')} All Rights Reserved
                     </p>
                 </div>
