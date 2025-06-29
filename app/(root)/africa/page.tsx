@@ -95,7 +95,20 @@ export const generateMetadata = (): Metadata => {
     return {
         title: "Africa",
         description: "XRP Healthcare africa, Discover XRPH Healthcare’s impact in Africa. Learn about our initiatives, partnerships, and efforts to enhance healthcare accessibility and innovation across the continent.",
-        alternates: {canonical: "https://www.xrphealthcare.ai/africa"},
+        alternates: {canonical: "https://xrphealthcare.ai/africa"},
+        openGraph: {
+            images: [
+                {
+                    url: "https://xrphealthcare.ai/meta/africa.png",
+                    width: 1200,
+                    height: 630,
+                    alt: "XRP Healthcare Africa",
+                },
+            ],
+        },
+        twitter: {
+            images: ["https://xrphealthcare.ai/meta/africa.png"],
+        },
     };
 };
 export default function Africa() {
